@@ -9,6 +9,7 @@ require 'middleman/rack'
 
 THREE_DAYS=259200
 ONE_MONTH=2678400
+TEN_YEARS=315360000
 header_rules = [
 	[['html'],  {'Content-Type'  => 'text/html; charset=utf-8'}],
 	[['css'],   {'Content-Type'  => 'text/css'}],
@@ -21,6 +22,7 @@ header_rules = [
 	[['svg'],    {'Content-Type'  => 'image/svg+xml'}],
 	[['png'],   {'Content-Type'  => 'image/png'}],
 	['/stylesheets', {'Cache-Control' => "public, max-age=#{ONE_MONTH}"}],
+	['/favicon.ico', {'Cache-Control' => "public, max-age=#{TEN_YEARS}"}]
 ]
 
 use Rack::Head
