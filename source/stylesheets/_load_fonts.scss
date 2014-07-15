@@ -1,1 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway|Source+Code+Pro:300);
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), url(https://themes.googleusercontent.com/static/fonts/raleway/v7/cIFypx4yrWPDz3zOxk7hIQLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Code Pro Light'), local('SourceCodePro-Light'), url(https://themes.googleusercontent.com/static/fonts/sourcecodepro/v4/leqv3v-yTsJNC7nFznSMqcVNtom4QlEDNJaqqqzqdSs.woff) format('woff');
+}
