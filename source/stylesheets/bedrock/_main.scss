@@ -1,0 +1,88 @@
+.post, .page {
+   .number {
+      list-style-type: decimal;
+   }
+   .bullet {
+      list-style-type: circle;
+   }
+   .post-body, .page-body {
+      margin-bottom:2rem;
+      a {
+         border-bottom: rem(1px) dotted $base-accent-color;
+      }
+      @import "asperities/tag-pills";
+      li> ul {
+         margin-left:$base-line-height ;
+      }
+      ol.number {
+         @extend .number;
+         margin:$base-line-height;
+         ul> li {
+            //margin-left:$base-line-height;
+           @extend .bullet;
+         }
+      }
+      .blank-bullet {
+         ul> li {
+            @extend .bullet;
+         }
+      }
+
+   }
+   .post-title, .page-title {
+//      font-weight: 400;
+      text-transform: lowercase;
+      small {
+         vertical-align: middle;
+         text-transform: lowercase;
+      }
+      .mute {
+         color: lighten($base-font-color, $light2 + $light1);
+         font-weight: 200;
+      }
+//      margin: rem(3px) auto rem(3px);
+   }
+   blockquote {
+      font-family: $serif;
+      font-size:105%;
+      small{
+         display: block;
+      }
+   }
+   .footnotes {
+      font-family: $sans-serif;
+      display: block;
+      $footnotes-font: ms(-2, $base-font-size, $major-second);
+      font-size: $footnotes-font;
+      background-color: $tertiary-accent-color;
+      padding: $footnotes-font;
+      //padding-bottom: $footnotes-space;
+      //font-family: "Helvetica Neue", Helvetica ;
+      p { margin: 0;}
+      ol {
+         margin-left:$base-line-height;
+         list-style-type: decimal;
+      }
+   }
+}
+
+#posts {
+   .post {
+      margin: .5rem 0 .5rem 0;
+//      border-bottom: rem(1px) solid $base-accent-color;
+   }
+   .post:first-child {
+//      margin-top: 0rem;
+   }
+   .post:last-child {
+//      border-bottom: none;
+   }
+}
+
+.meta {
+   color: lighten($base-font-color, $light2 + $light1);
+   font-size:80%;
+}
+.count {
+   font-family: $font-family-monospace;
+}

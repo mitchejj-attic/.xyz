@@ -1,0 +1,15 @@
+#footer {
+  background: $footer-background;
+  width:100%;
+  height: $base-footer-height;
+  font-size: 75%;
+  color: $footer-font-color;
+  border-top: rem(.7px) solid $header-border-color;
+  p { text-align: center; }
+  a, a:hover { color:$footer-font-color; }
+     .footer {
+        margin-left: auto;
+        margin-right: auto;
+        @include media($medium-screen-up) { max-width: $max-width; }
+     }
+  }

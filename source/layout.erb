@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <% unless content_for?(:replace_title) %>
+   <title><%= data.site.title %> <%= '| ' + current_page.data.title.downcase unless  current_page.data.title.nil? %></title>
+   <% else %>
+      <%= yield_content :replace_title %>
+   <% end %>
+   <meta name="description" content="<%= data.site.subtitle %>" />
+   <link rel="author" href="http://<%= data.site.host %>/humans.txt" type="text/plain" />
+   <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+   <%= stylesheet_link_tag "all" %>
+   <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+</head>
+<body>
+
+<section id="container">
+   <header role="banner" id="header">
+      <h1><a href="/">nullog</a><br><small><%= data.site.subtitle %></small></h1>
+      <h2><%= link_to 'About', '/about/' %> <small>|</small> <%= link_to 'tags', '/tags/' %> <small>|</small> <%= link_to 'archive', '/archive/' %> <small>|</small> <%= link_to 'io', '/io/' %></h2>
+   </header>
+   <main role="main" id="main">
+      <%= yield %>
+   </main>
+   <div class="foot-space"></div>
+</section>
+<footer id="footer">
+   <div class="footer">
+      <p><%= data.site.footer.quote %><br><em>Copyright &copy; 2012 &mdash; 2014; <a href="http://twitter.com/<%= data.site.twitter %>" title="@<%= data.site.twitter %>"><%= data.site.author %></a></em></p>
+   </div>
+   </footer>
+</body>
+</html>

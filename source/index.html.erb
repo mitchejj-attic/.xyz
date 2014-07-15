@@ -1,0 +1,12 @@
+---
+pageable: true
+per_page: 4
+---
+
+<section id="posts">
+<% page_articles.each_with_index do |article, i| %>
+      <%= partial "_post_entry", locals: {current_article: article, index: i} %>
+<% end %>
+</section>
+
+<%= partial "pagination", locals: {paginate: paginate, prev_page: prev_page, next_page: next_page, num_pages: num_pages, page_number: page_number} %>

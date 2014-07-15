@@ -1,0 +1,25 @@
+---
+layout: page
+---
+<ul>
+  <% page_articles.each_with_index do |article, i| %>
+     <li><span class="meta"><%= article.date.strftime('%b %d') %>  &raquo;</span> <%= link_to article.title, article %>
+  <% end %>
+</ul>
+
+
+<% case page_type
+when 'day' %>
+   <% current_archive_date = Date.new(year, month, day).strftime('%b %d %Y') %>
+<% when 'month' %>
+   <% current_archive_date =  Date.new(year, month, 1).strftime('%b %Y') %>
+<% when 'year' %>
+   <% current_archive_date =  year %>
+<% end %>
+
+<% content_for :replace_title do %>
+   <title>nullog | <%= current_archive_date %> </title>
+<% end %>
+<% content_for :alt_title do %>
+   <%= current_archive_date %>, the archive
+<% end %>

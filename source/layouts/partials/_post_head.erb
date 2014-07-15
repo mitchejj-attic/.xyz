@@ -1,0 +1,16 @@
+<header class="post-title">
+   <h2>
+      <% if current_article.data.llist.nil? %>
+         <% if defined?(index).nil? %>
+            <%= current_article.title %>
+         <% else %>
+            <%= link_to current_article.title, current_article %>
+         <% end %>
+      <% else %>
+         <%= link_to current_article.title, current_article.data.llist %>
+      <% end %>
+      <% if defined?(current_article.data.description).nil? %>
+         <span class="mute"> <%= current_article.data.description %></span>
+      <% end %>
+   </h2>
+</header>

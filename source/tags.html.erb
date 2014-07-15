@@ -1,0 +1,11 @@
+---
+layout: page
+title: The Tags
+pageable: false
+per_page: 12
+---
+<ul class="tag-pills">
+   <% blog.tags.each do |tag, articles| %>
+      <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
+   <% end %>
+</ul>

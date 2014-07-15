@@ -1,0 +1,32 @@
+// Shameless rip off from bootstrap code
+// mostly, but 'refined' over time
+// Pagination (multiple pages)
+// --------------------------------------------------
+.nav {
+   text-transform: lowercase;
+   min-width: 100%;
+   display: inline-block;
+   padding-left: 0;
+   margin-bottom: 1rem;
+   border-radius: 3rem;
+   > li {
+      min-width: 100%;
+      @include media($medium-screen-up) { min-width: 49%; }
+      color: $secondary-accent-color;
+      display: inline; // Remove list-style and block-level defaults
+      position: relative;
+      text-align: center;
+      border: 1px solid $secondary-accent-color;
+      margin-left: -1px;
+      @include clearfix();
+      > a, { text-decoration: none; }
+      &:hover, &:focus {
+         color: white;//$base-font-color;
+         background-color: $secondary-accent-color;
+      }
+   }
+    @include media($medium-screen-up) {
+      .prev { float: left; }
+      .next { float: right; }
+   }
+}

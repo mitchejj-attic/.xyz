@@ -1,0 +1,10 @@
+<% if paginate  %>
+<nav><ul class="nav">
+<% if prev_page %>
+  <li class="prev">&laquo; <%= link_to paginate == 2 ? prev_page.title : 'Ascending', prev_page.url %></li>
+<% end %>
+  <% if next_page %>
+    <li class="next"><%= link_to paginate == 2 ? next_page.title : 'Descending', next_page.url %>  &raquo;</li>
+  <% end %>
+<% end %>
+</ul></nav>

@@ -1,0 +1,23 @@
+@charset "utf-8";
+//@import 'font-awesome';
+
+main { display: block;}
+
+img { /// from http://webdesignerwall.com/tutorials/5-useful-css-tricks-for-responsive-design
+  max-width: 100%;
+  height: auto;
+}
+.img-circle
+{
+	border-radius: em(90);
+}
+.about img {
+	float: right;
+	margin: 0 8px 8px 0;
+
+}
+.img-post {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

@@ -1,0 +1,49 @@
+--- fitness
+http://www.youtube.com/watch?v=5pa82yYBgj0&feature=player_embedded
+
+
+__ news stuff
+www.nytimes.com/timesskimmer/
+http://www.politico.com/index.html?refresh=1
+
+interesting
+	evernote chrome http://www.youtube.com/watch?v=zofKzwqApQ4&hd=1
+	an old theme https://github.com/s9y/additional_themes/tree/master/morsel
+http://lab.simurai.com/
+http://codepen.io/
+http://lifehacker.com/5347089/the-plywood-and-pipe-desk
+http://lifehacker.com/5362103/keep-razors-sharp-with-mineral-oil
+--- foood
+http://lifehacker.com/5345372/use-your-oven-to-bulk-cook-hard+boiled-eggs
+http://lifehacker.com/5345554/how-to-fry-a-perfect-egg
+______ Mac Stuff
+http://mjtsai.com/blog/
+  --- news
+	the ios report
+	http://www.cultofmac.com/
+	http://www.ilounge.com/
+
+http://www.backblaze.com/
+
+mac battery http://www.macosxtips.co.uk/geeklets/collections/tron-inspired-desktop/
+
+Love it!  Thanks for sharing this.
+
+I add the following to my BatteryStatus.glet code - to get the battery stats for my Bluetooth Keyboard (just stole your code and put in the name of the KB object):
+
+kbatt=`ioreg -c AppleBluetoothHIDKeyboard | grep BatteryPercent | tail -1|awk '{print $10}'`;
+
+if [ ${#kbatt} -lt 1 ]; then
+
+echo "Bluetooth Keyboard: disconnected"
+
+else
+
+echo "Bluetooth Keyboard: $kbatt%"
+
+fi
+
+
+
+http://www.macosxtips.co.uk/geeklets/productivity/mountain-lion-reminders-list/
+http://www.macosxtips.co.uk/geeklets/collections/space-desktop-theme
