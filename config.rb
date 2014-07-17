@@ -19,9 +19,10 @@ set :markdown, :layout_engine => :erb,
                :smartypants => true
 
 configure :build do
+#   activate :minify_html
    activate :minify_css
    activate :minify_javascript
-   activate :asset_hash
+   activate :asset_hash, :ignore => [/^images\//]
    activate :relative_assets
    activate :gzip
 end
