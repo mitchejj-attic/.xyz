@@ -22,14 +22,14 @@ nav {
       border: rem(1px) solid $secondary-accent-color;
       margin-left: rem(-1px);
       @include clearfix();
-      > a, { text-decoration: none; }
+      > a, { text-decoration: none; display: block; }
       &:hover, &:focus {
          color: white;//$base-font-color;
          background-color: $secondary-accent-color;
       }
-   }
-   .prev { float: left; margin-bottom: rem(-1px) }
-   .next { float: right; }
+   }// &raquo; &laquo;
+   .prev { float: left; margin-bottom: rem(-1px); :before { content: "« "; color: $secondary-accent-color}}
+   .next { float: right; :after { content: " »"; color: $secondary-accent-color}}
     @include media($medium-screen-up) {
       .prev { margin-bottom: rem(1px) }
    }
