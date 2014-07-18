@@ -7,15 +7,12 @@ category: project
 tags: meta
 ---
 * clean up /about/history
-* fix mobile pagination
 * implement thor script
    * post
    * git push?
       * `git describe --always`
       * `git log -1 --format="%t"`
-* move /layout.erb to layouts/layout.erb
-   * move from erb to slim
-* move tag  and calendar into rational folders
+* move from erb to slim
 * changelog?
 * move /tags and /archive into one file /explore
 * move /about/spec to about/deploy/spec
