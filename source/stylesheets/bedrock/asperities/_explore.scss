@@ -1,0 +1,27 @@
+.explore {
+   margin: 0;
+   padding: 0; // Override default ul/ol
+   list-style: none;
+   @include clearfix();
+    li.pill, li.linger {
+      float: left;
+      position: relative;
+      display: block;
+      // Links rendered as pills
+       > a {
+         border-radius: $base-border-radius;
+         position: relative;
+         display: block;
+         border-bottom: initial;
+         text-decoration: none;
+         padding: rem(10);
+         &:hover, &:focus {
+            text-decoration: none;
+            background-color: $secondary-accent-color;
+         }
+      }
+      + li {
+         //margin-left: rem(2);
+      }
+   }
+}

@@ -1,0 +1,16 @@
+---
+layout: page
+title: explore
+description:
+pageable: false
+per_page: 12
+---
+ul
+   li.mute year
+   ol.explore
+      - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
+         li.pill =link_to "#{year}", blog_year_path(year)
+   li.mute tags
+   ul.explore
+      - blog.tags.each do |tag, articles|
+         li.pill =link_to "#{tag} (#{articles.size})", tag_path(tag)

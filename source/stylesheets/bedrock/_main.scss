@@ -10,7 +10,7 @@
       a {
          border-bottom: rem(1px) dotted $base-accent-color;
       }
-      @import "asperities/tag-pills";
+      @import 'bedrock/asperities/explore';
       li> ul {
          margin-left:$base-line-height ;
       }
@@ -35,10 +35,6 @@
       small {
          vertical-align: middle;
          text-transform: lowercase;
-      }
-      .mute {
-         color: lighten($base-font-color, $light2 + $light1);
-         font-weight: 200;
       }
 //      margin: rem(3px) auto rem(3px);
    }
@@ -79,6 +75,10 @@
    }
 }
 
+.mute {
+   color: lighten($base-font-color, $light2 + $light1);
+   font-weight: 200;
+}
 .meta {
    color: lighten($base-font-color, $light2 + $light1);
    font-size:80%;

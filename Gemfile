@@ -5,6 +5,7 @@ gem 'middleman', "~> 3.3.3"
 gem 'middleman-blog', "~> 3.5.3"
 gem 'middleman-syntax'
 gem 'nokogiri'
+gem 'slim'
 
 # For the server
 gem 'unicorn'

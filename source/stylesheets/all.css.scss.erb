@@ -14,10 +14,12 @@ $border-box-sizing: false;
 @import 'bedrock/header';
 #main {
    @import 'bedrock/main';
+      // explore is loaded in bedrock/main
 }
 @import 'bedrock/code';
 @import 'bedrock/footer';
 @import 'bedrock/images';
 @import 'bedrock/asperities/nav';
+@import 'bedrock/asperities/explore';
 
 <%= Rouge::Themes::Github.render(:scope => '.highlight') %>
