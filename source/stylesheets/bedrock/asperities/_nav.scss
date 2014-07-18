@@ -2,6 +2,9 @@
 // mostly, but 'refined' over time
 // Pagination (multiple pages)
 // --------------------------------------------------
+nav {
+   min-width: 100%;
+}
 .nav {
    text-transform: lowercase;
    min-width: 100%;
@@ -10,14 +13,14 @@
    margin-bottom: 1rem;
    border-radius: 3rem;
    > li {
-      min-width: 100%;
+      min-width: inherit;
       @include media($medium-screen-up) { min-width: 49%; }
       color: $secondary-accent-color;
       display: inline; // Remove list-style and block-level defaults
       position: relative;
       text-align: center;
-      border: 1px solid $secondary-accent-color;
-      margin-left: -1px;
+      border: rem(1px) solid $secondary-accent-color;
+      margin-left: rem(-1px);
       @include clearfix();
       > a, { text-decoration: none; }
       &:hover, &:focus {
@@ -25,8 +28,9 @@
          background-color: $secondary-accent-color;
       }
    }
+   .prev { float: left; margin-bottom: rem(-1px) }
+   .next { float: right; }
     @include media($medium-screen-up) {
-      .prev { float: left; }
-      .next { float: right; }
+      .prev { margin-bottom: rem(1px) }
    }
 }
