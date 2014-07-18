@@ -40,10 +40,10 @@ activate :blog do |blog|
    blog.permalink = "{year}/{month}/{day}/{title}/index.html"
 
    blog.tag_template = "tag.html"
-   blog.taglink = "tags/{tag}/index.html"
+   blog.taglink = "explore/{tag}/index.html"
 
    blog.calendar_template = "calendar.html"
-   blog.year_link = "{year}/index.html"
+   blog.year_link = "explore/{year}/index.html"
 
    # Enable pagination
    blog.paginate = true
