@@ -7,7 +7,7 @@ per_page: 12
 ---
 ul
    li.mute year
-   ol.explore
+   ul.explore
       - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
          li.pill =link_to "#{year}", blog_year_path(year)
    li.mute tags
