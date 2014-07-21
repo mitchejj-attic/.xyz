@@ -14,7 +14,6 @@ tags: meta
       * `git log -1 --format="%t"`
 * move from erb to slim
 * changelog?
-* move /tags and /archive into one file /explore
 * move /about/spec to about/deploy/spec
    * add about/deploy/heroku --- config/deploy related
    * does about/deploy/middleman make sense?
