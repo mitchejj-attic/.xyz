@@ -5,9 +5,11 @@ title: the nullog journey
 description: a purposeful endeavor
 subtitle: actually existing
 ---
-This page has always been a bit forgotten & neglected, the old about me page had a few philosophy and history behind the site, kind of making this an after thought. Hopefuly this will be part of the changes.
+## __Warning:__ Still under active change.
 
-# **Warning:** this page, while being actively modified is heavly dated.
+I have created more than a few sites over the years and over time they have fallen victim to neglect and digital decay. I created my first website in 1996, the site came out of my pracration writing my 'Up Close' experience paper over spring break. Like most sites at the time the the markup was mangled mess of content, layout and design. I've created a few more site overtime; they to fell victim to decay and neglect. I thought the solution was be moving to a database drive CMS; yet I wasn't happy with the CMS I choose and moved to another CMS. I even tried using platforms like Posterous and tumblr before I reverted back to
+ then back to a simply static site. For nearly two years this site has been built upon the awesomeness that is Jekyll. I do feel in many ways Jekyll with GitHub is nearly a perfect platform for many users. Over the last I've learned alot, I've also made may mistakes. Jekyll
+
 
 #### Origins
 Sometime in the summer of 2011 I wanted to find an escape from my Google dependency. The first step was to move away from Google Mail (gMail), with that change I wanted to use my own domain. I wanted a short URL that could tie into both my geek side and my emerging heath consciousness, nothing unreasonable. I ran many ideas through my Domain Register of choice [hover.com](https://www.hover.com/), nothing resonated with until [stderr.me](http://stderr.me).
@@ -26,14 +28,6 @@ Once I partially migrated away from Google I felt need to have a web presence ye
 
 Now I'm self hosting again, kind of. I'm using [Jekyll](http://jekyllrb.com/), "the blog-aware static site generator" coupled with [Git Lab](http://gitlab.com) for versioning and source control with the final site deployed on a single [heroku](http://heroku.com) dyno. I hoping working on this site will help me re-balance my work life balance, I do intent spend at least an hour every other day mucking about on this "project".
 
-#### Warning
-With that said I do have a small disclaimer. The initial genesis of this space was to create a playground where I may share my thoughts and experiences. This here will be my playground. Things may work, things may not work and things may break. As a result, nothing here should be considered finished, polished, refined or ready for mass consumption. My main quality goal is to keep the site light and nimble.
-
-
-
-
-
-
 I must confess this has been an interesting journey. I gave up the idea of a blog awhile back when I stopped using S9Y aka senderdipity, and dropped my the domain I was using and all kinds of other things.
 
 Then I started thinking wouldn't it be nice to post something larger than a tweet or reblog something... that lead me to tumblr. While I liked tumblr and the concept of having different layouts for different post types (images, video, quotes, text) and I loved the equally I didn't have to worry about keeping a sites backend up-to-date and I was getting a good content delivery stream. However, I wasn't a fan of the various limitations imposed by tumblr. In the end I just didn't use it as much as I liked because of that.
@@ -41,3 +35,14 @@ Then I started thinking wouldn't it be nice to post something larger than a twee
 So I started looking else where and found chyrp. It seemed perfect, a nice clone of tumblr and was marked as a lightweight blogging engine. I deployed it on my server and went to work hack a theme that worked for me. But I didn't get to far, it had issues. One issue I just couldn't get past was it included a local copy of jQuery and a few other javascripts . I'm sorry but I'm looking for something quick and nimble, I don't want to be bouged down by weighty scripts, let alone server them up when CDN's exist for that very purpose.
 
 Somehow that lead me to Jekyll. So far I'm impressed. It really is everything I want, I think. I'm given the freedom, to create and express myself with out worry about the server.
+
+#### Warning
+With that said I do have a small disclaimer. The initial genesis of this space was to create a playground where I may share my thoughts and experiences. This here will be my playground. Things may work, things may not work and things may break. As a result, nothing here should be considered finished, polished, refined or ready for mass consumption. My main quality goal is to keep the site light and nimble.
+
+#### Changelog
+* Aug 2012 -- Jul 2014
+   * Jekyll
+* Mar 2014
+   * moved from stderr.me to nullog.net
+Jul 2014
+   * migrated to middleman

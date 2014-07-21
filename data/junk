@@ -9,3 +9,12 @@ https://github.com/karlfreeman/middleman-deploy
 //rgb(114, 138, 191) rgb(114, 191, 170) rgb(144, 191, 114)
 https://github.com/Fooidge/PleaseJS
 http://www.checkman.io/please/
+
+
+### reasons to use unicorn (or switch to thin) and rack
+http://www.madebymarket.com/blog/dev/ruby-web-benchmark-report.html
+
+
+Peach and Coconut
+metaphor for differences in the way people in Germany and the US communicate
+http://www.sietar-europa.org/about_us/Newsletter/Mar04/Peach&CoconutCommunicate.html
