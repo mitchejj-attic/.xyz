@@ -12,7 +12,7 @@ tags: meta
    * git push?
       * `git describe --always`
       * `git log -1 --format="%t"`
-* move from erb to slim
+* move from erb to slim --- maybe early to late fall?
 * changelog?
 * move /about/spec to about/deploy/spec
    * add about/deploy/heroku --- config/deploy related

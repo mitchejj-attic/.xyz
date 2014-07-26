@@ -22,9 +22,10 @@ gem 'modular-scale'
 # For feed.xml.builder
 gem "builder", "~> 3.0"
 
-#group :development do
-   gem 'middleman-livereload'
-   gem 'rake'
-   gem 'foreman'
-   gem 'thor'
-#end
+group :development do
+   gem 'middleman-livereload', require: false
+   gem 'rake', require: false
+   gem 'foreman', require: false
+   gem 'thor', require: false
+   gem 'minigit', require: false
+end
