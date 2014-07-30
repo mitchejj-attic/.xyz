@@ -9,11 +9,11 @@ group :toolbox do
    gem "builder", "~> 3.0"
 end
 
-group :middleman do
+#group :middleman do
    gem 'middleman', "~> 3.3.3"
    gem 'middleman-blog', "~> 3.5.3"
    gem 'middleman-syntax'
-end
+#end
 
 group :server do
    gem 'unicorn'
@@ -22,12 +22,12 @@ group :server do
    gem 'rack-contrib'
 end
 
-group :css do
+#group :css do
    gem 'bitters'
    gem 'bourbon'
    gem 'neat'
    gem 'modular-scale'
-end
+#end
 
 group :development do
    gem 'middleman-livereload', require: false
