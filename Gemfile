@@ -1,13 +1,13 @@
 source 'https://rubygems.org'
 ruby "2.1.2"
 
-group :toolbox do
+#group :toolbox do
    gem 'rake'
    gem 'nokogiri'
    gem 'slim'
    # For feed.xml.builder
    gem "builder", "~> 3.0"
-end
+#end
 
 #group :middleman do
    gem 'middleman', "~> 3.3.3"
@@ -15,12 +15,12 @@ end
    gem 'middleman-syntax'
 #end
 
-group :server do
+#group :server do
    gem 'unicorn'
    #gem 'puma'
    gem 'rack'
    gem 'rack-contrib'
-end
+#end
 
 #group :css do
    gem 'bitters'
