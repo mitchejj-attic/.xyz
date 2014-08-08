@@ -3,14 +3,14 @@
 $sans-serif: $helvetica;
 $serif: $georgia;
 
-$base-font-family: 'Raleway', $sans-serif;
+$base-font-family: 'Source Sans Pro', $sans-serif;
 $header-font-family: $helvetica;
 $font-family-monospace: 'Source Code Pro', Inconsolata, Consolas, Monaco, monospace;
 
 // Sizes
 ///////////////////////////////////////////////////////////////////////////////
-$base-font-size: 1.1rem;
-$base-line-height: $base-font-size * 1.5;
+$base-font-size: 1.125rem;
+$base-line-height: $base-font-size * 1.618;
 $base-border-radius: #{$augmented-fourth / 10}rem; //3rem;
 $base-footer-height: 4.5rem;
 $base-font-size-reduction: 60%;

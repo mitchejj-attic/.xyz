@@ -1,12 +1,14 @@
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Raleway'), url(https://themes.googleusercontent.com/static/fonts/raleway/v7/cIFypx4yrWPDz3zOxk7hIQLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
-}
+//http://fonts.googleapis.com/css?family=Source+Code+Pro:300
 @font-face {
   font-family: 'Source Code Pro';
   font-style: normal;
   font-weight: 300;
-  src: local('Source Code Pro Light'), local('SourceCodePro-Light'), url(https://themes.googleusercontent.com/static/fonts/sourcecodepro/v4/leqv3v-yTsJNC7nFznSMqcVNtom4QlEDNJaqqqzqdSs.woff) format('woff');
-}
+  src: local('Source Code Pro Light'), local('SourceCodePro-Light'), url(http://fonts.gstatic.com/s/sourcecodepro/v5/leqv3v-yTsJNC7nFznSMqcVNtom4QlEDNJaqqqzqdSs.woff) format('woff');
+};
+//http://fonts.googleapis.com/css?family=Source+Sans+Pro:300
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v8/toadOcfmlt9b38dHJxOBGMVNtom4QlEDNJaqqqzqdSs.woff) format('woff');
+};
