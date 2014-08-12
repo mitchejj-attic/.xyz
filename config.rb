@@ -34,7 +34,7 @@ activate :blog do |blog|
    blog.layout = "post"
    blog.default_extension = ".md"
    blog.summary_separator = /(READMORE)/
-   blog.summary_length = 303
+   blog.summary_length = 500
 
    blog.sources = "post/:year-:month-:day-:title.html"
    blog.permalink = "{year}/{month}/{day}/{title}/index.html"
