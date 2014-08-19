@@ -7,7 +7,7 @@
    $ms-base: $base-font-size;
    text-align: center;
    border-bottom: rem(.75px) solid $header-border-color;
-   h1, h2 {line-height: ms(1); font-weight: 200;}
+   h1, h2 {line-height: 1; font-weight: 200;}
    a {
       color: $base-font-color;   }
    h2 {
