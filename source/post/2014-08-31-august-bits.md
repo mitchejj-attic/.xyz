@@ -7,7 +7,7 @@ llist:
 source:
   url:
   title:
-date: <%= Time.now =>
+date:  Time.now =>
 ---
 [The best argument yet for net neutrality comes from Major League Baseball][bam]
 [“Theater” vs. “Theatre”: The Great New York Times Language Swap][theater]
@@ -15,6 +15,7 @@ date: <%= Time.now =>
 [8 unexpected reasons why you should run The Marathon][the8]
 [MacBook Decals][stickers] --- stickers
 [BPA-Free Plastic Containers May Be Just as Hazardous][bpaFree]
+[Strength Running][sr]
 
 
 [bam]: http://qz.com/241250/the-best-argument-yet-for-net-neutrality-comes-from-major-league-baseball/
@@ -23,3 +24,4 @@ date: <%= Time.now =>
 [the8]: https://medium.com/@KindCraig/f-ck-that-sh-t-46b758cd74a6
 [stickers]: http://thedecalguru.com/macbook-decals/
 [bpaFree]: http://www.scientificamerican.com/article/bpa-free-plastic-containers-may-be-just-as-hazardous/
+[sr]: http://strengthrunning.com/ "Get Stronger, Stay Healthy and Race Faster"
