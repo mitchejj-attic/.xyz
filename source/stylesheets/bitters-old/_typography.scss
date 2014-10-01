@@ -1,58 +1,64 @@
 body {
-  color: $base-font-color;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  -webkit-font-smoothing: antialiased;
-  line-height: $base-line-height;
-  font-weight: 300;
+   -webkit-font-smoothing: antialiased;
+   background-color: $base-background-color;
+   color: $base-font-color;
+   font-family: $base-font-family;
+   font-size: $base-font-size;
+   line-height: $unitless-line-height;
+   font-weight: 300;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $header-font-family;
   font-weight: 400;
-  line-height: 1.25;
+  line-height: $header-line-height;
   margin: 0;
-  text-rendering: optimizeLegibility; // Fix the character spacing for headings
+  text-rendering: optgizeLegibility; // Fix the character spacing for headings
 }
 
 h1 {
 //  font-size: $base-font-size * 2.25; // 16 * 2.25 = 36px
-   font-size: ms(13, $base-font-size, $minor-second);
+   font-size: $h1-font-size;
 }
 
 h2 {
 //  font-size: $base-font-size * 2; // 16 * 2 = 32px
-   font-size: ms(8, $base-font-size, $minor-second);
+   font-size: $h2-font-size;
 }
 
 h3 {
 //  font-size: $base-font-size * 1.75; // 16 * 1.75 = 28px
-   font-size: ms(5, $base-font-size, $minor-second);
+   font-size: $h3-font-size;
 }
 
 h4 {
 //  font-size: $base-font-size * 1.5; // 16 * 1.5 = 24px
-   font-size: ms(3, $base-font-size, $minor-second);
+   font-size: $h4-font-size;
 }
 
 h5 {
 //  font-size: $base-font-size * 1.25; // 16 * 1.25 = 20px
-font-size: ms(2, $base-font-size, $minor-second);
+   font-size: $h5-font-size;
 }
 
 h6 {
 //  font-size: $base-font-size;
-   font-size: ms(1, $base-font-size, $minor-second);
+   font-size: $h6-font-size;
 }
 
 p {
-  margin: 0 0 ($base-line-height * .5);
+  margin: 0 0 ($base-spacing / 2);
 }
 
 a {
+  @include transition(color 0.1s linear);
   color: $base-link-color;
   text-decoration: none;
-  @include transition(color 0.1s linear);
 
   &:hover {
     color: $hover-link-color;
@@ -69,14 +75,15 @@ hr {
   border-left: none;
   border-right: none;
   border-top: none;
-  margin: $base-line-height 0;
+  margin: $base-spacing 0;
 }
 
-img {
+img,
+picture {
   margin: 0;
   max-width: 100%;
 }
-
+/*
 abbr, acronym {
   border-bottom: 1px dotted $base-border-color;
   cursor: help;
@@ -94,12 +101,12 @@ hgroup {
 del {
   color: lighten($base-font-color, 15);
 }
-
+*/
 blockquote {
   border-left: 2px solid $base-border-color;
   color: lighten($base-font-color, 15);
-  margin: $base-line-height 0;
-  padding-left: $base-line-height / 2;
+  margin: $base-spacing 0;
+  padding-left: $base-spacing / 2;
 }
 
 cite {

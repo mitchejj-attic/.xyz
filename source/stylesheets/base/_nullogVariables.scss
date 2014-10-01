@@ -1,16 +1,13 @@
 // Typography
-///////////////////////////////////////////////////////////////////////////////
 $sans-serif: $helvetica;
 $serif: $georgia;
-
-$base-font-family: 'Source Sans Pro', $sans-serif;
-$header-font-family: $helvetica;
 $font-family-monospace: 'Source Code Pro', Inconsolata, Consolas, Monaco, monospace;
 
-// Sizes
-///////////////////////////////////////////////////////////////////////////////
-$base-font-size: 1.125rem;
+$header-font-family: $helvetica;
+$base-font-family: 'Source Sans Pro', $sans-serif;
 
+// Font Sizes
+$base-font-size: 1.125rem;
 $h1-font-size: ms(13, $base-font-size, $minor-second);
 $h2-font-size: ms(8, $base-font-size, $minor-second);
 $h3-font-size: ms(5, $base-font-size, $minor-second);
@@ -18,22 +15,19 @@ $h4-font-size: ms(3, $base-font-size, $minor-second);
 $h5-font-size: ms(2, $base-font-size, $minor-second);
 $h6-font-size: ms(1, $base-font-size, $minor-second);
 
-// Line heights
-$base-line-height: $base-font-size * 1.618;
-$unitless-line-height: $base-line-height / ($base-line-height * 0 + 1); // Strip units from line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Prefer_unitless_numbers_for_line-height_values
-$header-line-height: $base-font-size * 1.25;
+// Line Heights
+$unitless-line-height: $minor-sixth;
+$base-line-height: $base-font-size * $unitless-line-height;
+$header-line-height:  $major-third;
 
 // Other Sizes
-$base-border-radius: #{$augmented-fourth / 10}rem; //3rem;
-$base-vertical-spacing: 0.5rem;
-$base-spacing: $base-line-height;// * 1rem;
+$base-border-radius: #{$augmented-fourth / 10}rem;
+$base-spacing: $base-line-height;
 $base-z-index: 0;
 $base-footer-height: 4.5rem;
 $base-font-size-reduction: 60%;
 
 // Colors
-///////////////////////////////////////////////////////////////////////////////
-
 $blue: rgb(35,75,115); //#477DCA;
 $dark-gray: rgb(61,61,61); //rgb(47,47,47); // #333;
 $medium-gray: rgb(83,83,83);//rgb(103,103,103); // #999;
@@ -56,8 +50,6 @@ $light2: 30%;
 $base-background-color: white;
 $base-body-color: $base-background-color;
 
-
-
 //  Font Colors
 $base-font-color: $black;
 $base-accent-color: $light_grayish_violet;
@@ -73,12 +65,8 @@ $header-border-color: rgb(192,182,215);
 
 // Border color
 $base-border-color: lighten($base-font-color, $light2); //$light-gray;
+$base-border: rem($unitless-line-height) solid $base-border-color;
 
 // Footer Colors
 $footer-background: $base-font-color; //$base-accent-color;//rgb(30,184,85); //rgb(31,193,246); //
 $footer-font-color: transparentize($base-body-color, .5);
-
-// Flash Colors
-$error-color: $light-red;
-$notice-color: $light-yellow;
-$success-color: $light-green;

@@ -1,4 +1,8 @@
+
 .post, .page {
+   h1, h2, h3, h4, h5, h6 {
+      font-weight: 400;
+   }
    .number {
       list-style-type: decimal;
    }
@@ -12,11 +16,11 @@
       }
       @import 'bedrock/asperities/explore';
       li> ul {
-         margin-left:$base-line-height ;
+         margin-left: $base-spacing;
       }
       ol.number {
          @extend .number;
-         margin:$base-line-height;
+         margin: $base-spacing;
          ul> li {
             //margin-left:$base-line-height;
            @extend .bullet;
@@ -30,17 +34,19 @@
 
    }
    .post-title, .page-title {
-//      font-weight: 400;
       text-transform: lowercase;
       small {
          vertical-align: middle;
          text-transform: lowercase;
       }
-//      margin: rem(3px) auto rem(3px);
+//     margin: rem(3px) auto rem(3px);
    }
    blockquote {
       font-family: $serif;
-      font-size:105%;
+      font-size: 105%;
+      @include media($medium-screen-up) {
+         font-size: $base-font-size * $unitless-line-height;
+      }
       small{
          display: block;
       }
@@ -56,7 +62,7 @@
       //font-family: "Helvetica Neue", Helvetica ;
       p { margin: 0;}
       ol {
-         margin-left:$base-line-height;
+         margin-left: #{$unitless-line-height}rem;
          list-style-type: decimal;
       }
    }
