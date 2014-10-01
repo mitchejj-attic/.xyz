@@ -8,7 +8,7 @@ llist:
 source:
   url:
   title:
-date:  Time.now =>
+date: 2014-09-30 20:25:24 -0400
 ---
 
 * [USATF 'Age Grading'][agegrading]
