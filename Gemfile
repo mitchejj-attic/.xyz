@@ -30,7 +30,7 @@ ruby "2.1.3"
 #end
 
 group :development do
-   gem 'middleman-livereload', require: false
+   gem 'middleman-livereload'
    #gem "better_errors", require: false
    gem 'foreman', require: false
    gem 'thor', require: false
