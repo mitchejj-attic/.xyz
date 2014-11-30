@@ -8,7 +8,7 @@ llist:
 source:
   url:
   title:
-date: <%= Time.now %>
+date: 2014-11-30 11:35:22 -0500
 ---
 
 * [Energy Gel Comparisons][gel]
