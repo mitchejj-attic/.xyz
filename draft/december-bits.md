@@ -1,11 +1,13 @@
 ---
 layout: post
 title: december bits
-description: 
-tags: 
-llist: 
+description:
+tags:
+llist:
 source:
-  url: 
-  title: 
+  url:
+  title:
 date: <%= Time.now %>
 ---
+
+http://www.bing.com/gallery/
