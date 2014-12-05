@@ -3,7 +3,7 @@ layout: post
 truncatable: 'true'
 title: November Bits
 description:
-tags:
+tags: bits
 llist:
 source:
   url:
