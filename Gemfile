@@ -20,6 +20,7 @@ ruby "2.1.5"
    #gem 'puma'
    gem 'rack'
    gem 'rack-contrib'
+   gem 'rack-rewrite'
 #end
 
 #group :css do

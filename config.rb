@@ -44,6 +44,7 @@ activate :blog do |blog|
 
    blog.calendar_template = "calendar.html"
    blog.year_link = "explore/{year}/index.html"
+   blog.month_link = "explore/{year}/{month}/index.html"
 
    # Enable pagination
    blog.paginate = true
