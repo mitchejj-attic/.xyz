@@ -7,9 +7,13 @@
    <% else %>
       <%= partial "post_head", locals: {current_article: current_article, index: index} %>
       <div class="post-body">
-         <%= current_article.summary %>
-         <% if current_article.body != current_article.summary %>
-            <%= link_to 'Read more…', current_article %>
+         <% if !current_article.data.truncatable %>
+            <%= current_article.summary %>
+            <% if current_article.body != current_article.summary %>
+               <%= link_to 'Read more…', current_article %>
+            <% end %>
+         <% else %>
+            <%= current_article.body %>
          <% end %>
       </div>
    <% end %>
