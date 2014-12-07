@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'rack'
 require 'rack/contrib/try_static'
+require 'rack/rewrite'
 require 'rack/contrib/not_found'
 require 'middleman/rack'
 
@@ -33,6 +34,9 @@ use Rack::TryStatic,
     urls: %w[/],
     try: %w[.html index.html /index.html],
     :header_rules =>	header_rules
+		use Rack::Rewrite do 														# match 2xxx with an optional /
+			r307 %r{2(\d{3}\/?\d{0,2})}, '/explore/2$1'		# will also take /mm and drop /dd
+		end																							# see http://rubular.com/r/yA2OEtWtg5
 run Rack::NotFound.new('./tmp/404/index.html')
 
 #FIVE_MINUTES=300
