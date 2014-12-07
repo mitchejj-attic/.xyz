@@ -1,5 +1,9 @@
-
+.bits ul> li {
+    padding-left: .5rem;
+    text-indent: -.5rem;
+}
 .post, .page {
+
    h1, h2, h3, h4, h5, h6 {
       font-weight: 400;
    }
@@ -82,12 +86,14 @@
 }
 
 .mute {
-   color: lighten($base-font-color, $light2 + $light1);
-   font-weight: 200;
+  color: lighten($base-font-color, $light2 + $light1);
+  font-weight: 200;
 }
-.meta {
-   color: lighten($base-font-color, $light2 + $light1);
-   font-size:80%;
+
+.meta-data {
+  font-family: $font-family-monospace;
+  color: lighten($base-font-color, $light2 + $light1);
+  font-size:80%;
 }
 .count {
    font-family: $font-family-monospace;

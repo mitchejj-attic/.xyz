@@ -1,4 +1,4 @@
-<article class="post">
+<article class="post <%= current_article.tags.sort.join(' ') %> ">
    <% if defined?(index).nil? %>
       <%= partial "post_head", locals: {current_article: current_article} %>
       <div class="post-body">
