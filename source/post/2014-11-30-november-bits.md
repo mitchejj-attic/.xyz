@@ -1,6 +1,6 @@
 ---
 layout: post
-truncatable: 'true'
+truncatable: 'false'
 title: November Bits
 description:
 tags: bits
