@@ -67,6 +67,7 @@
       p { margin: 0;}
       ol {
          margin-left: #{$unitless-line-height}rem;
+         margin-bottom: 0rem;
          list-style-type: decimal;
       }
    }
