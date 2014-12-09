@@ -18,6 +18,7 @@ ruby "2.1.5"
 #group :server do
    gem 'unicorn'
    #gem 'puma'
+   gem 'passenger', '5.0.0.beta1'
    gem 'rack'
    gem 'rack-contrib'
    gem 'rack-rewrite'
