@@ -122,6 +122,8 @@ GEM
       daemon_controller (>= 1.2.0)
       rack
       rake (>= 0.8.1)
+    puma (2.10.2)
+      rack (>= 1.1, < 2.0)
     rack (1.5.2)
     rack-contrib (1.2.0)
       rack (>= 0.9.1)
@@ -184,6 +186,7 @@ DEPENDENCIES
   neat
   nokogiri
   passenger (= 5.0.0.beta1)
+  puma
   rack
   rack-contrib
   rack-rewrite
