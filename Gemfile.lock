@@ -35,7 +35,6 @@ GEM
       sass (>= 3.3.0, < 3.5)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
-    daemon_controller (1.2.0)
     dotenv (1.0.2)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
@@ -56,7 +55,6 @@ GEM
     http_parser.rb (0.6.0)
     i18n (0.6.11)
     json (1.8.1)
-    kgio (2.9.2)
     kramdown (1.5.0)
     listen (2.8.3)
       celluloid (>= 0.15.2)
@@ -118,10 +116,6 @@ GEM
       tilt (~> 1.4.1)
     padrino-support (0.12.4)
       activesupport (>= 3.1)
-    passenger (5.0.0.beta1)
-      daemon_controller (>= 1.2.0)
-      rack
-      rake (>= 0.8.1)
     puma (2.10.2)
       rack (>= 1.1, < 2.0)
     rack (1.5.2)
@@ -132,7 +126,6 @@ GEM
     rack-rewrite (1.5.0)
     rack-test (0.6.2)
       rack (>= 1.0)
-    raindrops (0.13.0)
     rake (10.4.2)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
@@ -164,10 +157,6 @@ GEM
     uglifier (2.6.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    unicorn (4.8.3)
-      kgio (~> 2.6)
-      rack
-      raindrops (~> 0.7)
 
 PLATFORMS
   ruby
@@ -185,7 +174,6 @@ DEPENDENCIES
   modular-scale
   neat
   nokogiri
-  passenger (= 5.0.0.beta1)
   puma
   rack
   rack-contrib
@@ -193,4 +181,3 @@ DEPENDENCIES
   rake
   slim
   thor
-  unicorn
