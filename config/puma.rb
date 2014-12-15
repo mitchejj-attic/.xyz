@@ -1,5 +1,5 @@
 workers Integer(ENV['PUMA_WORKERS'] || 4)          ## heroku run cat /proc/cpuinfo
-threads Integer(ENV['MIN_THREADS']  || 4), Integer(ENV['MAX_THREADS'] || 16)
+threads Integer(ENV['MIN_THREADS']  || 1), Integer(ENV['MAX_THREADS'] || 16)
 
 preload_app!
 

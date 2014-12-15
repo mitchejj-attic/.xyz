@@ -18,7 +18,7 @@ ruby "2.1.5"
 #group :server do
 #   gem 'unicorn'
    gem 'puma'
-#   gem 'passenger', '5.0.0.beta1'
+#  gem 'passenger', '5.0.0.beta1'
    gem 'rack'
    gem 'rack-contrib'
    gem 'rack-rewrite'
@@ -31,10 +31,10 @@ ruby "2.1.5"
    gem 'modular-scale'
 #end
 
-group :development do
+#group :development do
    gem 'middleman-livereload'
    #gem "better_errors", require: false
    gem 'foreman', require: false
    gem 'thor', require: false
    gem 'minigit', require: false
-end
+#end
