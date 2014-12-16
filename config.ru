@@ -16,7 +16,7 @@ header_rules = [
 	[['css'],   {'Content-Type'  => 'text/css; charset=utf-8'}],
 	[['xml'],   {'Content-Type'  => 'application/atom+xml ; charset=utf-8'}],
 	[['js'],    {'Content-Type'  => 'text/javascript; charset=utf-8'}],
-	[['txt'],    {'Content-Type'  => 'text/plain; charset=utf-8'}], #should be text/text
+	[['txt'],    {'Content-Type'  => 'text/plain; charset=utf-8'}],
 	[['woff'],    {'Content-Type'  => 'application/x-font-woff'}],
 	[['ttf'],    {'Content-Type'  => 'application/x-font-ttf'}],
 	[['eot'],    {'Content-Type'  => 'application/vnd.ms-fontobject'}],
