@@ -13,10 +13,10 @@ ONE_MONTH=2678400
 TEN_YEARS=315360000
 header_rules = [
 	[['html'],  {'Content-Type'  => 'text/html; charset=utf-8'}],
-	[['css'],   {'Content-Type'  => 'text/css'}],
-	[['xml'],   {'Content-Type'  => 'application/atom+xml'}],
-	[['js'],    {'Content-Type'  => 'text/javascript'}],
-	[['txt'],    {'Content-Type'  => 'text/html'}], #should be text/text
+	[['css'],   {'Content-Type'  => 'text/css; charset=utf-8'}],
+	[['xml'],   {'Content-Type'  => 'application/atom+xml ; charset=utf-8'}],
+	[['js'],    {'Content-Type'  => 'text/javascript; charset=utf-8'}],
+	[['txt'],    {'Content-Type'  => 'text/plain; charset=utf-8'}], #should be text/text
 	[['woff'],    {'Content-Type'  => 'application/x-font-woff'}],
 	[['ttf'],    {'Content-Type'  => 'application/x-font-ttf'}],
 	[['eot'],    {'Content-Type'  => 'application/vnd.ms-fontobject'}],
