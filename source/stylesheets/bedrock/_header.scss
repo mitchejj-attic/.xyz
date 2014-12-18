@@ -2,11 +2,11 @@
    padding-top: 1rem;
    padding-bottom: .5rem;
    margin-bottom: .5rem;
-   @include linear-gradient(to right, $base-body-color 0%, transparentize($base-accent-color, .8) 50%, $base-body-color 100%);
+   //@include linear-gradient(to right, $base-body-color 0%, transparentize($base-accent-color, .8) 50%, $base-body-color 100%);
    width: 100%;
    $ms-base: $base-font-size;
    text-align: center;
-   border-bottom: rem(.75px) solid $header-border-color;
+//   border-bottom: rem(.75px) solid $header-border-color;
    h1, h2 {line-height: 1; font-weight: 200;}
    a {
       color: $base-font-color;   }
@@ -15,5 +15,9 @@
       small, a {
          font-size: 60%;
          color: lighten($base-link-color, $light2);   }
+   }
+   hr {
+      margin: .5rem;
+      border-bottom: rem(.75px) solid $darkish_gray_orange;//$header-border-color;
    }
 }
