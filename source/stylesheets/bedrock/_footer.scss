@@ -1,9 +1,9 @@
 #footer {
-  background: $footer-background;
+  background: rgb(255,78,78);//$footer-background;
   width:100%;
   height: $base-footer-height;
   font-size: 75%;
-  color: $footer-font-color;
+  color: white;//$footer-font-color;
   border-top: rem(.7px) solid $header-border-color;
   p { text-align: center; }
   a, a:hover { color:$footer-font-color; }

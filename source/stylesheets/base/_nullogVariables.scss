@@ -43,6 +43,11 @@ $light_grayish_blue: rgb(225,236,241);
 $light_grayish_orange: rgb(236,225,220);
 $light_grayish_green: rgb(231,236,220);
 $light_grayish_yellow: rgb(249,249,222);
+$bright_red: rgb(230,35,70);
+$dark_gray_blue: rgb(127,127,144);
+$darkish_gray_orange: rgb(144,136,127);
+$vivid_yellow: rgb(236,231,35);
+$grayish_violet: rgb(192,182,215);
 $light1: 15%;
 $light2: 30%;
 
@@ -57,16 +62,19 @@ $secondary-accent-color: $light_grayish_blue;
 $tertiary-accent-color: $light_grayish_green;
 
 //  Text Link Colors
-$base-link-color: lighten($base-font-color, $light1); //$base-accent-color;
-$hover-link-color: lighten($base-font-color, $light1); //darken($base-accent-color, 15);
+$_base-link-color: $base-font-color;
+   $base-link-color: lighten($_base-link-color, $light1); //$base-accent-color;
+$_hover-link-color: $base-font-color;
+   $hover-link-color: lighten($_hover-link-color, $light1); //darken($base-accent-color, 15);
 
 // Header
-$header-border-color: rgb(192,182,215);
+$header-border-color: $grayish_violet;
 
 // Border color
 $base-border-color: lighten($base-font-color, $light2); //$light-gray;
 $base-border: rem($unitless-line-height) solid $base-border-color;
 
 // Footer Colors
-$footer-background: $base-font-color; //$base-accent-color;//rgb(30,184,85); //rgb(31,193,246); //
-$footer-font-color: transparentize($base-body-color, .5);
+$footer-background: $darkish_gray_orange; //$bright_red;//rgb(245,10,70);//$base-font-color; //$base-accent-color;//rgb(30,184,85); //rgb(31,193,246); //
+$_footer-font-color: white;
+   $footer-font-color: transparentize($_footer-font-color, .5);
