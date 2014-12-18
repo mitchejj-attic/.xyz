@@ -10,7 +10,6 @@
    <% end %>
    <meta name="description" content="<%= data.site.subtitle %>" />
    <link rel="author" href="http://<%= data.site.host %>/humans.txt" type="text/plain" />
-   <link rel="dns-prefetch" href="fonts.gstatic.com" />
    <link rel="icon" href="data:image/x-icon;," type="image/x-icon">
    <%= stylesheet_link_tag "all" %>
    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
@@ -20,7 +19,7 @@
 <section id="container">
    <header role="banner" id="header">
       <h1><a href="/" title="<%= data.site.subtitle %>">nullog</a><br><small></small></h1>
-      <h2><%= link_to 'About', '/about/' %> <small>|</small> <%= link_to 'explore', '/explore/' %> <small>|</small> <%= link_to 'io', '/io/' %></h2>
+      <h2><%= link_to 'About', '/about/' %> <small>|</small> <%= link_to 'explore', '/explore/' %> <small>|</small> <%= link_to 'io', '/io/' %><hr></h2>
    </header>
    <main role="main" id="main">
       <%= yield %>

@@ -12,18 +12,18 @@ THREE_DAYS=259200
 ONE_MONTH=2678400
 TEN_YEARS=315360000
 header_rules = [
-	[['html'],  {'Content-Type'  => 'text/html; charset=utf-8'}],
-	[['css'],   {'Content-Type'  => 'text/css; charset=utf-8'}],
-	[['xml'],   {'Content-Type'  => 'application/atom+xml ; charset=utf-8'}],
-	[['js'],    {'Content-Type'  => 'text/javascript; charset=utf-8'}],
-	[['txt'],    {'Content-Type'  => 'text/plain; charset=utf-8'}],
-	[['woff'],    {'Content-Type'  => 'application/x-font-woff'}],
-	[['ttf'],    {'Content-Type'  => 'application/x-font-ttf'}],
-	[['eot'],    {'Content-Type'  => 'application/vnd.ms-fontobject'}],
-	[['svg'],    {'Content-Type'  => 'image/svg+xml'}],
-	[['png'],   {'Content-Type'  => 'image/png'}],
-	['/stylesheets', {'Cache-Control' => "public, max-age=#{ONE_MONTH}"}],
-	['/favicon.ico', {'Cache-Control' => "public, max-age=#{TEN_YEARS}"}]
+	[['html'],		{'Content-Type'  => 'text/html; charset=utf-8'}],
+	[['css'],		{'Content-Type'  => 'text/css; charset=utf-8'}],
+	[['xml'],		{'Content-Type'  => 'application/atom+xml ; charset=utf-8'}],
+	[['js'],			{'Content-Type'  => 'text/javascript; charset=utf-8'}],
+	[['txt'],		{'Content-Type'  => 'text/plain; charset=utf-8'}],
+#	[['woff'],		{'Content-Type'  => 'application/x-font-woff'}],
+#	[['ttf'],		{'Content-Type'  => 'application/x-font-ttf'}],
+#	[['eot'],		{'Content-Type'  => 'application/vnd.ms-fontobject'}],
+#	[['svg'],		{'Content-Type'  => 'image/svg+xml'}],
+#	[['png'],		{'Content-Type'  => 'image/png'}],
+	['/stylesheets',	{'Cache-Control' => "public, max-age=#{ONE_MONTH}"}],
+	['/favicon.ico',	{'Cache-Control' => "public, max-age=#{TEN_YEARS}"}]
 ]
 
 use Rack::Head
@@ -34,9 +34,9 @@ use Rack::TryStatic,
     urls: %w[/],
     try: %w[.html index.html /index.html],
     :header_rules =>	header_rules
-		use Rack::Rewrite do 														# match 2xxx with an optional /
-			r307 %r{2(\d{3}\/?\d{0,2})}, '/explore/2$1'		# will also take /mm and drop /dd
-		end																							# see http://rubular.com/r/yA2OEtWtg5
+use Rack::Rewrite do 												# match 2xxx with an optional /
+	r307 %r{2(\d{3}\/?\d{0,2})}, '/explore/2$1'				# will also take /mm and drop /dd
+end																		# see http://rubular.com/r/yA2OEtWtg5
 run Rack::NotFound.new('./tmp/404/index.html')
 
 #FIVE_MINUTES=300
