@@ -1,6 +1,6 @@
 .bits ul> li {
-    padding-left: .5rem;
-    text-indent: -.5rem;
+    padding-left: $base-font-size / $minor-sixth;
+    text-indent: -( $base-font-size / $minor-sixth );
 }
 .post, .page {
 
