@@ -2,12 +2,12 @@
    activate :livereload
 #end
 
-set :css_dir, 'stylesheets'
-set :js_dir, 'javascripts'
-set :images_dir, 'images'
-set :fonts_dir,  "fonts"
-set :partials_dir, '/layouts/partials'
-set :build_dir, 'tmp'
+config[:css_dir]      =    'stylesheets'
+config[:js_dir]       =    'javascripts'
+config[:images_dir]   =    'images'
+config[:fonts_dir]    =    'fonts'
+config[:partials_dir] =    'layouts/partials'
+config[:build_dir]    =    'tmp'
 
 Time.zone = "America/New_York"
 activate :directory_indexes
@@ -19,12 +19,16 @@ set :markdown, :layout_engine => :erb,
                :smartypants => true
 
 configure :build do
-#   activate :minify_html
+#  activate :minify_html
    activate :minify_css
    activate :minify_javascript
    activate :asset_hash, :ignore => [/^images\//]
    activate :relative_assets
    activate :gzip
+end
+
+configure :development do
+   config[:debug_assets] = true
 end
 
 ###
