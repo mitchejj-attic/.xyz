@@ -8,6 +8,7 @@ require 'middleman/rack'
 # run Middleman.server
 #`bundle exec middleman build`
 
+ONE_TWENTY_EIGHT=128
 THREE_DAYS=259200
 ONE_MONTH=2678400
 TEN_YEARS=315360000
@@ -22,6 +23,7 @@ header_rules = [
 #	[['eot'],		{'Content-Type'  => 'application/vnd.ms-fontobject'}],
 #	[['svg'],		{'Content-Type'  => 'image/svg+xml'}],
 #	[['png'],		{'Content-Type'  => 'image/png'}],
+	['/',	{'Cache-Control' => "public, max-age=#{ONE_TWENTY_EIGHT}"}],
 	['/stylesheets',	{'Cache-Control' => "public, max-age=#{ONE_MONTH}"}],
 	['/favicon.ico',	{'Cache-Control' => "public, max-age=#{TEN_YEARS}"}]
 ]
@@ -30,7 +32,7 @@ use Rack::Head
 use Rack::BounceFavicon
 use Rack::Deflater
 use Rack::TryStatic,
-    root: 'tmp',
+    root: 'build',
     urls: %w[/],
     try: %w[.html index.html /index.html],
     :header_rules =>	header_rules
