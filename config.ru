@@ -39,7 +39,7 @@ use Rack::TryStatic,
 use Rack::Rewrite do 												# match 2xxx with an optional /
 	r307 %r{2(\d{3}\/?\d{0,2})}, '/explore/2$1'				# will also take /mm and drop /dd
 end																		# see http://rubular.com/r/yA2OEtWtg5
-run Rack::NotFound.new('./tmp/404/index.html')
+run Rack::NotFound.new('./build/404/index.html')
 
 #FIVE_MINUTES=300
 #run lambda { |env|
