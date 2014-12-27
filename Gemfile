@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "2.1.5"
+ruby "2.2.0"
 
 #group :toolbox do
    gem 'rake'
@@ -10,16 +10,14 @@ ruby "2.1.5"
 #end
 
 #group :middleman do
-   gem 'middleman', "~> 3.3.3"
-   gem 'middleman-blog', "~> 3.5.3"
+   gem 'middleman'
+   gem 'middleman-blog'
    gem 'middleman-syntax'
    gem 'middleman-minify-html'
 #end
 
 #group :server do
-#   gem 'unicorn'
    gem 'puma'
-#  gem 'passenger', '5.0.0.beta1'
    gem 'rack'
    gem 'rack-contrib'
    gem 'rack-rewrite'
