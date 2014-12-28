@@ -1,20 +1,14 @@
 <article class="post <%= current_article.tags.sort.join(' ') %> ">
-   <% if defined?(index).nil? %>
-      <%= partial "post_head", locals: {current_article: current_article} %>
-      <div class="post-body">
-         <%= current_article.body %>
-      </div>
-   <% else %>
-      <%= partial "post_head", locals: {current_article: current_article, index: index} %>
-      <div class="post-body">
-         <% if current_article.data.truncatable %>
+   <%= partial "post_head", locals: {current_article: current_article, index: defined?(index)} %>
+   <div class="post-body">
+      <% case %>
+         <% when defined?(index).nil? || !current_article.data.truncatable %>
+            <%= current_article.body %>
+         <% else %>
             <%= current_article.summary %>
             <% if current_article.body != current_article.summary %>
                <%= link_to 'Read more…', current_article %>
             <% end %>
-         <% else %>
-            <%= current_article.body %>
-         <% end %>
-      </div>
-   <% end %>
+      <% end %>
+   </div>
 </article>
