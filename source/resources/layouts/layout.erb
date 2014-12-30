@@ -11,8 +11,9 @@
    <meta name="description" content="<%= data.site.subtitle %>" />
    <link rel="author" href="http://<%= data.site.host %>/humans.txt" type="text/plain" />
    <link rel="icon" href="data:image/x-icon;," type="image/x-icon">
+   <meta content='middleman' name='generator'/>
    <%= stylesheet_link_tag "all" %>
-   <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+   <%= feed_tag :atom, "/feed.xml", title: "Atom Feed", rel: "alternate", type: "application/atom+xml"%>
 </head>
 <body>
 
@@ -28,7 +29,7 @@
 </section>
 <footer id="footer">
    <div class="footer">
-      <p><%= data.site.footer.quote %><br><em>Copyright &copy; 2012 &mdash; 2014; <a href="http://twitter.com/<%= data.site.twitter %>" title="@<%= data.site.twitter %>"><%= data.site.author %></a></em></p>
+      <p><%= data.site.footer.quote %><br><em>Copyright &copy; 2012 &mdash; <%= Time.now.strftime("%Y") %>; <a href="http://twitter.com/<%= data.site.twitter %>" title="@<%= data.site.twitter %>"><%= data.site.author %></a></em></p>
    </div>
    </footer>
 </body>

@@ -1,9 +1,11 @@
 Time.zone = "America/New_York"
-config[:css_dir]      =    'stylesheets'
-config[:js_dir]       =    'javascripts'
+config[:css_dir]      =    'resources/stylesheets'
+config[:js_dir]       =    'resources/javascripts'
 config[:images_dir]   =    'images'
-config[:fonts_dir]    =    'fonts'
-config[:partials_dir] =    'layouts/partials'
+config[:fonts_dir]    =    'resources/fonts'
+#config[:partials_dir] =    'layouts/partials'
+config[:layouts_dir]  =    'resources/layouts'
+config[:partials_dir] =    'resources/layouts/partials'
 #config[:build_dir]    =    'tmp'
 
 ###
@@ -18,10 +20,10 @@ activate :blog do |blog|
    blog.sources = "post/:year-:month-:day-:title.html"
    blog.permalink = "{year}/{month}/{day}/{title}/index.html"
 
-   blog.tag_template = "tag.html"
+   blog.tag_template = "resources/tag.html"
    blog.taglink = "explore/{tag}/index.html"
 
-   blog.calendar_template = "calendar.html"
+   blog.calendar_template = "resources/calendar.html"
    blog.year_link = "explore/{year}/index.html"
    blog.month_link = "explore/{year}/{month}/index.html"
 
