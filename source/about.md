@@ -1,9 +1,10 @@
 ---
 layout: page
 title: whoami
+sitemap_priority: 0.9
 description: a bio
 tagline: guesstimating abnormality
-group: page
+group: nav
 ---
 ![me][gravatar]{:.img-circle width="128" height="128"} I'm Jason; this is my online dwelling; this is the disjointed weblog. I hold a degree in Computer Science from [Grand Valley State University][gvsu]. However, instead of putting my degree to uses, I work a retail job, as a manger, for [Panera Bread][pb]. Thanks to this experience learned a lot and grown as an individual.
 {:.about}
