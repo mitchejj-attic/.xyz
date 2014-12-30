@@ -9,7 +9,7 @@ xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
    xml.title data.site.title
    xml.subtitle data.site.subtitle
 
-   xml.id "tag:" + site_id + ",2014:" +  current_page.path.to_s.crypt(site_id)
+   xml.id "tag:" + site_id + ",2014:" +  current_page.path
    xml.link "href" => site_url, "rel" => "alternate", "type" => "text/html", "hreflang" => "en"
    xml.link "href" => feed_url, "rel" => "self", "type" => "application/atom+xml", "hreflang" => "en"
    xml.rights "Copyright © 2012 — " + Time.now.strftime("%Y") + " site_author"
@@ -18,10 +18,11 @@ xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
       xml.name site_author
       xml.uri site_author_uri }
 
-    blog.articles[0..5].each do |article|
+    blog.articles[0..5].each_with_index do |article, index|
       xml.entry do
          xml.title article.title
-         xml.id  "tag:" + site_id + "," + article.date.to_time.strftime("%Y") + ":" +  article.path.to_s.crypt(site_id)
+         id_key = blog.articles.count - index
+         xml.id   "tag:#{site_id}," + article.date.to_time.strftime("%Y") + ":" + id_key.to_s(10)
          xml.link "rel" => "alternate", "type" => "text/html", "href" => URI.join(site_url, article.url), "hreflang" => "en"
 
          xml.published article.date.to_time.iso8601
