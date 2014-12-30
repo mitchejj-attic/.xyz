@@ -15,7 +15,8 @@ TEN_YEARS=315360000
 header_rules = [
 	[['html'],		{'Content-Type'  => 'text/html; charset=utf-8'}],
 	[['css'],		{'Content-Type'  => 'text/css; charset=utf-8'}],
-	[['xml'],		{'Content-Type'  => 'application/atom+xml ; charset=utf-8'}],
+	[['xml'],		{'Content-Type'  => 'text/xml; charset=utf-8'}],
+#	[['xml'],		{'Content-Type'  => 'application/atom+xml;type=feed; charset=utf-8'}],
 	[['js'],			{'Content-Type'  => 'text/javascript; charset=utf-8'}],
 	[['txt'],		{'Content-Type'  => 'text/plain; charset=utf-8'}],
 #	[['woff'],		{'Content-Type'  => 'application/x-font-woff'}],
