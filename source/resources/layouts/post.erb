@@ -1,4 +1,0 @@
-<% wrap_layout :layout do %>
-   <%= partial "_post_entry", locals: {post: current_article} %>
-<%= partial "pagination", locals: {paginate: 2, prev_page: current_page.next_article, next_page: current_page.previous_article, num_pages: 0} %>
-<% end %>
