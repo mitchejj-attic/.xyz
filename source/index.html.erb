@@ -6,7 +6,7 @@ per_page: 4
 
 <section id="posts">
 <% page_articles.each_with_index do |article, i| %>
-      <%= partial "_post_entry", locals: {current_article: article, index: i} %>
+      <%= partial "post_entry", locals: {current_article: article, index: i} %>
 <% end %>
 </section>
 
