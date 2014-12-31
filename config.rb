@@ -3,16 +3,14 @@ config[:css_dir]      =    'resources/stylesheets'
 config[:js_dir]       =    'resources/javascripts'
 config[:images_dir]   =    'images'
 config[:fonts_dir]    =    'resources/fonts'
-#config[:partials_dir] =    'layouts/partials'
-config[:layouts_dir]  =    'resources/layouts'
-config[:partials_dir] =    'resources/layouts/partials'
-#config[:build_dir]    =    'tmp'
+config[:layouts_dir]  =    'resources/_layouts'
+config[:partials_dir] =    'resources/_layouts/_partials'
 
 ###
 # Blog settings
 ###
 activate :blog do |blog|
-   blog.layout = "post"
+   blog.layout = "resources/_layouts/post"
    blog.default_extension = ".md"
    blog.summary_separator = /(READMORE)/
    blog.summary_length = 500
@@ -35,6 +33,7 @@ end
 
 page "/feed.xml", layout: false
 page "/sitemap.xml", layout: false
+#page "resources/layouts" , layout: false
 
 activate :directory_indexes
 activate :syntax
@@ -60,6 +59,7 @@ configure :build do
       html.remove_http_protocol       = false   # Remove HTTP protocol
       html.remove_https_protocol      = false   # Remove HTTPS protocol
       html.preserve_line_breaks       = true    # Preserve line breaks
+
       html.simple_boolean_attributes  = true    # Use simple boolean attributes
    end
    activate :minify_css
