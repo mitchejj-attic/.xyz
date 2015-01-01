@@ -1,5 +1,5 @@
 <article class="post <%= current_article.tags.sort.join(' ') %> ">
-   <%= partial "post_head", locals: {current_article: current_article, index: defined?(index)} %>
+   <%= partial "resources/_layouts/_partials/post_head", locals: {current_article: current_article, index: defined?(index)} %>
    <div class="post-body">
       <% case %>
          <% when defined?(index).nil? || !current_article.data.truncatable %>

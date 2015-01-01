@@ -4,7 +4,7 @@ config[:js_dir]       =    'resources/javascripts'
 config[:images_dir]   =    'images'
 config[:fonts_dir]    =    'resources/fonts'
 config[:layouts_dir]  =    'resources/_layouts'
-config[:partials_dir] =    'resources/_layouts/_partials'
+#config[:partials_dir] =    'resources/_layouts/_partials'
 
 ###
 # Blog settings
@@ -33,7 +33,6 @@ end
 
 page "/feed.xml", layout: false
 page "/sitemap.xml", layout: false
-#page "resources/layouts" , layout: false
 
 activate :directory_indexes
 activate :syntax
