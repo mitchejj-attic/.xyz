@@ -13,6 +13,8 @@ ruby "2.2.0"
    gem 'middleman'
    gem 'middleman-blog'
    gem 'middleman-syntax'
+#gem 'middleman',:git => 'https://github.com/middleman/middleman.git', :branch => 'master', :require => 'middleman-core'
+#gem 'middleman-blog',:git => 'https://github.com/middleman/middleman-blog.git', :branch => 'master'
    gem 'middleman-minify-html'
 #end
 
