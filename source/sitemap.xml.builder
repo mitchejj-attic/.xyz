@@ -1,7 +1,6 @@
-# encoding: utf-8
-xml.instruct!
+xml.instruct! :xml, :version => "1.0", :encoding=> :utf8
 #https://gist.github.com/tommysundstrom/5756032
-xml.urlset "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9" do
+xml.urlset :xmlns => "http://www.sitemaps.org/schemas/sitemap/0.9" do
    page_count = 0
    sitemap.resources.each do |page|
       catch :next_page do
@@ -10,6 +9,7 @@ xml.urlset "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9" do
          # throw :next_page unless page.url.end_with?('.html')
          #
          # If you need more detailed control, this is a starting point:
+         throw :next_page if page.url.start_with?('/resources/')
          throw :next_page if page.url.start_with?('/images/')
          throw :next_page if page.url.start_with?('/javascripts/')
          throw :next_page if page.url.start_with?('/stylesheets/')

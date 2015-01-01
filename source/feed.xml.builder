@@ -1,5 +1,5 @@
-xml.instruct! :xml, :version => "1.0", :encoding=> "utf-8"
-xml.feed "xmlns" => "http://www.w3.org/2005/Atom", "xml:lang" => "en" do
+xml.instruct! :xml, :version => "1.0", :encoding=> :utf8
+xml.feed "xmlns" => "http://www.w3.org/2005/Atom", "xml:lang" => :en do
    ######
    site_url = URI.join("http://www." + data.site.host)
    feed_url = URI.join(site_url, current_page.path)
