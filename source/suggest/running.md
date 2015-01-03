@@ -25,4 +25,7 @@ description: running
 [bith]: http://www.believeintherun.com
 [rwb]: http://blog.runningwarehouse.com
 [rrj]: http://www.runresearchjunkie.com/
-https://twitter.com/Run_Radar
+[tw_rr]: https://twitter.com/Run_Radar
+[gearist]: http://gearist.com/
+[skechers_apparel]: http://www.skechers.com/men/styles/apparel
+[rei_deal]: http://www.rei.com/outlet/deal-of-the-day
