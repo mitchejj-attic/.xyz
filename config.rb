@@ -6,16 +6,21 @@ config[:fonts_dir]    =    'resources/fonts'
 config[:layouts_dir]  =    'resources/_layouts'
 #config[:partials_dir] =    'resources/_layouts/_partials'
 
+page '/*.xml',    layout: false
+page '/*.json',   layout: false
+page '/*.txt',    layout: false
+
 ###
 # Blog settings
 ###
 activate :blog do |blog|
+   Time.zone = "America/New_York"
    blog.layout = "resources/_layouts/post"
    blog.default_extension = ".md"
    blog.summary_separator = /(READMORE)/
    blog.summary_length = 500
 
-   blog.sources = "post/:year-:month-:day-:title.html"
+   blog.sources = "post/{year}-{month}-{day}-{title}.html"
    blog.permalink = "{year}/{month}/{day}/{title}/index.html"
 
    blog.tag_template = "resources/tag.html"
@@ -24,15 +29,13 @@ activate :blog do |blog|
    blog.calendar_template = "resources/calendar.html"
    blog.year_link = "explore/{year}/index.html"
    blog.month_link = "explore/{year}/{month}/index.html"
+   blog.day_link = "explore/{year}/{month}/{day}/index.html"
 
    # Enable pagination
    blog.paginate = true
    blog.per_page = 10
    blog.page_link = "p{num}"
 end
-
-page "/feed.xml", layout: false
-page "/sitemap.xml", layout: false
 
 activate :directory_indexes
 activate :syntax
@@ -63,7 +66,7 @@ configure :build do
    end
    activate :minify_css
    activate :minify_javascript
-   activate :asset_hash, :ignore => [/^images\//]
+#   activate :asset_hash, :ignore => [/^images\//]
    activate :relative_assets
    activate :gzip
 end
