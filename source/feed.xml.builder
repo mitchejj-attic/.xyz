@@ -26,7 +26,10 @@ xml.feed "xmlns" => "http://www.w3.org/2005/Atom", "xml:lang" => :en do
          xml.link :href => URI.join(site_url, article.url), :rel => :alternate, :type => "text/html", :hreflang => :en
 
          xml.published article.date.to_time.iso8601
-         xml.updated File.mtime(article.source_file).iso8601
+         #xml.updated File.mtime(article.source_file).iso8601
+         # Finding the true last modifided date (via git) & an ugly hack
+         source_obj = `git rev-list -n 1 HEAD #{article.source_file}`.chomp
+         xml.updated correct_mod = DateTime.parse(`git show --pretty=format:%ai --abbrev-commit #{source_obj} | head -n 1`.chomp).iso8601
 
          #xml.summary article.summary, "type" => "html"
          xml.content article.body, :type => :html, "xml:lang" => :en
