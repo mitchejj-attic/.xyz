@@ -6,7 +6,7 @@ ruby "2.2.0"
    gem 'nokogiri'
    gem 'slim'
    # For feed.xml.builder
-   gem "builder", "~> 3.0"
+   gem "builder"
 #end
 
 #group :middleman do

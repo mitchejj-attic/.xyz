@@ -10,7 +10,7 @@ source:
   title:
 date: 2015-01-24 12:56:14 -0500
 ---
-Last year I had many plans and thoughts about my 2014 running and after the Dopey Challenge I didn't do much. I only entered one other event, [Let's Move Festival of Races][lets]. I didn't do any training, I felt as if I could have ran a faster race yet with all things considered I do feel as if I ran an okay race. I also entered for the [Kona Running Company's][krc] [Kona Run][kr], that race however was a massive fail for two reasons. First, a few days earlier I had eye lid surgery so I would have been a bad idea to actually run. Second, I miss-calculated the drive time and missed the start of the race partly due to to the eye lid surgery. Towards the end of the year I tried to have at least one 13.1 run. Once the weather turned cold and the days grew shorter I found it difficult to find time run let alone squeeze in a half marathon run.
+Last year I had many plans 2014, running wise. After the Dopey Challenge I didn't do much and only finished one other event. For that event, [Let's Move Festival of Races][lets], I didn't do any training. I also entered [Kona Running Company's][krc] [Kona Run][kr], a massive fail. A few days earlier I had eye lid surgery, I miss-calculated the drive time and missed the start of the race partly due to to the eye lid surgery. Then towards the end of the year I tried complete the monthly strava Half-marathon challenge --- to have at least one 13.1 or greater run. Once the weather turned cold the days grew shorter I found it difficult to find time run let alone squeeze in 13.1 mile run.
 
 ####Official Chip Times (with strava links)
 
@@ -38,7 +38,7 @@ It will be hard for 2015 to top 2014. I loved my Dopey Challenge experience, des
 [dFull]: http://www.strava.com/activities/105856288
 [lHalf]: http://www.strava.com/activities/134358556
 
-So now on to 2015 I plan on once again running the Let's Move Festival of Races half marathon. I also entered the [Grand Rapids Marathon][grm]. I would like to find one more race to complete sometime in the year. I'm thinking maybe the [Crim 10-miler][crim] or [The Brooksie Way][brooksie], however I think I will opt to do the [Run 2 Read][r2r] 5k. Finally, I also have one other date circled on my calendar... [April 28][april].
+So now on to 2015 I plan on once again running the Let's Move Festival of Races half marathon. I also entered the [Grand Rapids Marathon][grm]. I would like to find one more race to complete sometime in the year. I'm thinking maybe the [Crim 10-miler][crim] or [The Brooksie Way][brooksie], however I think I will opt to do the [Run 2 Read][r2r] 10k. Finally, I also have one other date circled on my calendar... [April 28][april].
 
 [krc]: http://konarunningcompany.com/
 [kr]: http://www.konarun.com/

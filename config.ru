@@ -24,11 +24,12 @@ header_rules = [
 #	[['eot'],		{'Content-Type'  => 'application/vnd.ms-fontobject'}],
 #	[['svg'],		{'Content-Type'  => 'image/svg+xml'}],
 #	[['png'],		{'Content-Type'  => 'image/png'}],
-	['/',	{'Cache-Control' => "public, max-age=#{ONE_TWENTY_EIGHT}"}],
-	['/stylesheets',	{'Cache-Control' => "public, max-age=#{TWO_FIFTY_SIX}"}],
-	['/favicon.ico',	{'Cache-Control' => "public, max-age=#{TEN_YEARS}"}]
+	['/',					{'Cache-Control' => "public, max-age=#{ONE_TWENTY_EIGHT}"}	],
+	['/stylesheets',	{'Cache-Control' => "public, max-age=#{TWO_FIFTY_SIX}"}		],
 ]
 
+
+use Rack::Runtime
 use Rack::Head
 use Rack::BounceFavicon
 use Rack::Deflater
