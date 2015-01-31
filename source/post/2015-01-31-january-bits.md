@@ -8,7 +8,7 @@ llist:
 source:
   url:
   title:
-date: <%= Time.now %>
+date: 2015-01-31 12:53:13 -0500
 ---
 
 * [THe Running Experience Blog][tre] --- a nice series of video training tips
