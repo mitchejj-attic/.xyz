@@ -8,12 +8,12 @@ llist:
 source:
   url:
   title:
-date: 2015-01-31 12:53:13 -0500
+date: <%= Time.now %>
 ---
 
 * [THe Running Experience Blog][tre] --- a nice series of video training tips
 * [How to Update OpenSSH on Mac OS X][osxOpenSSH]
-   * [Secure Secure Shell] --- Securing the Secure Shell
+   * [Secure Secure Shell][sss] --- Securing the Secure Shell
 * [µBlock][µ] --- An efficient blocker add-on
 * [24/7 wearable heart rate monitor][hr] --- an interesting idea
 * [Essential JavaScript Links][ejs]
