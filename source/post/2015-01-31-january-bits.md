@@ -11,7 +11,7 @@ source:
 date: 2015-01-31 12:53:13 -0500
 ---
 
-* [THe Running Experience Blog][tre] --- a nice series of video training tips
+* [The Running Experience Blog][tre] --- a nice series of video training tips
 * [How to Update OpenSSH on Mac OS X][osxOpenSSH]
    * [Secure Secure Shell][sss] --- Securing the Secure Shell
 * [µBlock][µ] --- An efficient blocker add-on
