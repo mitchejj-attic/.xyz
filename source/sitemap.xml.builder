@@ -31,7 +31,7 @@ xml.urlset :xmlns => "http://www.sitemaps.org/schemas/sitemap/0.9" do
          #     Remove this if you want them.
          throw :next_page if /\/p\d*\/.*/i.match(page.url)
 
-         (2000..2030).each do |year|
+         (1970..2128).each do |year|
             # Exclude year index, directories and subdirectories
             throw :next_page if page.url == "/explore/#{year}.html" || page.url == "/explore/#{year}" || page.url.start_with?("/explore/#{year}/")
          end
