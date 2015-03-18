@@ -12,7 +12,7 @@ ruby '2.2.1'
 #group :middleman do
    gem 'middleman'#, '4.0.0.alpha.6'
    gem 'middleman-blog'#, '3.6.0.beta.2'
-#   gem 'middleman-syntax'
+   gem 'middleman-syntax'
 #gem 'middleman',:git => 'https://github.com/middleman/middleman.git', :branch => 'master', :require => 'middleman-core'
 #gem 'middleman-blog',:git => 'https://github.com/middleman/middleman-blog.git', :branch => 'master'
    gem 'middleman-minify-html'
