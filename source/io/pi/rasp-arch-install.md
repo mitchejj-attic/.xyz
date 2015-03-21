@@ -34,6 +34,7 @@ You might get something like the following:
       mmcblk0     179:0    0  3.7G  0 disk
       ├─mmcblk0p1 179:1    0  100M  0 part /boot
       └─mmcblk0p2 179:2    0  3.6G  0 part /
+      
 In this case we will be using the `sdX` device, change the `X` to your device name.
 
 ### Partition
@@ -42,21 +43,17 @@ The Raspberry Pi requires your boot device to have a MBR partition table. One ha
 We will create the partition type, along with two volumes. The first volume will be used for `/boot` the second volume will use the rest of the space on the drive for `/`.
 
       # sudo parted /dev/sdX
-         (parted) mklabel msdos
+         (parted) mktable msdos
          (parted) mkpart primary fat32 2MiB 100MiB
          (parted) set 1 boot on
          (parted) mkpart primary ext4 101MiB 100%
+         (parted) q
 
 ### Filesystem
-It is easy to assume the file system was created with `parted`. Yes, we did use `fat32` and `ext4` which are file systems
+It is easy to assume the file system was created with `parted`. Yes, we did use `fat32` and `ext4` which are file systems. I add the `-n` and `-L` flags in order to give the volumes proper names. I like to have incase I have issues and need to mount the microSD card on another system that has automount.
 
-      # sudo mkfs.vfat -F32 /dev/sdX1
-      # sudo mkfs.ext4 /dev/sdX2
-
-The following two lines are just filler I like to have incase I have issues and need to mount the microSD card on another system that has automount.
-
-      # sudo dosfslabel /dev/sdX1 archPiBoot
-      # sudo e2label /dev/sdX2 archPiRoot
+      # sudo mkfs.vfat -F32  -n archPiBoot /dev/sdX1
+      # sudo mkfs.ext4 -L archPiRoot /dev/sdX2
 
 ### Installation
 
@@ -77,8 +74,16 @@ Insert the microSD card, connect the an ethernet cable, keyboard, video, and fin
 
 I would invite you take a look at my [getting started guide][next].
 
+##### Source Aids
+* [Arch Linux ARM Raspberry Pi 2][alarm] --- install guide
+* [eLinux][elinux] --- Arch Linux install guide
+* [Arch Linux Raspberry Pi][arch-rp-wiki] --- wiki entry
+* [Gento Raspberry Pi][gento-rp-wiki] --- wiki entries
+
 [alarm]: http://archlinuxarm.org/platforms/armv7/broadcom/raspberry-pi-2#qt-platform_tabs-ui-tabs2
 [elinux]: http://elinux.org/ArchLinux_Install_Guide
+[arch-rp-wiki]: https://wiki.archlinux.org/index.php/Raspberry_Pi
+[gento-rp-wiki]: http://wiki.gentoo.org/wiki/Raspberry_Pi
 [rHOWTO]: https://www.reddit.com/r/raspberry_pi/comments/2ytvhg/how_to_manually_updating_arch_linux_on_noobs/
 [findME]: http://nullog.net/io/pi/rasp-arch-install
 [next]: /io/pi/rasp-arch-next/

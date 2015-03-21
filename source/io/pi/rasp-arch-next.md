@@ -6,10 +6,26 @@ description: Arch Rasberry Pi 2
 category: project
 tags: arch, linux, raspberry pi 2
 ---
-## Purpose
-My goal is to start with the base [Arch Linux ARM Raspberry Pi 2][baseARM] install and craft it fit what I deem to be a good base to move forward. I have been a bit bewilder trying to figure out the right entry point. I expect the Pi setup to all take place via SSH, therefore that decision will influence the order of operations.
+This, getting start guide was actually created before my [Arch Linux ARM Raspberry Pi 2 install guide][install], and the chances are good you are here because of it. I felt a tad overwhelmed trying to figure out the best, most logical, path from the primordial ooze of a tarball to what I deemed to be a good solid foundation. In order to organize my thoughts I had to map out a plan; identify flaw and blind spots.
 
-[baseARM]: http://archlinuxarm.org/platforms/armv7/broadcom/raspberry-pi-2
+The same conventions used in the [install guide][install] will be used here. I expected the Pi setup to all take place via SSH, therefore that decision will influence the order of operations.
+
+[baseARM]: http://archlinuxarm.org/ 'Linux ARM'
+[install]: /io/pi/rasp-arch-install/
+
+### Finding the Pi
+My Pi is connected directly connected to my home network via ethernet. To [find the Pi on the network][find] I could run `nmap -sn 192.168.0.0/24`, interestingly nmap reports my Pi as an HP.
+
+		MAC Address: 78:AC:C0:xx:yy:zz (Hewlett-Packard Company)
+		Nmap scan report for 192.168.0.17
+
+I have an HP printer on the network. I needed another method, I found a trusty USB keyboard and logged in.
+
+		# ip show addr
+
+Look near the bottom for `eth0` and you should find something akin to `inet 192.168.0.17/24`.
+
+[find]: http://www.raspberrypi.org/documentation/troubleshooting/hardware/networking/ip-address.md
 
 
 ### Meta Data
@@ -88,3 +104,6 @@ Personally, I kind of like the suggestion found in [Secure Secure Shell][sss] po
 	# swapon /swapfile
 	# echo '/swapfile none swap defaults 0 0' >> /etc/fstab
 	# echo 'vm.swappiness=10' >> /etc/sysctl.d/99-sysctl.conf
+
+### Over Clocking
+Just follow these links if you are interested.
