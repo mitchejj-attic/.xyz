@@ -1,9 +1,9 @@
 // Typography
 $sans-serif: $helvetica;
 $serif: $georgia;
-$font-family-monospace: Inconsolata, Consolas, Monaco, monospace;
-
-$header-font-family: $helvetica;
+$font-family-monospace_: Monaco, Consolas, Inconsolata, 'Liberation Mono', Courier, monospace;
+$font-family-monospace: Inconsolata, Consolas, Monaco, 'Liberation Mono', Courier, monospace;
+$heading-font-family: $helvetica;
 $base-font-family: $sans-serif;
 
 // Font Sizes
@@ -18,11 +18,12 @@ $h6-font-size: ms(1, $base-font-size, $minor-second);
 // Line Heights
 $unitless-line-height: $minor-sixth;
 $base-line-height: $base-font-size * $unitless-line-height;
-$header-line-height:  $major-third;
+$heading-line-height:  $major-third;
 
 // Other Sizes
 $base-border-radius: #{$augmented-fourth / 10}rem;
 $base-spacing: $base-line-height;
+$small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 $base-footer-height: 4.5rem;
 $base-font-size-reduction: 60%;
@@ -37,7 +38,7 @@ $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
 
 $white: rgb(249,249,249);
-$black: rgb(47,47,47);
+$black: rgb(51, 51, 51); //rgb(47,47,47);
 $light_grayish_violet: rgb(225,220,236);
 $light_grayish_blue: rgb(225,236,241);
 $light_grayish_orange: rgb(236,225,220);
@@ -54,6 +55,7 @@ $light2: 30%;
 // Body Color
 $base-background-color: white;
 $base-body-color: $base-background-color;
+
 
 //  Font Colors
 $base-font-color: $black;
@@ -78,3 +80,6 @@ $base-border: rem($unitless-line-height) solid $base-border-color;
 $footer-background: $darkish_gray_orange; //$bright_red;//rgb(245,10,70);//$base-font-color; //$base-accent-color;//rgb(30,184,85); //rgb(31,193,246); //
 $_footer-font-color: white;
    $footer-font-color: transparentize($_footer-font-color, .5);
+
+
+$action-color: $base-link-color;

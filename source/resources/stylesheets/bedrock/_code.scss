@@ -1,24 +1,38 @@
 $code-background-color: transparentize($secondary-accent-color, .85);
+@mixin _code {
+	/* inline */
+	font-size: ms(-1, 1rem, $minor-second);
+	line-height: ms(-1, 1rem, $minor-second) * 1.5;
+	padding: $base-border-radius;
+	border-width: .1rem;
+	border-color: $tertiary-accent-color;
+	border-style: solid;
+	@include border-top-radius(5px);
+}
+
 
 pre {
 	/* blocks */
 //	box-shadow: 0px 0px 0px 1px $light_grayish_blue;
-	@extend code;
+	@include _code;
+	font-family: $font-family-monospace_;
+	padding: unpack(.5rem 1.1rem);
 	white-space: pre-wrap;
 	word-break: break-all;
 	word-wrap: break-word;
+	color: white;
+	background-color: $black;
+	code {
+		border:none;
+		font-family: inherit;
+		color: inherit;
+		background-color: inherit;
+	}
 }
 
 code {
-	/* inline */
+	@include _code;
 	font-family: $font-family-monospace;
 	color: $black;
-	font-size: ms(-1, 1rem, $minor-second);
-	line-height: ms(-1, 1rem, $minor-second) * 1.5;
-	background-color: $code-background-color;
-	padding: $base-border-radius;
-	border-radius: $base-border-radius;
-	.highlight {
-		background-color: $code-background-color; //shade($white, 3.1%) ;//rgb(50,50,50);
-	}
+	background-color: $secondary-accent-color;//$tertiary-accent-color;
 }

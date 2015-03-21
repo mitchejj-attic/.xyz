@@ -99,3 +99,19 @@
 .count {
    font-family: $font-family-monospace;
 }
+
+blockquote {
+   //border-left: $base-border;
+   color: lighten($base-font-color, $light1);
+   //margin: $base-spacing 0;
+   //padding-left: $small-spacing;
+}
+
+cite {
+  color: lighten($base-font-color, $light2);
+  font-style: italic;
+
+  &:before {
+    content: '\2014 \00A0';
+  }
+}
