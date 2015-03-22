@@ -105,5 +105,12 @@ Personally, I kind of like the suggestion found in [Secure Secure Shell][sss] po
 	# echo '/swapfile none swap defaults 0 0' >> /etc/fstab
 	# echo 'vm.swappiness=10' >> /etc/sysctl.d/99-sysctl.conf
 
+### Data integurity
+Early detection often is key to rectifying impediments; the Raspberry Pi has a long standing history of data corruption on the systems SD card. By default `fsck` will run every 30 boots. Chances are you don't want to find out about data corruption at boot time, I believe checking the system every 8-16 days is a sane and precautionary tactic.
+
+	# tune2fs -i 8d /dev/mmcblk0p2
+
 ### Over Clocking
-Just follow these links if you are interested.
+Just follow this [link][oc] if you are interested.
+
+[oc]: http://haydenjames.io/raspberry-pi-2-overclock/ "Warning: The following link can display a spammy screen cover"
