@@ -62,11 +62,16 @@ Two different actions are need. First, and most importantly the Pi has a built i
 	# pacman-key --populate archlinux
 	# pacman -Qenq | pacman -Sy -
 
-in /etc/profile.d/
-	export PATH=$PATH:/opt/vc/bin
-export LD_LIBRARY_PATH=$LD_LIBRARYPATH:/opt/vc/lib
-
 [RNGD_OPTS]: http://archlinuxarm.org/forum/viewtopic.php?f=31&t=4993#p27708
+
+### Pi Tools
+Give you easy access commands like [`vcgencmd`][vc]
+
+	# echo 'export PATH=$PATH:/opt/vc/bin' > /etc/profile.d/00-raspberrypi-firmware.sh
+
+[vc]: http://elinux.org/RPI_vcgencmd_usage "vcgencmd usage"
+
+
 
 ### Users
 
