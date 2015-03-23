@@ -20,9 +20,10 @@
       <meta name="description" content="<%= data.site.subtitle %>" />
       <meta property="og:title" content="<%= _TITLE_ %>" />
       <meta property="article:author" content="Jason Mitchell" />
-      <% unless data.site.meta.nil? %>
-         <meta property="og:description" content="" />
-         <meta property="og:image" content="" />
+      <link rel="author" href="http://<%= data.site.host %>/humans.txt" type="text/plain" />
+      <% unless current_page.data.meta.nil? %>
+         <meta property="og:description" content="<%= current_page.data.meta.description %>" />
+         <meta property="og:image" content="<%= current_page.data.meta.image %>" />
       <% end %>
       <meta property="og:url" content="http://<%= data.site.host + current_page.url %>" />
       <link rel="canonical" href="//<%= data.site.host + current_page.url %>" />
@@ -31,14 +32,13 @@
    <% end %>
 
 
-   <link rel="author" href="http://<%= data.site.host %>/humans.txt" type="text/plain" />
    <link rel="icon" href="data:image/x-icon;," type="image/x-icon">
    <meta content='middleman' name='generator'/>
-
 
    <%= stylesheet_link_tag "nullog" %>
    <%= feed_tag :atom, "/feed.xml", title: "Atom Feed", rel: "alternate", type: "application/atom+xml"%>
 </head>
+
 <body>
 
 <section id="container">

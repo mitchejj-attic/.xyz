@@ -5,6 +5,9 @@ title: "Installing Arch Linix ARM"
 description: Raspberry Pi 2
 category: project
 tags: arch, linux, raspberry pi 2
+meta:
+  description: A simple guide for installing Arch Linux on a Raspberry Pi
+  image:
 ---
 [This guide][findME] is intended to more detailed comprehensive install guide that what is found on the [Arch Linux ARM][alarm] site or the [eLinux Wiki][elinux]. The following convention will be used:
 
@@ -34,7 +37,7 @@ You might get something like the following:
       mmcblk0     179:0    0  3.7G  0 disk
       ├─mmcblk0p1 179:1    0  100M  0 part /boot
       └─mmcblk0p2 179:2    0  3.6G  0 part /
-      
+
 In this case we will be using the `sdX` device, change the `X` to your device name.
 
 ### Partition

@@ -5,6 +5,9 @@ title: Getting Started Guide
 description: Arch Rasberry Pi 2
 category: project
 tags: arch, linux, raspberry pi 2
+meta:
+  description: Now you have Arch Linux installed on a Raspberry Pi, what should you do?
+  image:
 ---
 This, getting start guide was actually created before my [Arch Linux ARM Raspberry Pi 2 install guide][install], and the chances are good you are here because of it. I felt a tad overwhelmed trying to figure out the best, most logical, path from the primordial ooze of a tarball to what I deemed to be a good solid foundation. In order to organize my thoughts I had to map out a plan; identify flaw and blind spots.
 
@@ -14,12 +17,12 @@ The same conventions used in the [install guide][install] will be used here. I e
 [install]: /io/pi/rasp-arch-install/
 
 ### Finding the Pi
-My Pi is connected directly connected to my home network via ethernet. To [find the Pi on the network][find] I could run `nmap -sn 192.168.0.0/24`, interestingly nmap reports my Pi as an HP.
+My Pi is connected directly connected to my home network via ethernet. My main computers local IP address is 192.168.0.6; in order to [find the Pi on the network][find] I could run `nmap -sn 192.168.0.0/24`. Interestingly nmap reports my Pi as an HP, I have an HP printer on the network which nmap was not finding.
 
 		MAC Address: 78:AC:C0:xx:yy:zz (Hewlett-Packard Company)
 		Nmap scan report for 192.168.0.17
 
-I have an HP printer on the network. I needed another method, I found a trusty USB keyboard and logged in.
+I needed another method, I found a trusty USB keyboard and logged in.
 
 		# ip show addr
 
