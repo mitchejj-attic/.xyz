@@ -2,16 +2,39 @@
 <html lang="en-US">
 <head>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <meta property="og:locale" content="en_US" />
    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <meta property="og:site_name" content="<%= data.site.title %>" />
+   <meta name="twitter:site" content="@_nullog" />
+   <meta name="twitter:creator" content="@mitchejj" />
+
    <% unless content_for?(:replace_title) %>
-   <title><%= data.site.title %> <%= '| ' << current_page.data.title.downcase unless  current_page.data.title.nil? %></title>
+      <% unless  current_page.data.title.nil? %>
+         <% _TITLE_ = data.site.title + ' | ' + current_page.data.title.downcase %>
+      <% else %>
+         <% _TITLE_ = data.site.title %>
+      <% end %>
+      <meta name="twitter:card" content="summary" />
+      <meta property="og:type" content="article" />
+      <title><%= _TITLE_ %></title>
+      <meta name="description" content="<%= data.site.subtitle %>" />
+      <meta property="og:title" content="<%= _TITLE_ %>" />
+      <meta property="article:author" content="Jason Mitchell" />
+      <% unless data.site.meta.nil? %>
+         <meta property="og:description" content="" />
+         <meta property="og:image" content="" />
+      <% end %>
+      <meta property="og:url" content="http://<%= data.site.host + current_page.url %>" />
+      <link rel="canonical" href="//<%= data.site.host + current_page.url %>" />
    <% else %>
       <%= yield_content :replace_title %>
    <% end %>
-   <meta name="description" content="<%= data.site.subtitle %>" />
+
+
    <link rel="author" href="http://<%= data.site.host %>/humans.txt" type="text/plain" />
    <link rel="icon" href="data:image/x-icon;," type="image/x-icon">
    <meta content='middleman' name='generator'/>
+
 
    <%= stylesheet_link_tag "nullog" %>
    <%= feed_tag :atom, "/feed.xml", title: "Atom Feed", rel: "alternate", type: "application/atom+xml"%>
