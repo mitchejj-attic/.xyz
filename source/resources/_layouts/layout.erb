@@ -1,36 +1,39 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" itemscope itemtype="http://schema.org/WebPage">
 <head>
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
    <meta property="og:locale" content="en_US" />
-   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+   <meta property="article:author" content="Jason Mitchell" />
+   <meta name="twitter:creator" content="@mitchejj" />
+   <link rel="author" href="http://<%= data.site.host %>/humans.txt" type="text/plain" />
+
    <meta property="og:site_name" content="<%= data.site.title %>" />
    <meta name="twitter:site" content="@_nullog" />
-   <meta name="twitter:creator" content="@mitchejj" />
 
    <% unless content_for?(:replace_title) %>
-      <% unless  current_page.data.title.nil? %>
-         <% _TITLE_ = data.site.title + ' | ' + current_page.data.title.downcase %>
-      <% else %>
-         <% _TITLE_ = data.site.title %>
-      <% end %>
-      <meta name="twitter:card" content="summary" />
+
       <meta property="og:type" content="article" />
-      <title><%= _TITLE_ %></title>
-      <meta name="description" content="<%= data.site.subtitle %>" />
-      <meta property="og:title" content="<%= _TITLE_ %>" />
-      <meta property="article:author" content="Jason Mitchell" />
-      <link rel="author" href="http://<%= data.site.host %>/humans.txt" type="text/plain" />
-      <% unless current_page.data.meta.nil? %>
-         <meta property="og:description" content="<%= current_page.data.meta.description %>" />
-         <meta property="og:image" content="<%= current_page.data.meta.image %>" />
-      <% end %>
       <meta property="og:url" content="http://<%= data.site.host + current_page.url %>" />
       <link rel="canonical" href="//<%= data.site.host + current_page.url %>" />
+      <% unless  current_page.data.title.nil? %>
+         <title><%= data.site.title + ' | ' << current_page.data.title.downcase %></title>
+         <meta property="og:title" content="<%= current_page.data.title %>" />
+         <% unless current_page.data.meta.nil? || current_page.data.meta.description.nil?  %>
+            <meta name="twitter:card" content="summary" />
+            <meta property="og:description" content="<%= current_page.data.meta.description %>" />
+            <meta property="og:image" content="<%= current_page.data.meta.image.url %>" />
+         <% end %>
+      <% else %>
+         <title><%= data.site.title %></title>
+         <meta property="og:title" content="From <%= data.site.title %>" />
+      <% end %>
+
    <% else %>
       <%= yield_content :replace_title %>
    <% end %>
-
+   <meta name="description" content="<%= current_page.data.meta.description ||  data.site.meta.description %>" />
 
    <link rel="icon" href="data:image/x-icon;," type="image/x-icon">
    <meta content='middleman' name='generator'/>
@@ -47,7 +50,7 @@
       <h2><%= link_to 'About', '/about/' %> <small>|</small> <%= link_to 'explore', '/explore/' %> <small>|</small> <%= link_to 'io', '/io/' %></h2>
       <hr>
    </header>
-   <main role="main" id="main">
+   <main role="main" id="main" itemscope="" itemtype="http://schema.org/Blog">
       <%= yield %>
    </main>
    <div class="foot-space"></div>

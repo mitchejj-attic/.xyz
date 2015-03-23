@@ -63,13 +63,20 @@ class J2 < Thor
             abort("#{location} already exists!")
          else
             yamlHeader = {
-               'layout' => 'post',
-               'truncatable' => true,
                'title' => title,
-               'description' => nil,
+               'subtitle' => nil,
                'tags' => nil,
-               'llist' => nil,
-               'source' => { 'url' => nil, 'title' => nil }
+               'meta' => {
+                  'description' => nil,
+                  'image' => {
+                     'url' => nil,
+                     'title' => nil,
+                     'link' => nil},
+                  'source' => {
+                     'url' => nil,
+                     'title' => nil}},
+               'dispatch' => nil,
+               'truncatable' => true
                }
             h = yamlHeader.to_yaml + "date: <%= Time.now %>\n---\n"
             puts "Creating new post: #{title} at #{location}"

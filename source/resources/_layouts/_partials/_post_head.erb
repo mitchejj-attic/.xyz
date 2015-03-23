@@ -1,15 +1,15 @@
 <header class="post-title">
-   <h2>
+   <h2 itemprop="name">
       <% case %>
-         <% when !defined?(current_article.data.llist) && !current_article.data.llist.nil? %>
-            <%= link_to current_article.title, current_article.data.llist %>
+         <% when !defined?(current_article.data.dispatch) && !current_article.data.dispatch.nil? %>
+            <%= link_to current_article.title, current_article.data.dispatch %>
          <% when index.nil? %>
             <%= current_article.title %>
          <% else %>
             <%= link_to current_article.title, current_article %>
       <% end %>
-      <% if defined?(current_article.data.description).nil? %>
-         <span class="mute"> <%= current_article.data.description %></span>
+      <% if defined?(current_article.data.subtitle).nil? %>
+         <span class="mute"> <%= current_article.data.subtitle %></span>
       <% end %>
    </h2>
 </header>

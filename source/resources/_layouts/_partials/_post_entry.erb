@@ -1,6 +1,14 @@
-<article class="post <%= current_article.tags.sort.join(' ') %> ">
+<article class="post <%= current_article.tags.sort.join(' ') %> " itemscope="" itemtype="http://schema.org/BlogPosting">
    <%= partial "resources/_layouts/_partials/post_head", locals: {current_article: current_article, index: defined?(index)} %>
-   <div class="post-body">
+
+
+   <div class="post-body" itemprop="articleBody">
+      <% unless current_article.data.meta.image.url.nil? %>
+      <figure>
+         <a href="<%= current_article.data.meta.image.link || current_article.data.meta.image.url %>"><img src="<%= current_article.data.meta.image.url %>" alt="No alt data"></a>
+         <figcaption><%= current_article.data.meta.image.caption || current_article.data.subtitle || current_article.data.title %></figcaption>
+      </figure>
+      <% end %>
       <% case %>
          <% when defined?(index).nil? || !current_article.data.truncatable %>
             <%= current_article.body %>
