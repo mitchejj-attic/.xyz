@@ -1,16 +1,20 @@
 ---
-layout: post
-title: "twenty-fourteen"
-description: the year ahead
-tags:
-source:
-   url:
-   title:
-llist:
-image:
-   url:
-   caption:
+title: twenty-fourteen
+subtitle: the year ahead
+tags:  
+meta:
+  description:
+  image:
+    url:
+    caption:
+  source:
+    url:
+    title:
+dispatch:
+truncatable: false
+date:
 ---
+
 I feel as if I should start the year off with a posting, but I have no New Years resolutions nor do I have any lofty goals. So I am stuck what shall I write.
 
 The first challenge of the year will be the Doopy Challenge and I hope I find time to register for a few more events over the year. I hope to do a local event or two and I might consider doing RnR Chi again. Before I can consider those I must find time to head back to the gym and do the work the get stronger in both my legs and core.

@@ -1,13 +1,17 @@
 ---
-layout: post
-truncatable: false
 title: November Bits
-description:
+subtitle:
 tags: bits
-llist:
-source:
-  url:
-  title:
+meta:
+  description:
+  image:
+    url:
+    caption:
+  source:
+    url:
+    title:
+dispatch:
+truncatable: false
 date: 2014-11-30 11:35:22 -0500
 ---
 

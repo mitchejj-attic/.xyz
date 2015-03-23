@@ -1,16 +1,20 @@
 ---
-layout: post
-title: "Late Summer Report"
-description: status report
+title: Late Summer Report
+subtitle: status report
 tags:
-source:
-   url:
-   title:
-llist:
-image:
-   url:
-   caption:
+meta:
+  description:
+  image:
+    url:
+    caption:
+  source:
+    url:
+    title:
+dispatch:
+truncatable: false
+date:
 ---
+
 This summer I've accomplished a few task, and a few where placed on the back burner. After completing the summer vacation project, and then sitting on it, I finally did install Arch on my main laptop. I learned a good deal along the way and I am fairly happy with the end results. I may have a more indept install 'report' detailing some of my choices. I may push that off until I finish my next Arch install project, my Mac Mini with a functional OS X VM environment.
 
 I feel my running as been a success thus far. I've been able to put in a few 14-mile completing them faster than my fastest half marathon time. However, I feel as if my endurance isn't where I want it just yet. My nutrition is far from ideal this close to Marathon Weekend.

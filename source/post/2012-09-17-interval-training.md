@@ -1,16 +1,18 @@
 ---
-layout: post
 title: The Complete Guide to Interval Training
-description: (Infographic)
-category: fitness
-tags: training
-source:
-   url:
-   title:
-llist: http://greatist.com/fitness/interval-training-complete-guide/
-image:
-   url:
-   caption:
+subtitle: (Infographic)
+tags: fitness, training
+meta:
+  description:
+  image:
+    url:
+    caption:
+  source:
+    url:
+    title:
+dispatch: http://greatist.com/fitness/interval-training-complete-guide/
+truncatable: false
+date:
 ---
 I was listing podcast the other day where they where talking about HIIT, High Intensity Interval Training.; more specifically the Tabata and Little Methods. I wasn't able to sleep last night and figured I would look into the Little Method more. Only to find the infographic above from the same source I linked to the other day, <http://greatist.com/>, they my soon have a place in my daily reading line up. Oh, and I plan on using Little Method when I visit the gym for a short 30 minute run this evening.
 

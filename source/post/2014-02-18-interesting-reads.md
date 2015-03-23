@@ -1,16 +1,21 @@
 ---
-layout: post
-title: "interesting reads"
-description: jets, whales and bears
+title: interesting reads
+subtitle: jets, whales and bears
 tags:
-source:
-   url:
-   title:
-llist:
-image:
-   url:
-   caption:
+meta:
+  description:
+  image:
+    url:
+    caption:
+  tags:
+  source:
+    url:
+    title:
+dispatch:
+truncatable: false
+date:
 ---
+
 I admit it, I really don't feel that productive today so... some oddly interesting "news" stories.
 
 [There Are Whales Alive Today Who Were Born Before Moby Dick Was Written][whales] some whales where born **before** the Civil War, **before** Abraham Lincoln became President of the United States, some where born when Lincoln was 5 years old.

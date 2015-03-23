@@ -1,16 +1,18 @@
 ---
-layout: post
-title: "The other social"
-description:
-category:
+title: The other social
+subtitle:
 tags: internet, social
-source:
-   url:
-   title:
-llist:
-image:
-   url:
-   caption:
+meta:
+  description:
+  image:
+    url:
+    caption:
+  source:
+    url:
+    title:
+dispatch:
+truncatable: false
+date:
 ---
 I was never a Facebook fan. I get the general point of the service to easily stay connected to friends and family. However maybe its because I'm not an overly social person, I never understood why so many people view the internet thru Facebook, or buy so heavily into the Facebook services. As a result I was more of a Twitter users.
 

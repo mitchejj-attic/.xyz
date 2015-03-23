@@ -1,16 +1,20 @@
 ---
-layout: post
-title: "digital history"
-description: "the final frontier in personal computing"
+title: digital history
+subtitle: the final frontier in personal computing
 tags: sync, backup
-source:
-   url:
-   title:
-llist: https://spideroak.com/download/referral/3dd319d4afeaad92c8672e76c8789ef2
-image:
-   url:
-   caption:
+meta:
+  description:
+  image:
+    url:
+    caption:
+  source:
+    url:
+    title:
+dispatch: https://spideroak.com/download/referral/3dd319d4afeaad92c8672e76c8789ef2
+truncatable: false
+date:
 ---
+
 Each year, month, week and day we are moving awway from the classic personal computer paradigm and closer to some hybrid sci-fi paradigm geeks just lusted over as adolescents. With the rise of smart phones and cloud computing we will soon find ourselves at a cross road wondering what to do with all of our data. Now I could go on and on about data portablity. I think a bigger issue exist, the storge of our data. How does one preserve their digital history.
 
 Ever since I moved to to linux as my day-to-day OS I've been searching for the best backup/sync solution. I want something I can trust, that has an ability to sync, revision/version control and most importantly I want a soulution that I can easily archived data when on my iPhone or on OS X. I know back up and sync are two different problems, requiring differet solutions. However, the data I wish to keep synced between devices also happen to be important enought for me to keep backed up.

@@ -1,16 +1,18 @@
 ---
-layout: post
-title: "This Can't be Good"
-description:
-category:
+title: This Can't be Good
+subtitle:
 tags: macosx
-source:
-   url:
-   title:
-llist:
-image:
-   url:
-   caption:
+meta:
+  description:
+  image:
+    url:
+    caption:
+  source:
+    url:
+    title:
+dispatch:
+truncatable: false
+date:
 ---
 
 Part of a crash log report that caused my iPhone not to sync last night:

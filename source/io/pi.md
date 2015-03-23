@@ -1,15 +1,16 @@
 ---
 layout: page
-group: page, io
-title: "vacation[winter, 2015]"
-description: Arch Rasberry Pi 2
-category: project
-tags: arch, linux, raspberry pi 2
+title: vacation[winter, 2015]
+subtitle: Arch Raspberry Pi 2
+tags: io, vacation, raspberry
 meta:
-  a: test
   description: I spent part of my winter vacation playing with a Raspberry Pi 2
   image:
+    url:
+    caption:
+    link:
 ---
+
 I suppose these will work with most Arch Linux ARM installs.
 
 

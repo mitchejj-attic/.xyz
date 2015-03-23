@@ -1,7 +1,14 @@
 ---
 layout: page
 title: Suggestions
-description: running
+subtitle: running
+tags:
+meta:
+  description:
+  image:
+    url:
+    caption:
+    link:
 ---
 
 * #### Clothing

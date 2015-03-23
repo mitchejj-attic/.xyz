@@ -1,16 +1,20 @@
 ---
-layout: post
-title: "A few links"
-description:
+title: A few links
+subtitle:
 tags:
-source:
-   url: http://www.dcrainmaker.com/2013/08/reviewaugust-31st-2013.html
-   title: Week in Review - August 31st, 2013
-llist:
-image:
-   url:
-   caption:
+meta:
+  description:
+  image:
+    url:
+    caption:
+  source:
+    url: http://www.dcrainmaker.com/2013/08/reviewaugust-31st-2013.html
+    title: Week in Review - August 31st, 2013
+dispatch:
+truncatable: false
+date:
 ---
+
 
 
 [I spy...][bear]

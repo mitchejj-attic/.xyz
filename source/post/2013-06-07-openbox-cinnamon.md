@@ -1,15 +1,18 @@
 ---
-layout: post
-title: "falsity of sure things"
-description: "natural scrolling with cinnamon"
+title: falsity of sure things
+subtitle: natural scrolling with cinnamon
 tags: arch, linux
-source:
-   url:
-   title:
-llist:
-image:
-   url:
-   caption:
+meta:
+  description:
+  image:
+    url:
+    caption:
+  source:
+    url:
+    title:
+dispatch:
+truncatable: false
+date:
 ---
 My [vacation\[summer, 2013\]][myLink] ended and I continue to evaluate and tinker with plans to create a standardized deployment across my laptops; I am finding what I once thought was a sure thing isn't. I currently run [OpenBox][openBox] on my Arch install, my desire to keep minimal system along how much I enjoy many aspects of [Crunch Bang][#!] I thought OpenBox would be the clear winner. Yet [Cinnamon][cMon] is starting to emerge as a strong contender, I am starting to grow fond of the environment. I wish Cinnamon was an independant [project][cMonProject] and not a vital cog of Mint Linux. Without such seperation, lack of documantion and independant development cycle the project lacks transparency leaving the UX at the whim of the Mint dev team.
 

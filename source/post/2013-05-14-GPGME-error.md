@@ -1,15 +1,18 @@
 ---
-layout: post
 title: pacman errors
-description: "error: GPGME error: No data"
+subtitle: "error: GPGME error: No data"
 tags: arch
-source:
-   url:
-   title:
-llist:
-image:
-   url:
-   caption:
+meta:
+  description:
+  image:
+    url:
+    caption:
+  source:
+    url:
+    title:
+dispatch:
+truncatable: false
+date:
 ---
 Just in case I run up against this again....
 

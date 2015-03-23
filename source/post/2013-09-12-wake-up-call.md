@@ -1,14 +1,18 @@
 ---
-layout: post
-title: "Wake Up Call"
-description:
+title: Wake Up Call
+subtitle:
 tags:
-source:
-   url:
-   title:
-llist: http://instagram.com/p/eKfsSLIaB9/#
-image:
-   url:
-   caption:
+meta:
+  description:
+  image:
+    url:
+    caption:
+  source:
+    url:
+    title:
+dispatch: http://instagram.com/p/eKfsSLIaB9/
+truncatable: false
+date:
 ---
+
 Now that is some wake up call...

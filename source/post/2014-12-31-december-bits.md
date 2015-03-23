@@ -1,13 +1,17 @@
 ---
-layout: post
-title: december bits
-description:
-truncatable: true
+title: December Bits
+subtitle:
 tags: bits
-llist:
-source:
-  url:
-  title:
+meta:
+  description:
+  image:
+    url:
+    caption:  
+  source:
+    url:
+    title:
+dispatch:
+truncatable: false
 date: 2014-12-31 20:46:46 -0500
 ---
 

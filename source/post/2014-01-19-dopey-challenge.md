@@ -1,17 +1,20 @@
 ---
-layout: post
-title: "The Dopey Weekend"
-description: the memories, the experiences the stress
+title: The Dopey Weekend
+subtitle: the memories, the experiences the stress
 tags: running, dopey, disney
-source:
-   url:
-   title:
-llist:
-image:
-   url:
-   caption:
+meta:
+  description: My journey to completing the Dopey Challenge in 2013.
+  image:
+    url: http://farm6.static.flickr.com/5476/11930984426_1ce49e30b7_b.jpg
+    caption: What 4 days of running gets you.
+    link:
+  source:
+    url:
+    title:
+dispatch:
+truncatable: false
+date:
 ---
-[![The Reward](http://farm6.static.flickr.com/5476/11930984426_1ce49e30b7_b.jpg)][1]
 
 The trip of course didn't start as planned. The schedule flight out of DTW to MCO was canceled the previous morning due to weather conditions. I quickly called the airline and the earliest flight I could get to MCO was scheduled to land at 755pm; the expo was scheduled to close at 8pm. The initial question of how do I get to Disney was replaced with how do make it to Disney in time to pick up my bib. Ah-ha drive, yes I will drive  nearly 20 hours to make it in time for bib pick up. The common sense intervened, and I choose to take the flight... but did I do the right thing? Surely not as I will be unable to run the 5k and thus unable to complete the Dopey Challenge.
 

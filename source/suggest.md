@@ -1,7 +1,14 @@
 ---
 layout: page
 title: Suggestions
-description: recommended by me
+subtitle: recommended by me
+tags:
+meta:
+  description:
+  image:
+    url:
+    caption:
+    link:
 ---
 
 * [Running Related][running]

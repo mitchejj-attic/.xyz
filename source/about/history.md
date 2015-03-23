@@ -1,10 +1,16 @@
 ---
 layout: page
-group: about
 title: the nullog journey
-description: a purposeful endeavor
-subtitle: actually existing
+subtitle: actually existing a purposeful endeavor
+tags:
+meta:
+  description: "A purposeful endeavor: the story of nullog.net"
+  image:
+    url:
+    caption:
+    link:
 ---
+
 ## __Warning:__ Still under active change.
 
 I have created more than a few sites over the years and over time they have fallen victim to neglect and digital decay. I created my first website in 1996, the site came out of my pracration writing my 'Up Close' experience paper over spring break. Like most sites at the time the the markup was mangled mess of content, layout and design. I've created a few more site overtime; they to fell victim to decay and neglect. I thought the solution was be moving to a database drive CMS; yet I wasn't happy with the CMS I choose and moved to another CMS. I even tried using platforms like Posterous and tumblr before I reverted back to

@@ -1,15 +1,18 @@
 ---
-layout: post
-title: "Moving to Arch?"
-description:
-tags: arch
-source:
-   url:
-   title:
-llist:
-image:
-   url:
-   caption:
+title: Moving to Arch?
+subtitle:
+tags: arch, linux
+meta:
+  description:
+  image:
+    url:
+    caption:
+  source:
+    url:
+    title:
+dispatch:
+truncatable: false
+date:
 ---
 A few months back I installed Ubuntu; shortly after that I moved to CrunchBang. For the most part I've enjoyed my experiences with CruncBang. The few things I haven't enjoyed where directly related to it foundation, Debian. However, I stuck with it and even upgraded the Macbook (4,1) replacing the HD with an SSD and doubling the RAM.
 

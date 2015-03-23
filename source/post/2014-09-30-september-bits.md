@@ -1,13 +1,18 @@
 ---
-layout: post
-truncatable: false
 title: September Bits
-description:
+subtitle:
 tags: bits
-llist:
-source:
-  url:
-  title:
+meta:
+  description:
+  image:
+    url:
+    caption:
+  tags:
+  source:
+    url:
+    title:
+dispatch:
+truncatable: false
 date: 2014-09-30 20:25:24 -0400
 ---
 

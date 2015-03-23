@@ -1,14 +1,16 @@
 ---
 layout: page
-group: page, io
-title: "Installing Arch Linix ARM"
-description: Raspberry Pi 2
-category: project
-tags: arch, linux, raspberry pi 2
+title: Installing Arch Linix ARM
+subtitle: Raspberry Pi 2
+tags: io, vacation, raspberry
 meta:
   description: A simple guide for installing Arch Linux on a Raspberry Pi
   image:
+    url:
+    caption:
+    link:
 ---
+
 [This guide][findME] is intended to more detailed comprehensive install guide that what is found on the [Arch Linux ARM][alarm] site or the [eLinux Wiki][elinux]. The following convention will be used:
 
       #        <--- shell prompt

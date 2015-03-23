@@ -1,15 +1,20 @@
 ---
-layout: post
-truncatable: true
-title: february bits
-description:
+title: February Bits
+subtitle:
 tags: bits
-llist:
-source:
-  url:
-  title:
+meta:
+  description:
+  image:
+    url:
+    caption:  
+  source:
+    url:
+    title:
+dispatch:
+truncatable: false
 date: 2015-02-28 18:10:01 -0500
 ---
+
 * [Flipboard] --- finally on the web
 * [The Keurig 2.0 DRM Freedom Clip][keurig]
 * [How metro Detroit transit went from best to worst][detTans]

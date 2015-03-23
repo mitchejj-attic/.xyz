@@ -1,15 +1,21 @@
 ---
-layout: post
-truncatable: 'true'
 title: october bits
-description:
+subtitle:
 tags: bits
-llist:
-source:
-  url:
-  title:
+meta:
+  description:
+  image:
+    url:
+    caption:
+  tags:
+  source:
+    url:
+    title:
+dispatch:
+truncatable: false
 date: 2014-10-31 21:46:52 -0400
 ---
+
 * [Handy Tools & Apps Page][tools] --- running/biking/fitness related
 * [Are Online Race Registration Companies Scamming Us?][reg]
 

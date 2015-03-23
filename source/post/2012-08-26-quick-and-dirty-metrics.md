@@ -1,9 +1,16 @@
 ---
-layout: post
-title: "quick and dirty metrics"
-description: "actually its about mcache"
-category:
+title: quick and dirty metrics
+subtitle: actually its about mcache
 tags: meta
+meta:
+  description:
+  image:
+  source:
+    url:
+    title:
+dispatch:
+truncatable: false
+date:
 ---
 Now that I have github -> heroku publishing in place now is the time to setup even more over kill, heroku offers a few (2)5 MB Memcache Bucket.
 

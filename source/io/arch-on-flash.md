@@ -1,11 +1,16 @@
 ---
 layout: page
-group: page, io
-title: "vacation[summer, 2013]"
-description: "Arch Linux on USB Flash"
-category: project
+title: vacation[summer, 2013]
+subtitle: Arch Linux on USB Flash
 tags: arch, linux
+meta:
+  description:
+  image:
+    url:
+    caption:
+    link:
 ---
+
 The first step is to download the official ISO, well maybe. I've never been able to make any of my MacBook's to boot the EFISTUB. Maybe adding the boot options `noapic`, `noapic`, `nomodeset` In fact I haven't been able to make a VM boot an EFISTUB yet. Before writeing this little post I was never able to get any version of Linux to boot off a flash drive on my MacBook (2,1)
 
 		### Are Comments

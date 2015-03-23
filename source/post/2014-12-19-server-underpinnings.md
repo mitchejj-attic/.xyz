@@ -1,15 +1,20 @@
 ---
-layout: post
-truncatable: true
 title: server underpinnings
-description: The perfect server isn't going to exist, the right server is the one you don't have to think about or worry about
+subtitle: The perfect server isn't going to exist, the right server is the one you don't have to think about or worry about
 tags:
-llist:
-source:
-  url:
-  title:
+meta:
+  description:
+  image:
+    url:
+    caption:  
+  source:
+    url:
+    title:
+dispatch:
+truncatable: true
 date: 2014-12-19 14:29:37 -0500
 ---
+
 The choice to move to Heroku was made just under two and a half years ago; since that time Unicorn has been the primary server of choice, with a short flirtation with Puma. Lets be honest this site gets very little traffic before removing my visit or the search bots. Yet, the desire to have quick response times, load times, able to serve thousands of request per second, and not be a resource hog has had always been my mission. A free Heroku Dyno with Unicorn has been a steller choice. The choice between Unicorn and Puma was difficult, performance was nearly indistinguishable, and some benchmarks show [Unicorn was the superior choice][rubyWebBench], for my usage. Of couse, me being me I've been itching to change things up.
 
 Enter [Raptor aka Passenger 5][raptor] which is "up to 4x faster than Unicorn, up to 2x faster than Puma, Torquebox". If this is true, switch must be made. At moment Passenger 5 is still in beta, beta software in the production environment is a big no-no. I'm not running mission critical software, I'm not running a website real demands. While the initial testing looks promising Passenger isn't a good fit, yet, as route queue time is up drastically resulting in longer wait times by the end client.

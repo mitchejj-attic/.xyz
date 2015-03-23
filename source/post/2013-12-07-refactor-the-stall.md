@@ -1,16 +1,20 @@
 ---
-layout: post
-title: "refactor, the stall"
-description:
+title: refactor, the stall
+subtitle:
 tags: meta
-source:
-   url:
-   title:
-llist:
-image:
-   url:
-   caption:
+meta:
+  description:
+  image:
+    url:
+    caption: 
+  source:
+    url:
+    title:
+dispatch:
+truncatable: false
+date:
 ---
+
 So I quickly learned CloudFlare isn't for me as it add to much overhead for such a minimal ROI. Around the same time I noticed my Bootsrap base was no longer current, I stumbled upon `jekyll-assets` and `bootstrap-sass` which started to get me thinking why not use the two and customize it for my needs and serve it all up as one file. It works faily well, which then lead me to wonder if I should keep using Bootstrap or find something a bit lighter. This of course has caused slight stall in the refactor, do I:
 
  1. continue the status quo and use bootstrap

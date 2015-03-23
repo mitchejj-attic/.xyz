@@ -1,11 +1,21 @@
 ---
 layout: page
-group: page, io
 title: todo
-description: "the unfinished"
-category: project
+subtitle: the unfinished
 tags: meta
+meta:
+  description: on going projects & ideas
+  image:
+    url:
+    caption:  
+  source:
+    url:
+    title:
+dispatch:
+truncatable: false
+date:
 ---
+
 * clean up /about/history
 * get ready for middleman 4.0
 * reduce pages... for instance is pagination (for index) really worth it?

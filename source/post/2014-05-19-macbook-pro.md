@@ -1,13 +1,21 @@
 ---
-layout: post
-title: "MacBook Pro"
-description:
+title: MacBook Pro
+subtitle:
 tags:
-source:
-   url:
-   title:
-llist:
+meta:
+  description:
+  image:
+    url:
+    caption:
+  tags:
+  source:
+    url:
+    title:
+dispatch:
+truncatable: false
+date:
 ---
+
 While my trusty MacBook (4,2) has been my workhorse for sometime, and while it do undergo some life saving surgery last year it really is starting to show its age. I hoped my Mac Mini would  help push back the need yet another year. But it hasn't and while the idea of building my own system seems alluring I know I will be left wanting a portable system. I know I should wait to WWDC until I replace the system but...
 
 Of all the 'other' laptops I've seen they have one problem I can't get around, no not the cheap build feel... but the track pad is not centered. So I was left looking between the MacBook Air and Pro. In the end I went with what will have the longest use life, the Pro and bumped out the specs. I know I love having millions of tabs open in my browser so I need plenty of RAM, since the HD is upgradeable I should go with something a tad on the larger side and since I'm buying to use the system for years I should also go with and i7. I might not need all of these 'extra' bits today but I will 2-3 years from now.

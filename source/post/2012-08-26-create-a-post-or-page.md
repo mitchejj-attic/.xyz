@@ -1,9 +1,16 @@
 ---
-layout: post
-title: "Create a Post or Page"
-description:
-category:
+title: Create a Post or Page
+subtitle:
 tags: jekyll
+meta:
+  description:
+  image:
+  source:
+    url:
+    title:
+dispatch:
+truncatable: false
+date:
 ---
 Why is it I can never remember:
 

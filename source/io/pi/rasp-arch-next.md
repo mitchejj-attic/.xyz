@@ -1,14 +1,16 @@
 ---
 layout: page
-group: page, io
 title: Getting Started Guide
-description: Arch Rasberry Pi 2
-category: project
-tags: arch, linux, raspberry pi 2
+subtitle: Arch Raspberry Pi 2
+tags: io, vacation, raspberry
 meta:
   description: Now you have Arch Linux installed on a Raspberry Pi, what should you do?
   image:
+    url:
+    caption:
+    link:
 ---
+
 This, getting start guide was actually created before my [Arch Linux ARM Raspberry Pi 2 install guide][install], and the chances are good you are here because of it. I felt a tad overwhelmed trying to figure out the best, most logical, path from the primordial ooze of a tarball to what I deemed to be a good solid foundation. In order to organize my thoughts I had to map out a plan; identify flaw and blind spots.
 
 The same conventions used in the [install guide][install] will be used here. I expected the Pi setup to all take place via SSH, therefore that decision will influence the order of operations.

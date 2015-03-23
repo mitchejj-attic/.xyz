@@ -1,15 +1,18 @@
 ---
-layout: post
-title: "Creating an Arch Flash Drive"
-description: "For my MacBook's"
+title: Creating an Arch Flash Drive
+subtitle: For my MacBook's
 tags: arch, linux, macbook
-source:
-   url:
-   title:
-llist:
-image:
-   url:
-   caption:
+meta:
+  description:
+  image:
+    url:
+    caption:
+  source:
+    url:
+    title:
+dispatch:
+truncatable: false
+date:
 ---
 This week I was lucky enough to enjoy a week off from work. I am half way thru the vacation and wanted to post a stats report on my [vacation[summer, 2013]][myLink] project.
 

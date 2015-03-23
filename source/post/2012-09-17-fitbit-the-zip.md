@@ -1,16 +1,18 @@
 ---
-layout: post
 title: Fitbit & The Zip
-description:
-category: fitness
-tags:
-source:
-   url:
-   title:
-llist:
-image:
-   url:
-   caption:
+subtitle:
+tags: fitness
+meta:
+  description:
+  image:
+    url:
+    caption:
+  source:
+    url:
+    title:
+dispatch:
+truncatable: false
+date:
 ---
 I ordered my first [fitbit, the classic,][1] on March 8th 2010, each day I wait in anticipation for production to ramp up. Finally on May 18th my fitbit shipped. Sadly my fitbit died a few month later, as I completed my first half marathon. I found out the hard way the fitbit wasn't water resistant at all. The fitbit also didn't seem very durable construction wise, but I didn't exactly wear it as directed. I'm sure that contributed to my original failing. Last year jawbone released their failed entry into the space, with the [Jawbone UP][2] shortly after that Nike announced their [FuelBand][3]. Each of those items had something the I wanted in the fitbit before making a replacement purchase, Bluetooth syncing to my phone.
 

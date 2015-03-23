@@ -1,8 +1,16 @@
 ---
 layout: page
 title: Suggestions
-description: podcast
+subtitle: podcast
+tags:
+meta:
+  description:
+  image:
+    url:
+    caption:
+    link:
 ---
+
 * ##### Knowledge
 * #### Running & Fitness
 * #### Tech

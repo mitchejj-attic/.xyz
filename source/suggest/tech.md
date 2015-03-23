@@ -1,7 +1,14 @@
 ---
 layout: page
 title: Suggestions
-description: tech
+subtitle: tech
+tags:
+meta:
+  description:
+  image:
+    url:
+    caption:
+    link:
 ---
 
 * #### General

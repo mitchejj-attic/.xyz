@@ -1,16 +1,19 @@
 ---
-layout: post
-title: "iSight in Arch"
-description: "enabling the isight"
+title: iSight in Arch
+subtitle: enabling the isight
 tags: arch, linux, macbook
+meta:
+  description:
+  image:
+    url:
+    caption:
+  source:
+    url:
+    title:
+dispatch:
+truncatable: false
+date:
 x-meta: /System/Library/Extensions/IOUSBFamily.kext/Contents/PlugIns/AppleUSBVideoSupport.kext/Contents/MacOS/AppleUSBVideoSupport
-source:
-   url:
-   title:
-llist:
-image:
-   url:
-   caption:
 ---
 
 According the the Arch [MacBook wiki page][macBookWiki], the MacBook's iSight camera should just work out of the box since kernal 2.6.26. Well that maybe the case on new hardware[^newMac], older hardware[^oldMac] doesn't have the iSight camera just work. One must first do some work, like finding the drivers `AppleUSBVideoSupport`. The driver can be found on any Mac OS X system, however it must come Mac OS X pre-10.6, so just just google it.
