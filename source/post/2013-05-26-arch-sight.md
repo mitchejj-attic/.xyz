@@ -3,7 +3,7 @@ layout: post
 title: "iSight in Arch"
 description: "enabling the isight"
 tags: arch, linux, macbook
-meta: /System/Library/Extensions/IOUSBFamily.kext/Contents/PlugIns/AppleUSBVideoSupport.kext/Contents/MacOS/AppleUSBVideoSupport
+x-meta: /System/Library/Extensions/IOUSBFamily.kext/Contents/PlugIns/AppleUSBVideoSupport.kext/Contents/MacOS/AppleUSBVideoSupport
 source:
    url:
    title:
