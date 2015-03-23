@@ -7,6 +7,7 @@ meta:
   image:
     url:
     caption:
+    link:
   source:
     url: http://www.webupd8.org/2013/03/easily-backup-imap-email-accounts-using.html
     title: www.webupd8.org

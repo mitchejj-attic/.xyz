@@ -7,6 +7,7 @@ meta:
   image:
     url:
     caption:
+    link:
   source:
     url: http://9to5mac.com/2012/09/14/full-iphone-5-schematics-posted/
     title: Full iPhone 5 schematics posted

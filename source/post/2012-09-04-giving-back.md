@@ -2,9 +2,12 @@
 title: Giving Back
 subtitle: stackoverflow
 tags: heroku, jekyll
+tags:
 meta:
   description:
   image:
+    url:
+    caption:  
   source:
     url:
     title:

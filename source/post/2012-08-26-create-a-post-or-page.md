@@ -2,9 +2,12 @@
 title: Create a Post or Page
 subtitle:
 tags: jekyll
+tags:
 meta:
   description:
   image:
+    url:
+    caption:  
   source:
     url:
     title:

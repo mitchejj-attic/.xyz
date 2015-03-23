@@ -7,6 +7,7 @@ meta:
   image:
     url:
     caption:
+    link:
   source:
     url:
     title: Walt Disney World Marathon Weekend
