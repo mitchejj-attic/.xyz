@@ -1,6 +1,16 @@
 ---
 layout: page
-title: "Thanks"
+title: Thanks
+subtitle:
+tags:
+meta:
+  description:
+  image:
+    url:
+    caption:  
+  source:
+    url:
+    title:
 ---
 
 I would just like to record someplace a thank you roll for pages/links and sites I found useful.
