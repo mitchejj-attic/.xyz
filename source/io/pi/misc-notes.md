@@ -1,4 +1,16 @@
-
+---
+  layout: page
+  title: you shouldn't see this
+  subtitle: just a mange bit of links
+  tags: null
+  meta:
+    description:
+    image:
+      url:
+      caption:
+      link:
+sitemap_priority: -1.0
+  ---
 	http://haydenjames.io/raspberry-pi-2-overclock/
 
 https://github.com/Nefelim4ag/systemd-swap
