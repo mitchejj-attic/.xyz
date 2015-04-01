@@ -17,11 +17,12 @@ pre {
 	@include _code;
 	font-family: $font-family-monospace_;
 	padding: unpack(.5rem 1.1rem);
-	white-space: pre-wrap;
-	word-break: break-all;
-	word-wrap: break-word;
+	//white-space: pre-wrap;
+	//word-break: break-all;
+	//word-wrap: break-word;
 	color: white;
 	background-color: $black;
+	overflow-x: auto;
 	code {
 		border:none;
 		font-family: inherit;

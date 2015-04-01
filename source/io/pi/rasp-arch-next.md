@@ -21,12 +21,12 @@ The same conventions used in the [install guide][install] will be used here. I e
 ### Finding the Pi
 My Pi is connected directly connected to my home network via ethernet. My main computers local IP address is 192.168.0.6; in order to [find the Pi on the network][find] I could run `nmap -sn 192.168.0.0/24`. Interestingly nmap reports my Pi as an HP, I have an HP printer on the network which nmap was not finding.
 
-		MAC Address: 78:AC:C0:xx:yy:zz (Hewlett-Packard Company)
-		Nmap scan report for 192.168.0.17
+	MAC Address: 78:AC:C0:xx:yy:zz (Hewlett-Packard Company)
+	Nmap scan report for 192.168.0.17
 
 I needed another method, I found a trusty USB keyboard and logged in.
 
-		# ip show addr
+	# ip addr show
 
 Look near the bottom for `eth0` and you should find something akin to `inet 192.168.0.17/24`.
 
@@ -34,12 +34,13 @@ Look near the bottom for `eth0` and you should find something akin to `inet 192.
 
 
 ### Meta Data
+I should look into doing this using `localectl`
 
 	# rnano /etc/locale.gen
 	# locale-gen
 	# echo LANG=en_US.UTF-8 > /etc/locale.conf
 	# export LANG=en_US.UTF-8
-	# echo 'arch-pi' > /etc/hostname
+   # hostnamectl set-hostname arch-pi
 
 ### Date & Time
 The Raspberry Pi doesn't have a hardware clock. In order to have a good historical record it is vital the system to have the correct time. Using [pool.ntp.org][ntp], pick the logical servers, to populate `/etc/systemd/timesyncd.conf`.

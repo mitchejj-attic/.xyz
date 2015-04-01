@@ -62,8 +62,9 @@ It is easy to assume the file system was created with `parted`. Yes, we did use 
 
 ### Installation
 
-      # mkdir -p /tmp/pi/boot
+      # mkdir -p /tmp/pi/
       # sudo mount /dev/sdX2 /tmp/pi
+      #mkdir /tmp/pi/boot
       # sudo mount /dev/sdX2 /tmp/pi/boot
       # su root
       # bsdtar -xpf ArchLinuxARM-rpi-2-latest.tar.gz -C /tmp/pi && exit
