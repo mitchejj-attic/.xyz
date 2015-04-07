@@ -12,7 +12,7 @@ GEM
       bourbon (>= 3.2)
       sass (>= 3.2)
       thor
-    bourbon (4.2.1)
+    bourbon (4.2.2)
       sass (~> 3.4)
       thor
     builder (3.2.2)
@@ -101,6 +101,8 @@ GEM
     middleman-syntax (2.0.0)
       middleman-core (~> 3.2)
       rouge (~> 1.0)
+    middleman-vcs-time (0.0.3)
+      middleman-core (~> 3.2)
     mini_portile (0.6.2)
     minigit (0.0.4)
     minitest (5.5.1)
@@ -173,6 +175,7 @@ DEPENDENCIES
   middleman-livereload
   middleman-minify-html
   middleman-syntax
+  middleman-vcs-time
   minigit
   modular-scale
   neat

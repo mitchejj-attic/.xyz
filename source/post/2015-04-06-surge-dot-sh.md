@@ -1,22 +1,23 @@
 ---
-title: surge.sh
+title: Surge CDN
 subtitle:
 tags: meta
 meta:
   description: I'm moving to from Heroku to Surge!
   image:
     url:
-    title:
-    link:
-  source:
-    url: /images/surge.png
+    title: Static Web Publishing for Front-End Developers
+    link: https://surge.sh/
+  source: free-for-dev
+    url: https://github.com/ripienaar/free-for-dev
     title:
 dispatch: https://surge.sh/
 truncatable: false
 date: 2015-04-06 17:52:17 -0400
 ---
-I've enjoyed rolling my own Rack server on Heroku. Something never did feel right about it, and I could never put my finger on it. I think I've finally been about to figure out what that something was; the why. Why was I deploying to Heroku, what where the benefits? Deploying to Heroku, for me and the site, really had no benefits.^1 The only advantage of deploying to Heroku the learning process. Ultimately that 'advantage' has a relative short shelf life.
+I've enjoyed rolling my own Rack server on Heroku. Yet, it always seemed to be a functional hack. Then I finally posed a seemly simple question. Why am I deploying to Heroku, what are the benefits? The reason I initial reason I was deplying to heroku for Jekyll plug-ins, beeing different, and the learning process. The only tangitable benefits hosting with Heroku offers me... crickets...wait I have the ability to control site routing via ModRewrite.
 
-Now is the time; the time to move. Surge is still growing into what it will be but I believe it move in the right direction for 'things' I care about. Namely reliable uptime, speedy delivery, with low latency.
+I believe Surge CDN [will offer a service which values][surgeMed] the 'things' I care about. Namely reliability, speed, and low latency. If I'm wrong I can always move back to Heroku.
 
-[^1]: **Update:** An advantage I forgot about was being able to some routing via rewrite rules.
+
+[surgeMed]: https://medium.com/surge-sh/introducing-surge-the-cdn-for-front-end-developers-b4a50a61bcfc
