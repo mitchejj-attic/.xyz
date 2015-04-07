@@ -39,6 +39,7 @@ end
 
 activate :directory_indexes
 activate :syntax
+activate :vcs_time
 set :markdown_engine, :kramdown
 set :markdown, :layout_engine => :erb,
                :tables => true,
@@ -68,8 +69,10 @@ configure :build do
    activate :minify_javascript
 #   activate :asset_hash, :ignore => [/^images\//]
    activate :relative_assets
-   activate :gzip
+#   activate :gzip
 end
+
+
 
 configure :development do
    config[:debug_assets] = true
