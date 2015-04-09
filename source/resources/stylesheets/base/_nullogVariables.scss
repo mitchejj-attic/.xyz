@@ -29,25 +29,25 @@ $base-footer-height: 4.5rem;
 $base-font-size-reduction: 60%;
 
 // Colors
-$blue: rgb(35,75,115); //#477DCA;
-$dark-gray: rgb(61,61,61); //rgb(47,47,47); // #333;
-$medium-gray: rgb(83,83,83);//rgb(103,103,103); // #999;
-$light-gray: rgb(253,253,253); // #DDD;
-$light-red: rgb(214,73,55) ;// #FBE3E4;
-$light-yellow: #FFF6BF;
-$light-green: #E6EFC2;
+//$blue: rgb(35,75,115); //#477DCA;
+//$dark-gray: rgb(61,61,61); //rgb(47,47,47); // #333;
+//$medium-gray: rgb(83,83,83);//rgb(103,103,103); // #999;
+//$light-gray: rgb(253,253,253); // #DDD;
+//$light-red: rgb(214,73,55) ;// #FBE3E4;
+//$light-yellow: #FFF6BF;
+//$light-green: #E6EFC2;
 
 $white: rgb(249,249,249);
 $black: rgb(51, 51, 51); //rgb(47,47,47);
 $light_grayish_violet: rgb(225,220,236);
 $light_grayish_blue: rgb(225,236,241);
-$light_grayish_orange: rgb(236,225,220);
+//$light_grayish_orange: rgb(236,225,220);
 $light_grayish_green: rgb(231,236,220);
-$light_grayish_yellow: rgb(249,249,222);
-$bright_red: rgb(230,35,70);
-$dark_gray_blue: rgb(127,127,144);
+//$light_grayish_yellow: rgb(249,249,222);
+//$bright_red: rgb(230,35,70);
+//$dark_gray_blue: rgb(127,127,144);
 $darkish_gray_orange: rgb(144,136,127);
-$vivid_yellow: rgb(236,231,35);
+//$vivid_yellow: rgb(236,231,35);
 $grayish_violet: rgb(192,182,215);
 $light1: 15%;
 $light2: 30%;
@@ -77,7 +77,7 @@ $base-border-color: lighten($base-font-color, $light2); //$light-gray;
 $base-border: rem($unitless-line-height) solid $base-border-color;
 
 // Footer Colors
-$footer-background: $darkish_gray_orange; //$bright_red;//rgb(245,10,70);//$base-font-color; //$base-accent-color;//rgb(30,184,85); //rgb(31,193,246); //
+$footer-background: $hover-link-color; //$darkish_gray_orange; //$bright_red;//rgb(245,10,70);//$base-font-color; //$base-accent-color;//rgb(30,184,85); //rgb(31,193,246); //
 $_footer-font-color: white;
    $footer-font-color: transparentize($_footer-font-color, .5);
 

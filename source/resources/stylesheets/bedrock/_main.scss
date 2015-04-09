@@ -2,75 +2,47 @@
     padding-left: $base-font-size / $minor-sixth;
     text-indent: -( $base-font-size / $minor-sixth );
 }
+.number {
+   list-style-type: decimal;
+}
+.bullet {
+   list-style-type: circle;
+}
+.post-body, .page-body {
+   margin-bottom:2rem;
+   //a {
+   //   border-bottom: rem(1px) dotted $base-accent-color;
+   // }
+   @import 'bedrock/asperities/explore';
+   li> ul {
+      margin-left: $base-spacing;
+   }
+   ol.number {
+      @extend .number;
+      margin: $base-spacing;
+      ul> li {
+         //margin-left:$base-line-height;
+        @extend .bullet;
+      }
+   }
+   .blank-bullet {
+      ul> li {
+         @extend .bullet;
+      }
+   }
+
+}
+.post-title, .page-title {
+   text-transform: lowercase;
+   small {
+      vertical-align: middle;
+      //text-transform: lowercase;
+   }
+}
+
+
 .post, .page {
 
-   h1, h2, h3, h4, h5, h6 {
-      font-weight: 400;
-   }
-   .number {
-      list-style-type: decimal;
-   }
-   .bullet {
-      list-style-type: circle;
-   }
-   .post-body, .page-body {
-      margin-bottom:2rem;
-      a {
-         border-bottom: rem(1px) dotted $base-accent-color;
-      }
-      @import 'bedrock/asperities/explore';
-      li> ul {
-         margin-left: $base-spacing;
-      }
-      ol.number {
-         @extend .number;
-         margin: $base-spacing;
-         ul> li {
-            //margin-left:$base-line-height;
-           @extend .bullet;
-         }
-      }
-      .blank-bullet {
-         ul> li {
-            @extend .bullet;
-         }
-      }
-
-   }
-   .post-title, .page-title {
-      text-transform: lowercase;
-      small {
-         vertical-align: middle;
-         text-transform: lowercase;
-      }
-//     margin: rem(3px) auto rem(3px);
-   }
-   blockquote {
-      font-family: $serif;
-      font-size: 105%;
-      @include media($medium-screen-up) {
-         font-size: $base-font-size * $unitless-line-height;
-      }
-      small{
-         display: block;
-      }
-   }
-   .footnotes {
-      font-family: $sans-serif;
-      display: block;
-      $footnotes-font: ms(-2, $base-font-size, $major-second);
-      font-size: $footnotes-font;
-      background-color: $tertiary-accent-color;
-      padding: $footnotes-font;
-      //padding-bottom: $footnotes-space;
-      //font-family: "Helvetica Neue", Helvetica ;
-      p { margin: 0;}
-      ol {
-         margin-left: #{$unitless-line-height}rem;
-         margin-bottom: 0rem;
-         list-style-type: decimal;
-      }
-   }
 }
 
 #posts {
@@ -83,6 +55,20 @@
    }
    .post:last-child {
 //      border-bottom: none;
+   }
+}
+.footnotes {
+   font-family: $sans-serif;
+   display: block;
+   $footnotes-font: ms(-3, $base-font-size, $major-second);
+   font-size: $footnotes-font;
+   background-color: $tertiary-accent-color;
+   padding: $footnotes-font / 2;
+   p { margin: inherit;}
+   ol {
+      margin-left: #{$unitless-line-height}rem;
+      margin-bottom: inherit;
+      list-style-type: decimal;
    }
 }
 
@@ -99,14 +85,17 @@
 .count {
    font-family: $font-family-monospace;
 }
-
 blockquote {
-   //border-left: $base-border;
+   font-family: $serif;
    color: lighten($base-font-color, $light1);
-   //margin: $base-spacing 0;
-   //padding-left: $small-spacing;
+   font-size: 105%;
+   @include media($medium-screen-up) {
+      font-size: $base-font-size * $unitless-line-height;
+   }
+   small{
+      display: block;
+   }
 }
-
 cite {
   color: lighten($base-font-color, $light2);
   font-style: italic;

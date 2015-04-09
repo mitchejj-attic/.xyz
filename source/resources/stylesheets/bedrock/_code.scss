@@ -23,12 +23,36 @@ pre {
 	color: white;
 	background-color: $black;
 	overflow-x: auto;
+	word-break: normal !important;
+	word-wrap: normal !important;
+	white-space: pre !important;
 	code {
 		border:none;
 		font-family: inherit;
 		color: inherit;
 		background-color: inherit;
 	}
+}
+
+/* Minimal scrollbars for code-samples on Webkit */
+pre::-webkit-scrollbar {
+  width: .4rem;
+  height: .4rem;
+}
+pre::-webkit-scrollbar-track-piece {
+  background-color: $tertiary-accent-color;
+  -webkit-border-radius: 0;
+  border-top: .2rem solid $secondary-accent-color;
+}
+pre::-webkit-scrollbar-thumb:vertical {
+  height: 0;
+  background-color: $base-accent-color;
+  -webkit-border-radius: 0;
+}
+pre::-webkit-scrollbar-thumb:horizontal {
+  width: $base-font-size;
+  background-color: $base-accent-color;
+  -webkit-border-radius: 0;
 }
 
 code {
