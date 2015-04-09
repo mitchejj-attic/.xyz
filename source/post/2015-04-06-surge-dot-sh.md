@@ -8,9 +8,9 @@ meta:
     url:
     title: Static Web Publishing for Front-End Developers
     link: https://surge.sh/
-  source: free-for-dev
+  source:
     url: https://github.com/ripienaar/free-for-dev
-    title:
+    title: free-for-dev
 dispatch: https://surge.sh/
 truncatable: false
 date: 2015-04-06 17:52:17 -0400

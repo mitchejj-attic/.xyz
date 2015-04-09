@@ -6,7 +6,7 @@
       <% unless current_article.data.meta.image.url.nil? %>
       <figure>
          <a href="<%= current_article.data.meta.image.link || current_article.data.meta.image.url %>"><img src="<%= current_article.data.meta.image.url %>" alt="No alt data"></a>
-         <figcaption><%= current_article.data.meta.image.caption || current_article.data.subtitle || current_article.data.title %></figcaption>
+         <figcaption><%= current_article.data.meta.image.caption || current_article.data.subtitle %></figcaption>
       </figure>
       <% end %>
       <% case %>

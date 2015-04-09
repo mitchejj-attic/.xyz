@@ -11,9 +11,11 @@ meta:
   source:
     url: http://twitter.com/gruber/status/249259888725856256
     title: "@gruber"
-dispatch: http://mantia.me/wallpaper/
+dispatch: http://louie.land/wallpapers/
 truncatable: false
 date:
 ---
 
 I found my new homescreen background.
+
+[oldLink]: http://mantia.me/wallpaper/

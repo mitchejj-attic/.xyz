@@ -11,7 +11,7 @@ meta:
     link:
 ---
 
-I suppose these will work with most Arch Linux ARM installs.
+I suppose none of this is to specific to the Raspberry Pi.
 
 
 * [Installing Arch Linix ARM](rasp-arch-install/)
