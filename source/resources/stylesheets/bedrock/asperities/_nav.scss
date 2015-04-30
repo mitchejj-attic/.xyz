@@ -19,18 +19,18 @@ nav {
       display: inline; // Remove list-style and block-level defaults
       position: relative;
       text-align: center;
-      border: rem(1px) solid $secondary-accent-color;
-      margin-left: rem(-1px);
+      border: $smallest_rem solid $secondary-accent-color;
+      margin-left: -($smallest_rem);
       @include clearfix();
       > a, { text-decoration: none; display: block; }
       &:hover, &:focus {
-         color: white;//$base-font-color;
+         color: $white;//$base-font-color;
          background-color: $secondary-accent-color;
       }
    }// &raquo; &laquo;
-   .prev { float: left; margin-bottom: rem(-1px); :before { content: "« "; color: $secondary-accent-color}}
+   .prev { float: left; margin-bottom: -($smallest_rem); :before { content: "« "; color: $secondary-accent-color}}
    .next { float: right; :after { content: " »"; color: $secondary-accent-color}}
     @include media($medium-screen-up) {
-      .prev { margin-bottom: rem(1px) }
+      .prev { margin-bottom: $smallest_rem }
    }
 }

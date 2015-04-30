@@ -5,8 +5,7 @@
    <div class="post-body" itemprop="articleBody">
       <% unless current_article.data.meta.image.url.nil? %>
       <figure>
-         <a href="<%= current_article.data.meta.image.link || current_article.data.meta.image.url %>"><img src="<%= current_article.data.meta.image.url %>" alt="No alt data"></a>
-         <figcaption><%= current_article.data.meta.image.caption || current_article.data.subtitle %></figcaption>
+         <a href="<%= current_article.data.meta.image.link || current_article.data.meta.image.url %>"><img src="<%= current_article.data.meta.image.url %>" alt="<%= current_article.data.meta.image.caption || current_article.data.subtitle %>"></a>
       </figure>
       <% end %>
       <% case %>

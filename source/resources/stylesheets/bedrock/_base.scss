@@ -1,17 +1,17 @@
 html {
-   margin: 0rem;
-   background-color: $base-background-color;
+   margin: 0;
+   background-color: $base-body-color;
    height:100%;
 }
 body {
-   margin: 0rem;
-   padding: 0rem;
+   margin: 0;
+   padding: 0;
    height: 100%;
    font-weight: 300;
 }
-small {
-   font-size: $base-font-size-reduction;
-}
+//small {
+//   font-size: $base-font-size-reduction;
+//}
 header {
    display:block;
 }

@@ -27,6 +27,7 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 $base-footer-height: 4.5rem;
 $base-font-size-reduction: 60%;
+$smallest_rem: .061875rem;
 
 // Colors
 //$blue: rgb(35,75,115); //#477DCA;
@@ -37,7 +38,7 @@ $base-font-size-reduction: 60%;
 //$light-yellow: #FFF6BF;
 //$light-green: #E6EFC2;
 
-$white: rgb(249,249,249);
+$white: white;//rgb(249,249,249);
 $black: rgb(51, 51, 51); //rgb(47,47,47);
 $light_grayish_violet: rgb(225,220,236);
 $light_grayish_blue: rgb(225,236,241);
@@ -52,34 +53,30 @@ $grayish_violet: rgb(192,182,215);
 $light1: 15%;
 $light2: 30%;
 
-// Body Color
-$base-background-color: white;
-$base-body-color: $base-background-color;
-
-
-//  Font Colors
-$base-font-color: $black;
+// Misc Colors
 $base-accent-color: $light_grayish_violet;
 $secondary-accent-color: $light_grayish_blue;
 $tertiary-accent-color: $light_grayish_green;
 
+// Body Color
+$base-background-color: $white;
+$base-body-color: $base-background-color;
+
+//  Font Colors
+$base-font-color: $black;
+
 //  Text Link Colors
 $_base-link-color: $base-font-color;
-   $base-link-color: lighten($_base-link-color, $light1); //$base-accent-color;
+   $base-link-color: lighten($_base-link-color, $light1);
+      $action-color: $base-link-color;
 $_hover-link-color: $base-font-color;
-   $hover-link-color: lighten($_hover-link-color, $light1); //darken($base-accent-color, 15);
-
-// Header
-$header-border-color: $grayish_violet;
+   $hover-link-color: lighten($_hover-link-color, $light1);
 
 // Border color
-$base-border-color: lighten($base-font-color, $light2); //$light-gray;
+$base-border-color: lighten($base-font-color, $light2);
 $base-border: rem($unitless-line-height) solid $base-border-color;
 
 // Footer Colors
-$footer-background: $hover-link-color; //$darkish_gray_orange; //$bright_red;//rgb(245,10,70);//$base-font-color; //$base-accent-color;//rgb(30,184,85); //rgb(31,193,246); //
-$_footer-font-color: white;
+$footer-background: $hover-link-color;
+$_footer-font-color: $white;
    $footer-font-color: transparentize($_footer-font-color, .5);
-
-
-$action-color: $base-link-color;

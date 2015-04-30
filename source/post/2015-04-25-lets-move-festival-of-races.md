@@ -1,11 +1,11 @@
 ---
 title: Lets Move Festival of Races
 subtitle: 2015 Half Marathon
-tags:
-meta: running
-  description:
+tags: running
+meta:
+  description: Thoughts the 2015 @MacombFitness Half Marathon
   image:
-    url: /images/IMG_0736.jpg
+    url: /images/2015/IMG_0736.jpg
     title:
     link:
   source:
@@ -13,21 +13,25 @@ meta: running
     title:
 dispatch:
 truncatable: false
-date: 2015-04-25 23:10:12 -0400
+date: 2015-04-25 23:13:13 -0400
 ---
 Last year was the first year I ran this event. Mentally I felt down for most of the race, physically I felt a bit off; I ran my fast official half marathon it was also the last race I ran. This year, I was in a good place mentally but a tad unsure physically. When I signed up I wanted to better last years time, my goal time was 2:10.
 
 I felt the best way to accomplish this feat was to run smart, and have negative splits. The backside of the half mostly comprised segments from my daily running routes, surely that would give me 'mental' lift. I felt strong for the first 6 miles, with a nice pace;  then it happened. No I didn't hit the wall, the slight nagging pain in my left knee wanted some attention. The next 7 miles was less than ideal yet I managed to finish a tad over 2:20. Heading into the last week I kind of expected I would run a 2:20, goal accomplished?
 
-This year also marked the first rendition of the full marathon for this race. I do think that took away some of the overall organization found in last years race. For instance, day one of the expo seemed a bit disorganized, the first water station was out of water (the also ran out of GU at the GU stop), some mile markers seemed misplaced, and the event organizers still have yet to figure out a bull horn is not the best way to disseminate information at the start of a race. It's a hard job, and I'm sure adding a full marathon to the slate of events is a daunting task. We always notice the little, and sometimes big, things that go wrong; we often overlook hundreds of items that work and worked well.
+####Official Chip Time
 
 * [Let's Move Festival Half Marathon][lHalf] --- 2:20:12.3
-   * First Half --- 1:01:47.4
-   * Seocnd Half --- 1:09:16.7
+
+This year also marked the first rendition of the full marathon for this race. I do think that took away some of the overall organization found in last years race. For instance, day one of the expo seemed a bit disorganized, the first water station was out of water (the also ran out of GU at the GU stop), some mile markers seemed misplaced, and the event organizers still have yet to figure out a bull horn is not the best way to disseminate information at the start of a race. It's a hard job, and I'm sure adding a full marathon to the slate of events is a daunting task. We always notice the little, and sometimes big, things that go wrong; we often overlook hundreds of items that work and worked well.
+
+I'm just left with one question, when did they change the full marathon route? I know the route the participants ran seemed saner compared to the orginal plan.
+
+Oh, and the finish line pizza just seemed better this year, total win.
+
 
 [lHalf]: https://www.strava.com/activities/292298443
 
-Oh, and the finish line pizza just seemed better this year, total win.
 
 ##### Rant
 

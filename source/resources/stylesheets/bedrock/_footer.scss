@@ -1,10 +1,9 @@
 #footer {
-  background: $footer-background; //rgb(255,78,78);
+  background: $footer-background;
   width:100%;
   height: $base-footer-height;
-  font-size: 75%;
-  color: white;//$footer-font-color;
-  border-top: rem(.7px) solid $header-border-color;
+  font-size: ms(-3, $base-font-size, $minor-second);
+  color: $white;
   p { text-align: center; }
   a, a:hover { color:$footer-font-color; }
      .footer {

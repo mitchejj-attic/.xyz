@@ -18,7 +18,6 @@ meta:
                <--- inside a command
       ##       <--- optional command to run
 
-
 ***Note:*** In order to follow these instructions you will need a prior linux install someplace. Another possibility would be to follow the guide to [Manually Updating Arch Linux on NOOBS formatted disk for RPi2][rHOWTO] .
 
 

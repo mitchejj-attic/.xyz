@@ -1,60 +1,30 @@
-$code-background-color: transparentize($secondary-accent-color, .85);
 @mixin _code {
-	/* inline */
 	font-size: ms(-1, 1rem, $minor-second);
 	line-height: ms(-1, 1rem, $minor-second) * 1.5;
 	padding: $base-border-radius;
-	border-width: .1rem;
-	border-color: $tertiary-accent-color;
-	border-style: solid;
-	@include border-top-radius(5px);
 }
-
 
 pre {
 	/* blocks */
-//	box-shadow: 0px 0px 0px 1px $light_grayish_blue;
+	//box-shadow: 0px 0px 0px 1px $light_grayish_blue;
 	@include _code;
+	@include border-top-radius(.25rem);
 	font-family: $font-family-monospace_;
 	padding: unpack(.5rem 1.1rem);
-	//white-space: pre-wrap;
-	//word-break: break-all;
-	//word-wrap: break-word;
-	color: white;
+	color: $white;
 	background-color: $black;
 	overflow-x: auto;
 	word-break: normal !important;
 	word-wrap: normal !important;
 	white-space: pre !important;
 	code {
-		border:none;
+		//border:none;
 		font-family: inherit;
 		color: inherit;
-		background-color: inherit;
+		background-color: transparent;
 	}
 }
-
-/* Minimal scrollbars for code-samples on Webkit */
-pre::-webkit-scrollbar {
-  width: .4rem;
-  height: .4rem;
-}
-pre::-webkit-scrollbar-track-piece {
-  background-color: $tertiary-accent-color;
-  -webkit-border-radius: 0;
-  border-top: .2rem solid $secondary-accent-color;
-}
-pre::-webkit-scrollbar-thumb:vertical {
-  height: 0;
-  background-color: $base-accent-color;
-  -webkit-border-radius: 0;
-}
-pre::-webkit-scrollbar-thumb:horizontal {
-  width: $base-font-size;
-  background-color: $base-accent-color;
-  -webkit-border-radius: 0;
-}
-
+/* inline */
 code {
 	@include _code;
 	font-family: $font-family-monospace;
