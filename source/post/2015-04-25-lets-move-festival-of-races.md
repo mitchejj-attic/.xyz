@@ -5,7 +5,7 @@ tags: running
 meta:
   description: Thoughts the 2015 @MacombFitness Half Marathon
   image:
-    url: /images/2015/IMG_0736.jpg
+    url: https://frosting.surge.sh/2015/IMG_0736.jpg
     title:
     link:
   source:
