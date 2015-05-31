@@ -90,7 +90,7 @@ blockquote {
    color: lighten($base-font-color, $light1);
    font-size: 105%;
    @include media($medium-screen-up) {
-      font-size: $base-font-size * $unitless-line-height;
+      font-size: 105%;
    }
    small{
       display: block;
