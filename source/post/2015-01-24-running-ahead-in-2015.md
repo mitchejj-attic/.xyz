@@ -31,7 +31,7 @@ Last year I had many plans 2014, running wise. After the Dopey Challenge I didn'
    * 10M Split --- 1:52:07
    * Half Split --- 2:27:20
    * 20M Split --- 3:47:36
-* [Let's Move Festival Half Marathon][lHalf] --- 2:11:04.1
+* [Let's Move Festival Half Marathon][lHalf] --- [2:11:04.1][lOfficial]
    * First Half --- 1:01:47.4
    * Seocnd Half --- 1:09:16.7
 
@@ -43,6 +43,7 @@ It will be hard for 2015 to top 2014. I loved my Dopey Challenge experience, des
 [dHalf]: http://www.strava.com/activities/105512705
 [dFull]: http://www.strava.com/activities/105856288
 [lHalf]: http://www.strava.com/activities/134358556
+[lOfficial]: http://www.runmichigan.com/r_view.php?id=22714
 
 So now on to 2015 I plan on once again running the Let's Move Festival of Races half marathon. I also entered the [Grand Rapids Marathon][grm]. I would like to find one more race to complete sometime in the year. I'm thinking maybe the [Crim 10-miler][crim] or [The Brooksie Way][brooksie], however I think I will opt to do the [Run 2 Read][r2r] 10k. Finally, I also have one other date circled on my calendar... [April 28][april].
 

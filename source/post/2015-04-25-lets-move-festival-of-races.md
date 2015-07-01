@@ -21,7 +21,7 @@ I felt the best way to accomplish this feat was to run smart, and have negative 
 
 ####Official Chip Time
 
-* [Let's Move Festival Half Marathon][lHalf] --- 2:20:12.3
+* [Let's Move Festival Half Marathon][lHalf] --- [2:20:12.3][official]
 
 This year also marked the first rendition of the full marathon for this race. I do think that took away some of the overall organization found in last years race. For instance, day one of the expo seemed a bit disorganized, the first water station was out of water (the also ran out of GU at the GU stop), some mile markers seemed misplaced, and the event organizers still have yet to figure out a bull horn is not the best way to disseminate information at the start of a race. It's a hard job, and I'm sure adding a full marathon to the slate of events is a daunting task. We always notice the little, and sometimes big, things that go wrong; we often overlook hundreds of items that work and worked well.
 
@@ -31,6 +31,7 @@ Oh, and the finish line pizza just seemed better this year, total win.
 
 
 [lHalf]: https://www.strava.com/activities/292298443
+[official]: http://www.eastsideracingcompany.com/wp-content/uploads/2015/04/Lets-Move-Festival-of-Races-Half-Marathon.htm# 6
 
 
 ##### Rant
