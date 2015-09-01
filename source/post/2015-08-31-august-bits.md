@@ -21,7 +21,7 @@ date: 2015-08-31 20:12:40 -0400
 * [Nike promotes --- and undermines --- U.S. track][nike]
 * [When running for exercise was for weirdos][running] --- history of running
 * [React Static Site][react]
-* [Cron Wars][corn]
+* [Corn Wars][corn]
 * [The Lyubov Orlova][ship]
 
 
