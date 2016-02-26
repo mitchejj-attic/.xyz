@@ -38,7 +38,7 @@ We had a 530am town car for the airport. However, before leaving Sister and I wa
 Day Four
 Poly Cultural Center all day.
    New Zeeland
-   
+
 Day Five
 Quick AM run.
 Pearl Harbor & Missiori
@@ -55,3 +55,24 @@ Road to Hawa
    black sand beaches
    sea turtles
    (13,371)
+
+Day Eight
+Hilo -- Rainbow falls and valcano natioal
+   - lava will give you a great reason to buy new running shoes
+ Run to Cocconut Island via Banyan Dr
+
+ Day Nine
+ Kona & historic tour... most intersting was the painted church
+  Short run around kona, most of it felt uphill
+
+ Day 11
+ Bus tour to the grand canyon of the pacafic
+
+ Day 12
+ Short sunrise run before the ship left at 1:30 not much t do off board except the near by beach.
+
+ Day 13
+ Travel
+
+ Day 14
+ Finally arrive home

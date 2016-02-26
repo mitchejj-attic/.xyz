@@ -28,5 +28,5 @@ date: 2015-10-31 22:32:12 -0400
 [Redux]: http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html
 [marvel]: https://ryanlanciaux.github.io/blog/2014/05/26/trying-out-reactjs-with-the-marvel-api/
 [khan]:  https://github.com/Khan/style-guides/blob/master/style/react.md
-[noGulp]: https://medium.com/@tarkus/you-might-not-need-gulp-js-89a0220487dd#.f68myjs2p
+[noGulp]: https://medium.com/@tarkus/you-might-not-need-gulp-js-89a0220487dd
 [hi]: http://www.atlasobscura.com/articles/object-of-intrigue-banknotes-for-a-japanese-occupied-hawaii

@@ -11,7 +11,21 @@
       link:
 sitemap_priority: -1.0
   ---
-	http://haydenjames.io/raspberry-pi-2-overclock/
+https://wiki.archlinux.org/index.php/VPN_over_SSH
+http://www.tldp.org/HOWTO/NFS-HOWTO/security.html
+https://serverfault.com/questions/486188/securing-nfs-against-ssh-tunneling
+
+
+http://allanmcrae.com/2015/01/replacing-makepkg-asroot/
+http://aur.sh/
+
+http://0pointer.net/blog/
+http://www.linuxfromscratch.org/lfs/view/systemd/chapter06/systemd.html
+http://0pointer.de/blog/projects/detect-virt.html
+
+http://www.ihackforfun.eu/index.php?title=improve-security-by-removing-services&more=1&c=1&tb=1&pb=1
+
+	https://raymii.org/s/tutorials/IPSEC_L2TP_vpn_on_a_Raspberry_Pi_with_Arch_Linux.html
 
 https://github.com/Nefelim4ag/systemd-swap
 

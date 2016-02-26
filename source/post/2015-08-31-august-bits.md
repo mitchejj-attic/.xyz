@@ -25,7 +25,7 @@ date: 2015-08-31 20:12:40 -0400
 * [The Lyubov Orlova][ship]
 
 
-[hyperion]: http://www.disneyanimation.com/technology/innovations/hyperion]
+[hyperion]: http://www.disneyanimation.com/technology/innovations/hyperion
 [gorilla]: http://www.runnersworld.com/races-places/gorilla-spooks-runners-during-trail-race "The runners’ reactions made for priceless race photos."
 [react]: http://braddenver.com/blog/2015/react-static-site.html
 [nike]: http://www.ocregister.com/articles/nike-676683-athletes-track.html

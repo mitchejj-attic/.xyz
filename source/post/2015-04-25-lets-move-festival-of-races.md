@@ -31,7 +31,7 @@ Oh, and the finish line pizza just seemed better this year, total win.
 
 
 [lHalf]: https://www.strava.com/activities/292298443
-[official]: http://www.eastsideracingcompany.com/wp-content/uploads/2015/04/Lets-Move-Festival-of-Races-Half-Marathon.htm# 6
+[official]: http://www.eastsideracingcompany.com/wp-content/uploads/2015/04/Lets-Move-Festival-of-Races-Half-Marathon.htm#
 
 
 ##### Rant
