@@ -1,0 +1,14 @@
+<h2>
+  {{#if dispatch}}
+    <a href="{{ dispatch }}">{{ title }}</a>
+   {{else}}
+    {{#if renderSelf}}
+      {{ title }}
+    {{else}}
+      <a href="{{ path.href }}">{{ title }}</a>
+    {{/if}}
+  {{/if}}
+  {{#if subtitle}}
+    <span class="mute"> {{ subtitle }}</span>
+  {{/if}}
+</h2>

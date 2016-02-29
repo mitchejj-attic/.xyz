@@ -1,0 +1,8 @@
+var logFilesMap = function(files, metalsmith, done) {
+    Object.keys(files).forEach(function (file) {
+        var fileObject = files[file];
+
+        console.log("key -------> ", file);
+        console.log("value -----> ", fileObject);
+    });
+};
