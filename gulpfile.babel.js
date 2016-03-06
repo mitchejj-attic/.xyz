@@ -6,6 +6,7 @@ import autoprefixer from 'autoprefixer'
 import mqpacker from 'css-mqpacker'
 import csswring from 'csswring'
 import cssnext from 'postcss-cssnext'
+import atImport from 'postcss-import'
 import uncss from 'gulp-uncss'
 
 //https://www.npmjs.com/package/run-sequence
@@ -22,9 +23,14 @@ import { exec } from 'child_process'
 
 const vars = {
   css: {
-    source: './css/**/*.css',
-    dest: './css_dest/',
-    uncss: './css_dest/un.css'
+    sourceFiles: './css/**/*.css',
+    source: './css/nullog.css',
+    dest: './build/_css/',
+    uncss: './build/css_dest/un.css'
+  },
+  metalsmith: {
+      source: '',
+      dest: 'build/_site/'
   },
   watch_mode: {
     interval: 1000,
@@ -34,10 +40,12 @@ const vars = {
 
 //https://hellojason.net/blog/remove-unused-css-from-middleman-before-deploying/
 gulp.task('build-css', () => {
-  const processors = [
-    cssnext,
-    autoprefixer({browsers: ['last 1 version']}),
-    mqpacker,
+    const processors = [
+        atImport,
+        cssnext,
+        autoprefixer({browsers: ['last 1 version']}),
+        mqpacker,
+    
 //    csswring
   ]
   return gulp.src(vars.css.source)
@@ -59,7 +67,7 @@ gulp.task('clean-css', () => {
 })
 
 gulp.task('watch-css', () => {
-  let watcher = gulp.watch([vars.css.source], vars.watch_mode, ['build-css'])
+  let watcher = gulp.watch([vars.css.sourceFiles], vars.watch_mode, ['build-css'])
   watcher.on('change', function (event) {
    console.log(event.type + ' at ' + event.path); // added, changed, or deleted The path of the modified file
  })
@@ -87,13 +95,22 @@ gulp.task('build-metalsmith', (cb) => {
 
 //https://github.com/shama/gaze
 gulp.task('watch-metalsmith', () => {
-  let watcher = gulp.watch(['layouts/**/*.hbs', 'src/**/*.md', 'src/**/*.html', '**/*.js'], {interval: 1000, mode: 'auto'}, ['build-metalsmith'])
+  let watcher = gulp.watch(['layouts/**/*.hbs', 'src/**/*.md', 'src/**/*.markdown', 'src/**/*.html', '**/*.js'], {interval: 1000, mode: 'auto'}, ['build-metalsmith'])
   watcher.on('change', function (event) {
    console.log(event.type + ' at ' + event.path); // added, changed, or deleted The path of the modified file
  })
 })
 
-
+gulp.task('dist', () => {
+    gulp.src(vars.css.dest + '*.css')
+    .pipe(uncss({
+        html: [vars.metalsmith.dest + '/**/*.html']
+    }))
+//    .pipe(uncss({[
+//        html: [vars.metalsmith.dest + '/**/*.html']
+//    ]}))
+    .pipe(gulp.dest(vars.metalsmith.dest + 'css'))
+})
 
 gulp.task('build', ['build-metalsmith', 'build-css']);
 gulp.task('watch', ['watch-metalsmith', 'watch-css']);
