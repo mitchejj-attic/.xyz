@@ -12,6 +12,7 @@
 tmp/
 tmp/*
 **/tmp
+node_modules/**
 
 # Ignore cache
 /.sass-cache
