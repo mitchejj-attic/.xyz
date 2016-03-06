@@ -11,7 +11,7 @@ const metadex = {
     v8: process.versions.v8,
     arch: process.arch,
     platform: process.platform,
-    date: Date()
+    date: new Date().toJSON()
   },
   author: {
     name: 'Jason Mitchell',
