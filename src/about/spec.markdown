@@ -11,13 +11,14 @@ meta:
     link:
 ---
 * Host: [Surge CDN][cdn]
-* Generator: [Middleman][middleman]
-* [Ruby][ruby]: <%= RUBY_VERSION %>
-   * Platform: <%= RUBY_PLATFORM %>
-   * Release Date: <%= RUBY_RELEASE_DATE %>
+* Generator: [Metalsmith][ms]
+* [Node][node]: 
+   * Platform: 
+   * Release Date: 
 * Version Control: [GitLab][gl]
 * [CSS Stats][cssStats]
-* Generated: <%= Time.now %>
+* [TestMyCSS][cssTest]
+* Generated: {{ env.date }}
 
 Generally speaking the frontmatter has two version
 
@@ -61,3 +62,4 @@ Pages:
 [middleman]: http://middlemanapp.com/
 [gl]: https://gitlab.com/
 [cssStats]: http://cssstats.com/stats?url=http://www.nullog.net
+[cssTest]: http://www.testmycss.com/analyze?url=http%3A%2F%2Fnullog.net%2Fresources%2Fstylesheets%2Fnullog.css

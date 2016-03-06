@@ -11,6 +11,8 @@ import permalinks from 'metalsmith-permalinks'
 import collections from 'metalsmith-collections'
 import inplace from 'metalsmith-in-place'
 import layouts from 'metalsmith-layouts'
+import rename from 'metalsmith-rename'
+import sitemap from 'metalsmith-mapsite'
 // import default_values from 'metalsmith-default-values'
 // import pagination from 'metalsmith-pagination'
 
@@ -40,6 +42,14 @@ Metalsmith(__dirname)
   .use(forge())
   .use(collections(config.collections))
 //    .use(function (f,m,d) { console.log(m.metadata().collections); d() }) // DEBUG=metalsmith-collections babel-node index.js
+  .use(inplace({
+      engine: 'handlebars',
+      pattern: '**/*.txt.hbs',
+      rename: false,
+  }))
+  .use(rename([
+      [/\.txt.hbs$/, ".text"]
+  ]))
   .use(inplace(config.inplace))
   .use(markdown({smartypants: true}))
   .use(permalinks(config.blog.permalinks))
@@ -49,7 +59,7 @@ Metalsmith(__dirname)
 //      collections.blog
 //    }
 //  ))
-  .use(layouts(config.layouts))
+.use(layouts(config.layouts))
 //  .use(serve(config.server))
 //.use(browserSync({
 //  server: config.destination,
@@ -57,6 +67,10 @@ Metalsmith(__dirname)
 //  logLevel: "debug",
 //  files  : ['src/**/*.md', 'layouts/**/*.hbs']
 //}))
+.use(sitemap({
+    hostname: metadex.site.uri,
+    omitIndex: true,
+    }))
   .build(function(err)
    {
     if (err) throw err;
