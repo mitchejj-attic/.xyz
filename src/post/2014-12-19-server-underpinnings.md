@@ -7,7 +7,7 @@ meta:
   image:
     url:
     caption:
-    link: 
+    link:
   source:
     url:
     title:

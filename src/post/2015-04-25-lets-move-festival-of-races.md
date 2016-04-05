@@ -19,7 +19,7 @@ Last year was the first year I ran this event. Mentally I felt down for most of 
 
 I felt the best way to accomplish this feat was to run smart, and have negative splits. The backside of the half mostly comprised segments from my daily running routes, surely that would give me 'mental' lift. I felt strong for the first 6 miles, with a nice pace;  then it happened. No I didn't hit the wall, the slight nagging pain in my left knee wanted some attention. The next 7 miles was less than ideal yet I managed to finish a tad over 2:20. Heading into the last week I kind of expected I would run a 2:20, goal accomplished?
 
-####Official Chip Time
+#### Official Chip Time
 
 * [Let's Move Festival Half Marathon][lHalf] --- [2:20:12.3][official]
 

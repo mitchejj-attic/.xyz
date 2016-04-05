@@ -26,5 +26,5 @@ I'm also going to try using [CloudFlare][cloudFlare] to stand between the user a
 
 [oldMethod]: http://jonasforsberg.se/2012/07/22/jekyll-heroku-unicorn "Jekyll + Heroku + Unicorn = Blazing fast blogging"
 [newMethod]: http://jbhannah.net/blog/2013/01/16/jekyll-on-heroku-without-rack-jekyll-or-custom-buildpacks.html "Jekyll on Heroku without Rack::Jekyll or custom buildpacks"
-[mention]: {% post_url 2012-09-04-giving-back %}
+[mention]: /2012/09/04/giving-back
 [cloudFlare]: https://www.cloudflare.com

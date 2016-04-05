@@ -18,7 +18,7 @@ date: 2015-01-24 12:56:14 -0500
 
 Last year I had many plans 2014, running wise. After the Dopey Challenge I didn't do much and only finished one other event. For that event, [Let's Move Festival of Races][lets], I didn't do any training. I also entered [Kona Running Company's][krc] [Kona Run][kr], a massive fail. A few days earlier I had eye lid surgery, I miss-calculated the drive time and missed the start of the race partly due to to the eye lid surgery. Then towards the end of the year I tried complete the monthly strava Half-marathon challenge --- to have at least one 13.1 or greater run. Once the weather turned cold the days grew shorter I found it difficult to find time run let alone squeeze in 13.1 mile run.
 
-####Official Chip Times (with strava links)
+#### Official Chip Times (with strava links)
 
 * [Dopey Challenge 5k][d5k] --- 30:28
 * [Dopey Challenge 10k][d10k] --- 1:04:45

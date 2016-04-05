@@ -2,7 +2,6 @@
 title: Create a Post or Page
 subtitle:
 tags: jekyll
-tags:
 meta:
   description:
   image:
@@ -18,12 +17,12 @@ date:
 ---
 Why is it I can never remember:
 
-~~~ shell
+``` shell
 rake post title="Hello World"
-~~~
+```
 
 or
 
-~~~ shell
+``` shell
 rake page name="about.md"
-~~~
+```

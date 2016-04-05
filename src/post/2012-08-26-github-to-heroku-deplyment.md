@@ -2,7 +2,6 @@
 title: github to heroku deplyment
 subtitle:
 tags: heroku, github, meta
-tags:
 meta:
   description:
   image:
