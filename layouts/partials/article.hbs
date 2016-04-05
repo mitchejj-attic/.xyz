@@ -1,11 +1,7 @@
 <article class="post {{#each tags as |tag|}}{{ tag }}{{/each}}">
-  <header class="post-title">
-    {{> article/header renderSelf=renderSelf}}
-  </header>
-  <div class="post-body">
-    {{# if meta.image.url }}
-    {{> article/image }}
-    {{/ if }}
-    {{{ contents}}}
-  </div>
+<header class="title">
+  {{> article/header renderSelf=renderSelf}}
+</header>
+{{~# if meta.image.url ~}}{{> article/image }}{{~/ if ~}}
+{{{ contents }}}
 </article>
