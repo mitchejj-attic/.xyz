@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page.hbs
 title: Suggestions
 subtitle: running
 tags:

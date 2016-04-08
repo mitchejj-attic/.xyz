@@ -1,5 +1,5 @@
 ---
-layout: index.hbs
+layout: all.hbs
 sitemap_priority: 1.0
 pageable: true
 per_page: 4

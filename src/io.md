@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page.hbs
 title: io
 subtitle: a scratch pad of ideas
 tags:

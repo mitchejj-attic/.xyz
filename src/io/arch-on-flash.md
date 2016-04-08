@@ -113,7 +113,8 @@ Boot the drive to ensure your able to boot the system & enable a few services, I
 
 Just a few layout notes for my other systems
 
-Use GPT
+### Use GPT
+
 Have a 1MB buffer between partitions (including the first entry and last)
 
 - **/dev/sda1/**

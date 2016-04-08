@@ -40,7 +40,7 @@ I should look into doing this using `localectl`
 	# locale-gen
 	# echo LANG=en_US.UTF-8 > /etc/locale.conf
 	# export LANG=en_US.UTF-8
-   # hostnamectl set-hostname arch-pi
+	# hostnamectl set-hostname arch-pi
 
 ### Date & Time
 The Raspberry Pi doesn't have a hardware clock. In order to have a good historical record it is vital the system to have the correct time. Using [pool.ntp.org][ntp], pick the logical servers, to populate `/etc/systemd/timesyncd.conf`.

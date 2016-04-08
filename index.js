@@ -28,6 +28,7 @@ import metadex from './var/site-meta-index'
 
 
 Metalsmith(__dirname)
+.concurrency(1000)
 .metadata(metadex)
 .frontmatter(false)  //
 .destination(config.destination)
@@ -42,18 +43,18 @@ Metalsmith(__dirname)
   .use(forge())
   .use(collections(config.collections))
 //    .use(function (f,m,d) { console.log(m.metadata().collections); d() }) // DEBUG=metalsmith-collections babel-node index.js
-  .use(inplace({
-      engine: 'handlebars',
-      pattern: '**/*.txt.hbs',
-      rename: false,
-  }))
-  .use(rename([
-      [/\.txt.hbs$/, ".text"]
-  ]))
+ // .use(inplace({
+ //     engine: 'handlebars',
+ //     pattern: '*.txt.hbs',
+ //     rename: false,
+ // }))
+ // .use(rename([
+ //     [/\.txt.hbs$/, ".text"]
+ // ]))
   .use(inplace(config.inplace))
   .use(markdown({smartypants: true}))
-  .use(permalinks(config.blog.permalinks))
-  .use(paths())
+  .use(permalinks(config.blog))
+  .use(paths({directoryIndex: 'index.html'}))
 //  .use(pagination(
 //    {
 //      collections.blog
