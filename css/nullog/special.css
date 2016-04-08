@@ -1,0 +1,70 @@
+.lowercase {
+  text-transform: lowercase;
+}
+
+.center {
+  text-align: center;
+}
+
+.mute {
+  color: gray(200);
+}
+
+.small {
+  font-size: 80%;
+  vertical-align: middle;
+}
+
+p + ul {
+  & ul > li { list-style-type: circle;}
+  & p {margin: 0}
+}
+ ol li > ul li {
+   list-style-type: circle;
+ }
+.img-circle {
+  float: left;
+  display: inline;
+  margin: 0 1.2rem 1.2rem 0;
+  border-radius: calc(1rem * calc( var(--rhythm-ratio) * var(--nasa-pi) ))  ;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+cite {
+  color: gray(30);
+  font-style: italic;
+}
+
+cite :before {
+  content: '\2014 \00A0';
+}
+
+blockquote {
+  border-left: thick solid gray(120);
+  padding-left: 2rem;
+  background-color: gray(240);
+  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  color: gray(60);
+  font-size: 105%;
+
+}
+li > blockquote { backgroud: red;}
+blockquote small{
+   display: block;
+}
+
+.footnotes {
+  font-size: 75%;
+  border: thin solid gray(120);
+  background-color: gray(240);
+  margin-bottom: var(--rhythm-rem);
+}
+.footnotes :any-link {
+  color: black;
+  font-weight: 400;
+}
+.footnotes p { padding:0; margin: 0;}

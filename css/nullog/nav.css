@@ -1,0 +1,34 @@
+nav {
+  text-align: center;
+  font-weight: 200;
+  color: gray(28);
+  padding: 0rem;
+  padding: var(--rhythm-rem);
+}
+
+nav :any-link {
+  color: inherit;
+}
+
+.nav-node {
+  display: inline;
+  line-height: calc(var(--rhythm-squared) * var(--rhythm-squared));
+  padding-left: var(--nav-margin);
+  padding-right: var(--nav-margin);
+  border-left: medium solid gray(88);
+  border-right: medium solid gray(88);
+  border-radius: var(--nav-margin);
+}
+
+.site-nav {
+  color: white;
+  background-color: gray(28);
+  width: 100%;
+  padding: 0rem;
+  margin-bottom: var(--nav-margin);
+}
+
+:root{
+  --bottom-margin-base: var(--rhythm-squared);
+  --nav-margin: calc(1rem * var(--bottom-margin-base));
+}

@@ -1,0 +1,16 @@
+ul {
+  margin: inherit;
+  padding: inherit;
+  padding-left: calc(1rem * calc(var(--rhythm-ratio) * var(--rhythm-ratio)));
+  list-style-position: inside;
+  list-style-type: none;
+  line-height: calc(var(--rhythm-ratio) * var(--rhythm-ratio));
+}
+
+li {
+  text-indent: -.25rem;
+}
+
+li > ul, ul > ul {
+  margin:0rem;
+}
