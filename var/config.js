@@ -28,7 +28,8 @@ const config = {
   blog: {
     source: blog_source,
     // permalinks: ':collection/:year/:month/:day/:slug'
-    permalinks: ':year/:month/:day/:slug'
+    permalinks: ':year/:month/:day/:slug',
+    relative: false
   },
   collections: {
     blog: {
