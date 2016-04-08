@@ -1,0 +1,15 @@
+// Place your settings in this file to overwrite the default settings
+{
+	"editor.fontFamily": "Inconsolata, Monaco, Consolas, 'Courier New', Courier",
+	"editor.fontSize": 16,
+	"editor.tabSize": 2,
+	"editor.insertSpaces": false,
+	"editor.formatOnType": false,
+	"editor.selectionHighlight": false,
+	"editor.quickSuggestionsDelay": 1000,
+	"editor.quickSuggestions": false,
+	"files.exclude": {
+		"**/node_modules": true,
+		"**/.gitignore": true
+	}
+}
