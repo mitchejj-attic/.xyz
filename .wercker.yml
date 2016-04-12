@@ -1,0 +1,35 @@
+box: node
+dev:
+   steps:
+     - internal/shell:
+       cmd: /bin/bash
+build:
+   steps:
+      - npm-install
+      - script:
+        name: build metalsmith
+        code: $(npm bin)/gulp build-metalsmith
+      - script:
+        name: build dist
+        code: $(npm bin)/gulp dist
+deploy:
+  nullog.net:
+    steps:
+      - script:
+        name: install git
+        code: |
+          apt-get update
+          apt-get -y install git
+      # Add SSH-Key to
+      - leipert/add-ssh-key-gh-bb:
+        keyname: DEPLOY_SSH
+      # Add bitbucket to known hosts, so they won't ask us whether we trust bitbucket
+      - add-to-known_hosts:
+        hostname: bitbucket.org
+        fingerprint: 97:8c:1b:f2:6f:14:6b:5c:3b:ec:aa:46:46:74:7c:40
+      - leipert/git-push:
+         host: bitbucket.org
+         repo: mitchejj/nullog.net
+         branch: master
+         basedir: public
+         clean_removed_files: true
