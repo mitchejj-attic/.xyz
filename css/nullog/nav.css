@@ -11,18 +11,28 @@ nav :any-link {
 }
 
 .nav-node {
-  display: inline;
+  display: inline-block;
   line-height: calc(var(--rhythm-squared) * var(--rhythm-squared));
+}
+
+.nav-node > h2 > a {
   padding-left: var(--nav-margin);
   padding-right: var(--nav-margin);
-  border-left: medium solid gray(88);
-  border-right: medium solid gray(88);
+  border-left: medium solid transparent;
+  border-right: medium solid transparent;
   border-radius: var(--nav-margin);
+  margin-left: calc(var(--nav-margin)/var(--nasa-pi));
+  margin-right: calc(var(--nav-margin)/var(--nasa-pi));
+}
+
+.nav-node > h2 > a:hover {
+  background-color: gray(185);
 }
 
 .site-nav {
-  color: white;
-  background-color: gray(28);
+  color: gray(17);
+  background-color: gray(238);
+/*  border-top: .01rem solid gray(28); */
   width: 100%;
   padding: 0rem;
   margin-bottom: var(--nav-margin);

@@ -1,10 +1,13 @@
 ul {
   margin: inherit;
   padding: inherit;
-  padding-left: calc(1rem * calc(var(--rhythm-ratio) * var(--rhythm-ratio)));
+  padding-left: .25rem;
   list-style-position: inside;
   list-style-type: none;
   line-height: calc(var(--rhythm-ratio) * var(--rhythm-ratio));
+  @media(--viewport-non-mobile) {
+    padding-left: calc(1rem * calc(var(--rhythm-ratio) * var(--rhythm-ratio)));
+  }
 }
 
 li {
