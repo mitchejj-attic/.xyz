@@ -115,9 +115,11 @@ gulp.task('clean-css', ['sanitize-html', 'build-css'], () => {
     .pipe(gulp.dest(vars.css.dest))
 })
 
+// Probally should use npm run <something> opposed to the $(npm bin)
+// next `version`?
 gulp.task('build-metalsmith', (cb) => {
   console.log('building')
-  exec('babel-node index.js', function (err, stdout, stderr) {
+  exec('$(npm bin)/babel-node index.js', function (err, stdout, stderr) {
     if (stdout) {
       console.log(stdout)
     }
