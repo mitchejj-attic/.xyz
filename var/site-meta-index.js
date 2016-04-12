@@ -4,7 +4,7 @@ const metadex = {
     description: 'guesstimating abnormality',
     host: 'nullog.net',
     uri: 'http://nullog.net/',
-    twitter: '@_nullog',
+    twitter: '@_nullog'
   },
   env: {
     node: process.versions.node,
@@ -29,7 +29,6 @@ const metadex = {
     source: 'http://www.script-o-rama.com/movie_scripts/a2/ratatouille-script-transcript.html',
     old: 'Oh, hi there.',
     theYear: new Date().getFullYear()
-
   }
 }
 export default metadex

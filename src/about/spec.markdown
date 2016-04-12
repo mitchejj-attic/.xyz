@@ -12,9 +12,9 @@ meta:
 ---
 * Host: [Surge CDN][cdn]
 * Generator: [Metalsmith][ms]
-* [Node][node]: 
-   * Platform: 
-   * Release Date: 
+* [Node][node]:
+   * Version: {{ env.node }}
+   * Release Date: {{ env.arch }}
 * Version Control: [GitLab][gl]
 * [CSS Stats][cssStats]
 * [TestMyCSS][cssTest]
@@ -58,6 +58,8 @@ Pages:
 
 [cdn]: http://surge.sh/
 [ruby]: http://ruby-lang.org/
+[ms]: http://www.metalsmith.io
+[node]: http://nodejs.org/
 [heroku]: https://www.heroku.com/
 [middleman]: http://middlemanapp.com/
 [gl]: https://gitlab.com/
