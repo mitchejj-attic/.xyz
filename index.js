@@ -39,18 +39,17 @@ Metalsmith(__dirname)
     .use(taggy())
     .use(ider())
   )
-
   .use(forge())
   .use(collections(config.collections))
 //    .use(function (f,m,d) { console.log(m.metadata().collections); d() }) // DEBUG=metalsmith-collections babel-node index.js
- // .use(inplace({
- //     engine: 'handlebars',
- //     pattern: '*.txt.hbs',
- //     rename: false,
- // }))
- // .use(rename([
- //     [/\.txt.hbs$/, ".text"]
- // ]))
+  .use(inplace({
+    engine: 'handlebars',
+    pattern: '*.txt.hbs',
+    rename: false
+  }))
+  .use(rename([
+    [/\.txt.hbs$/, ".text"]
+  ]))
   .use(inplace(config.inplace))
   .use(markdown({smartypants: true}))
   .use(permalinks(config.blog))
