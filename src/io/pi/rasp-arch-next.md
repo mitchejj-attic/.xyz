@@ -15,7 +15,6 @@ This, getting start guide was actually created before my [Arch Linux ARM Raspber
 
 The same conventions used in the [install guide][install] will be used here. I expected the Pi setup to all take place via SSH, therefore that decision will influence the order of operations.
 
-[baseARM]: http://archlinuxarm.org/ 'Linux ARM'
 [install]: /io/pi/rasp-arch-install/
 
 ### Finding the Pi

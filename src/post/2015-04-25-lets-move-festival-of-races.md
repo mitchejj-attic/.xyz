@@ -34,7 +34,7 @@ Oh, and the finish line pizza just seemed better this year, total win.
 [official]: http://www.eastsideracingcompany.com/wp-content/uploads/2015/04/Lets-Move-Festival-of-Races-Half-Marathon.htm#
 
 
-##### Rant
+#### Rant
 
 The biggest failure by goes to the State; we need a dramatic shift in road maintenance and repair. It is hard to imagine anything failing more than our roads, yet on May 5th Prop 1 will undoubtedly fail. With its failure and no other viable solutions on the horizon we must endure more more paved roads turn into a mound of gravel.
 

@@ -10,16 +10,18 @@ meta:
     caption:
     link:
 ---
-* Host: [Surge CDN][cdn]
+* Host: [Netlify][cdn]
 * Generator: [Metalsmith][ms]
 * [Node][node]:
-   * Version: {{ env.node }}
-   * Release Date: {{ env.arch }}
-* Version Control: [GitLab][gl]
+  * Version: {{ env.node }}
+  * v8: {{ env.v8 }}
+  * Arch: {{ env.arch }}-{{ env.platform }}
+* Version Control: [GitHub][git]
 * [CSS Stats][cssStats]
 * [TestMyCSS][cssTest]
 * Generated: {{ env.date }}
 
+Form
 Generally speaking the frontmatter has two version
 
 Postings:
@@ -56,12 +58,25 @@ Pages:
           link:
       ---
 
-[cdn]: http://surge.sh/
+Grave Yard:
+* Past Host:
+  * Git Hub Pages
+  * heroku
+  * Surge CDN
+* Past Generator
+  * Jekyll -- ruby
+  * Middleman -- ruby
+* Past Version Control:
+  * github
+  * gitlab
+
+
+[cdn]: https://www.netlify.com
 [ruby]: http://ruby-lang.org/
 [ms]: http://www.metalsmith.io
 [node]: http://nodejs.org/
 [heroku]: https://www.heroku.com/
 [middleman]: http://middlemanapp.com/
 [gl]: https://gitlab.com/
-[cssStats]: http://cssstats.com/stats?url=http://www.nullog.net
-[cssTest]: http://www.testmycss.com/analyze?url=http%3A%2F%2Fnullog.net%2Fresources%2Fstylesheets%2Fnullog.css
+[cssStats]: http://cssstats.com/stats?url=https://nullog.net
+[cssTest]: http://www.testmycss.com/analyze?url=https%3A%2F%2Fnullog.net%2Fresources%2Fstylesheets%2Fnullog.css
