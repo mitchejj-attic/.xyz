@@ -46,7 +46,7 @@ Metalsmith(__dirname)
     rename: false
   }))
   .use(rename([
-    [/\.txt.hbs$/, ".text"]
+    [/\.txt.hbs$/, ".txt"]
   ]))
   .use(inplace(config.inplace))
   .use(markdown({smartypants: true}))
