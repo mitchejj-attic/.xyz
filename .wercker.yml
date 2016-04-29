@@ -49,7 +49,7 @@ deploy:
         keyname: DEPLOY_SSH
     - leipert/git-push:
         host: github.com
-        repo: mitchejj/nullog-test
-        branch: dist
+        repo: mitchejj/nullog
+        branch: nullog.net
         basedir: build/public
         clean_removed_files: true
