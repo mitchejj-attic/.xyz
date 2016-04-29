@@ -1,7 +1,7 @@
 ---
 title: January Bits
 subtitle: 2016
-tags:
+tags: bits
 meta:
   description:
   image:
