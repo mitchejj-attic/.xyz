@@ -14,14 +14,14 @@ article:last-child {
 	margin-bottom: var(--bottom-margin)
 }
 article :any-link {
-	color: gray(128);
+	color: gray(64);
 }
 
-.title :any-link {
-	font-weight: 400;
+.title :any-link, .title {
+	font-weight: 500;
 }
 .title a:hover {
-	color: gray(28);
+	color: gray(128);
 }
 
 :root{

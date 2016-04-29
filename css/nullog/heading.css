@@ -22,4 +22,10 @@ h6, .h6 {
   font-size: var(--h6-font-size);
 }
 :root {
+  --h1-font-size: calc(var(--fontSize) * calc(var(--rhythm-ratio)) * 2);
+  --h2-font-size: calc(var(--fontSize) * calc(var(--rhythm-ratio)) * 1.25);
+  --h3-font-size: calc(var(--fontSize) * calc(var(--rhythm-ratio)) * 1.125);
+  --h4-font-size: calc(var(--fontSize) * calc(var(--rhythm-ratio)) * 1);
+  --h5-font-size: calc(var(--fontSize) * calc(var(--rhythm-ratio)) * .875);
+  --h6-font-size: calc(var(--fontSize) * calc(var(--rhythm-ratio)) * .625);
 }

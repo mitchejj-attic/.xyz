@@ -3,7 +3,7 @@ const metadex = {
     title: 'nullog',
     description: 'guesstimating abnormality',
     host: 'nullog.net',
-    uri: 'http://nullog.net/',
+    uri: 'https://nullog.net/',
     twitter: '@_nullog'
   },
   env: {

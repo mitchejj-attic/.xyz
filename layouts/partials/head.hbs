@@ -5,7 +5,11 @@
   {{> head/meta/twitter/meta-header }}
  <meta property="article:author" content="{{ site.title }}" />
  <meta name="twitter:creator" content="{{ site.twitter }}" />
- <link rel="author" href="http://{{ site.uri }}/humans.txt" type="text/plain" />
- <title>{{title}} | {{ site.title }}</title>
+ <link rel="author" href="///{{ site.host }}/humans.txt" type="text/plain" />
+ {{~#if title~}}
+  <title>{{title}} | {{ site.title }}</title>
+{{~else~}}
+  <title>{{ site.title }}</title>
+{{~/if~}}
  <link rel="canonical" href="{{ path.href }}" />
  <link rel="stylesheet" href="/nullog.css">

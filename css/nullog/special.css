@@ -52,8 +52,9 @@ blockquote {
   font-size: 105%;
 
 }
-li > blockquote { backgroud: red;}
-blockquote small{
+li > blockquote {}
+
+blockquote small {
    display: block;
 }
 

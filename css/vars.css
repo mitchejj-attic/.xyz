@@ -8,7 +8,7 @@
 
     --fontSize: 1.2rem;
 
-    
+
     --gray1: gray(28);
     --gray2: gray(66);
     --gray3: gray(38);
@@ -22,29 +22,29 @@ rgb(0,148,115) --- Emerald
 
 rgb(250, 224, 60) -- butter cup
 rgb(177, 143, 106) -- iced coffee */
-    
-    
+
+
     --mainColor: gray(51);
     --color-black: gray(51);
     --color-gray: var(--gray4);
     --highlightColor: hwb(190, 35%, 20%);
     --monospace: Inconsolata, Consolas, Monaco, "Liberation Mono", Courier, monospace;
-    
 
-    
+
+
     --rhythm-ratio: 1.20;
     --rhythm-rem: calc(1rem *  var(--rhythm-ratio));
     --rhythm-squared: calc(var(--rhythm-ratio) * var(--rhythm-ratio));
     --nasa-pi: 3.141592653589793;
-    
+
     --h1-font-size: calc(var(--fontSize) * calc(var(--rhythm-ratio)) * 2);
     --h2-font-size: calc(var(--fontSize) * calc(var(--rhythm-ratio)) * 1.5);
     --h3-font-size: calc(var(--fontSize) * calc(var(--rhythm-ratio)) * 1.25);
     --h4-font-size: calc(var(--fontSize) * calc(var(--rhythm-ratio)) * 1);
     --h5-font-size: calc(var(--fontSize) * calc(var(--rhythm-ratio)) * .75);
     --h6-font-size: calc(var(--fontSize) * calc(var(--rhythm-ratio)) * .625);
-    
-    
+
+
 }
 /* custom selectors */
 @custom-selector :--heading h1, h2, h3, h4, h5, h6;

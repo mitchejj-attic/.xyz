@@ -46,6 +46,7 @@
     "metalsmith-pagination": "^1.4.0",
     "metalsmith-paths": "^2.1.1",
     "metalsmith-permalinks": "github:segmentio/metalsmith-permalinks",
+    "metalsmith-remark": "^3.0.0",
     "metalsmith-rename": "^1.0.0",
     "postcss": "^5.0.19",
     "postcss-cssnext": "^2.5.2",

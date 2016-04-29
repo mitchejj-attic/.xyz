@@ -26,13 +26,11 @@ import ider from './lib/scripts/metalsmith/ider'
 import config from './var/config'
 import metadex from './var/site-meta-index'
 
-
 Metalsmith(__dirname)
 .concurrency(1000)
 .metadata(metadex)
-.frontmatter(false)  //
+.frontmatter(false)
 .destination(config.destination)
-//  .use(watch())
 .use(frontmatter())
 .use(branch(config.blog.source)
     .use(metadate())
@@ -60,22 +58,11 @@ Metalsmith(__dirname)
 //    }
 //  ))
 .use(layouts(config.layouts))
-//  .use(serve(config.server))
-//.use(browserSync({
-//  server: config.destination,
-//  open: false,
-//  logLevel: "debug",
-//  files  : ['src/**/*.md', 'layouts/**/*.hbs']
-//}))
 .use(sitemap({
-    hostname: metadex.site.uri,
-    omitIndex: true,
-    }))
-  .build(function(err)
-   {
-    if (err) throw err;
-  })
+  hostname: metadex.site.uri,
+  omitIndex: true
+}))
+.build(function (err) {
+  if (err) throw err
+})
 
-  function echo () {
-    console.log('echo')
-}
