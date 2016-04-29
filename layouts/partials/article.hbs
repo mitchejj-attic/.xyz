@@ -1,0 +1,7 @@
+<article class="post {{#each tags as |tag|}}{{ tag }}{{/each}}">
+<header class="title">
+  {{> article/header renderSelf=renderSelf}}
+</header>
+{{~# if meta.image.url ~}}{{> article/image }}{{~/ if ~}}
+{{{ contents }}}
+</article>

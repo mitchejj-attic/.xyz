@@ -1,0 +1,9 @@
+footer {
+  background-color: var(--gray6);
+  color: rgb(217,217,217);
+  height:100%;
+  padding:.125rem;
+}
+footer p {
+  margin: 0
+}

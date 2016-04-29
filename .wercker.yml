@@ -1,0 +1,55 @@
+# this should get me the latest node
+box: node
+dev:
+  steps:
+    - internal/shell:
+      cmd: /bin/bash
+build:
+  steps:
+    - npm-install
+    - script:
+      name: build metalsmith
+      code: $(npm bin)/gulp build-metalsmith
+    - script:
+      name: build dist
+      code: $(npm bin)/gulp dist
+deploy:
+  # This will be used, if no deploy target is found.
+  steps:
+    - script:
+      name: default
+      code: echo default deploy
+  # This will be used, if the deploy target "bitbucket" is used.
+  bitbucket:
+    - wercker/install-packages:
+        packages: git
+    # Add SSH-Key to
+    - leipert/add-ssh-key-gh-bb:
+        keyname: DEPLOY_SSH
+    # Add bitbucket to known hosts, so they won't ask us whether we trust bitbucket
+    - wercker/add-to-known_hosts:
+        hostname: bitbucket.org
+        fingerprint: 97:8c:1b:f2:6f:14:6b:5c:3b:ec:aa:46:46:74:7c:40
+    - leipert/git-push:
+        host: bitbucket.org
+        repo: mitchejj/nullog.net
+        branch: master
+        basedir: build/public
+        clean_removed_files: true
+    # This will be used, if the deploy target "github" is used.
+  github:
+    - wercker/install-packages:
+        packages: git
+    # SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8
+    # 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48
+    - wercker/add-to-known_hosts:
+        hostname: github.com
+        fingerprint: 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48
+    - leipert/add-ssh-key-gh-bb:
+        keyname: DEPLOY_SSH
+    - leipert/git-push:
+        host: github.com
+        repo: mitchejj/nullog
+        branch: nullog.net
+        basedir: build/public
+        clean_removed_files: true

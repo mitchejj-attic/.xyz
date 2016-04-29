@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  {{> head }}
+</head>
+<body class="nullog">
+  <header class='site-header center'>
+    {{> nav-header }}
+  </header>
+  <main class='nullog-body'>
+{{#each blog }}
+{{> article }}
+{{/each}}
+  </main>
+<footer>
+  {{> footer }}
+</footer>
+</body>
+</html>

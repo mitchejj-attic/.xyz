@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  {{> head }}
+</head>
+<body class="nullog">
+  <header class='site-header center'>
+    {{> nav-header }}
+  </header>
+  <main class='nullog-body'>
+    <article class="page {{~tag~}}">
+      <header class="title">
+        <h2 class="lowercase">{{ title }}
+          {{~#if subtitle~}}<span class="mute"> {{ subtitle }}</span>{{~/if~}}
+        </h2>
+      </header>
+      {{{ contents}}}
+    </article>
+</main>
+<footer>
+  {{> footer }}
+</footer>
+</body>
+</html>

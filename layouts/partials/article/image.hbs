@@ -1,0 +1,6 @@
+<figure>
+  <a href="{{# if meta.image.link}}{{ meta.image.link }}{{else}}{{ meta.image.url }}{{/if}}">
+    <img src="{{ meta.image.url }}"
+      alt="{{# if meta.image.caption}}{{ meta.image.caption }}{{else}}{{ subtitle }}{{/if}}">
+  </a>
+</figure>
