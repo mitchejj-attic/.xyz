@@ -1,4 +1,3 @@
-Time.zone = "America/New_York"
 config[:css_dir]      =    'resources/stylesheets'
 config[:js_dir]       =    'resources/javascripts'
 config[:images_dir]   =    'images'
@@ -15,6 +14,7 @@ page '/*.txt',    layout: false
 ###
 activate :blog do |blog|
    Time.zone = "America/New_York"
+
    blog.layout = "resources/_layouts/post"
    blog.default_extension = ".md"
    blog.summary_separator = /(READMORE)/
@@ -22,7 +22,6 @@ activate :blog do |blog|
 
    blog.sources = "post/{year}-{month}-{day}-{title}.html"
    blog.permalink = "{year}/{month}/{day}/{title}/index.html"
-
    blog.tag_template = "resources/tag.html"
    blog.taglink = "explore/{tag}/index.html"
 
