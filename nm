@@ -24,6 +24,12 @@ class J2 < Thor
    method_option :editor, :default => 'atom'
    method_option :latest, :aliases => "-l", :desc => "post latest draft", :default => false
 
+   desc "go", "just a set up"
+   def go
+      system('bundle upgrade')
+      system('bundle clean --force')
+   end
+
    desc "drafts", "list all drafts"
    def drafts
       postManager(list:DRAFTLOC)
@@ -111,8 +117,8 @@ class J2 < Thor
                   erb = ERB.new(File.read(publishing))
                   File.open(publishing, 'w') {|f| f.write(erb.result) }
                   MiniGit.mv publishing, newPost
-                  MiniGit.add newPost
-                  MiniGit.commit :m => "moving from draft to post: #{newPost}"
+#                  MiniGit.add newPost
+#                  MiniGit.commit :m => "moving from draft to post: #{newPost}"
                else
                   say_status("error", "#{newPost} already exist", :red)
                end
