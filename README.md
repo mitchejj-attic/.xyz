@@ -13,7 +13,7 @@
  - [ ] lint css/js
  - [ ] move to remark
  - [ ] hook up `explore` to work correctly
- - [] sitemap should have proper lost mod dates based on the VC mod time
+ - [ ] sitemap should have proper lost mod dates based on the VC mod time
  
  [nullog.net]: https://nullog.net
  [decrepit.nullog.net]: http://decrepit.nullog.net
