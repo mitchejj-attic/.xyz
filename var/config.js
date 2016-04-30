@@ -41,10 +41,6 @@ const config = {
       pattern: 'io/**/*'
     }
   },
-  server: {
-    port: 8091,
-    verbose: true
-  },
   p2: {
       // original options would act as the keys of a `default` linkset,
     pattern: ':collection/:title',
