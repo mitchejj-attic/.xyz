@@ -1,8 +1,7 @@
 ---
 layout: all.hbs
-sitemap_priority: 1.0
+private: true
 pageable: true
-per_page: 4
 title:
 subtitle:
 tags:
