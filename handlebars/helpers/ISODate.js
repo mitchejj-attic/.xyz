@@ -1,8 +1,11 @@
 'use strict'
 
 module.exports = function (date, options) {
-  if(date) {
-//console.log(date)
-}
-  return date
+  const newDate = new Date(date)
+  if ((newDate instanceof Date)) {
+    return newDate.toISOString()
+  }
+  else {
+    return '9999-99-99'
+  }
 }
