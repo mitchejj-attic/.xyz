@@ -12,8 +12,9 @@
  - [ ] move lib/ to gittrees
  - [ ] lint css/js
  - [ ] move to remark
- - [ ] if private is true (page not in sitemap) also include that in the page meta
+ - [x] if private is true (page not in sitemap) also include that in the page meta
  - [ ] hook up `explore` to work correctly
+  - currently displaying all post via /all
  - [x] sitemap should have proper lost mod dates based on the VC mod time
 
  [nullog.net]: https://nullog.net
