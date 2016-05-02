@@ -19,7 +19,7 @@ const config = {
   inplace: {
     engine: 'handlebars',
     pattern: '**/*.markdown',
-    partials: 'layouts/partials',
+    partials: 'layouts/partials/',
     helpers: {
       each_upto: each_upto,
       iso_date: ISODate
