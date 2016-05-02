@@ -65,7 +65,7 @@ const vars = {
     source: '',
     dest: 'build/_site/',
     watch: [
-      'layouts/**/*.hbs',
+      'handlebars/**/*.hbs',
       'src/**/*.md',
       'src/**/*.markdown',
       'src/**/*.html',
