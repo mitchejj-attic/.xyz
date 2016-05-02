@@ -16,7 +16,7 @@ meta:
   * Version: {{ env.node }}
   * v8: {{ env.v8 }}
   * Arch: {{ env.arch }}-{{ env.platform }}
-* Version Control: [GitHub][git]
+* Version Control: [GitHub][gh]
 * [CSS Stats][cssStats]
 * [TestMyCSS][cssTest]
 * Generated: {{ env.date }}
@@ -77,6 +77,7 @@ Grave Yard:
 [node]: http://nodejs.org/
 [heroku]: https://www.heroku.com/
 [middleman]: http://middlemanapp.com/
+[gh]: https://github.com
 [gl]: https://gitlab.com/
-[cssStats]: http://cssstats.com/stats?url=https://nullog.net
-[cssTest]: http://www.testmycss.com/analyze?url=https%3A%2F%2Fnullog.net%2Fresources%2Fstylesheets%2Fnullog.css
+[cssStats]: http://cssstats.com/stats?url=https://nullog.net/nullog.css
+[cssTest]: http://www.testmycss.com/analyze?url=https%3A%2F%2Fnullog.net%2Fnullog.css
