@@ -10,6 +10,7 @@
 
 ## TODO
  - [ ] move lib/ to gittrees
+ - [ ] ugly text
  - [ ] lint css/js
  - [ ] move to remark
  - [x] if private is true (page not in sitemap) also include that in the page meta
