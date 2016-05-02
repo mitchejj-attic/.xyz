@@ -10,7 +10,7 @@ const config = {
     pattern: '**/!(*.css|*.scss)+(*.md|*.html)',  // https://stackoverflow.com/questions/24222093/node-javascript-glob-file-path-matching-syntax-wildcards-etc
     default: 'default.hbs',
     directory: 'handlebars/layouts/',
-    partials: 'handlebars/partials',
+    partials: 'handlebars/partials/',
     helpers: {
       each_upto: each_upto,
       iso_date: ISODate
