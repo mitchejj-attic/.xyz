@@ -6,8 +6,8 @@ import frontmatter from 'metalsmith-matters'
 // import define from 'metalsmith-define'
 import branch from 'metalsmith-branch'
 import markdown from 'metalsmith-markdown'
-import remark from 'metalsmith-remark'
-  import midas from 'remark-midas'
+// import remark from 'metalsmith-remark'
+// import midas from 'remark-midas'
 import paths from 'metalsmith-paths'
 import permalinks from 'metalsmith-permalinks'
 import collections from 'metalsmith-collections'
@@ -52,7 +52,7 @@ Metalsmith(__dirname)
   ]))
   .use(inplace(config.inplace))
   .use(markdown({smartypants: true}))
-  //.use(remark([midas]))
+  // .use(remark([midas]))
   .use(permalinks(config.blog))
   .use(paths({directoryIndex: 'index.html'}))
 //  .use(pagination(
