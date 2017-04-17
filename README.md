@@ -9,6 +9,7 @@
  - middleman  -- the pre-metalsmith site [decrepit.nullog.net]
 
 ## TODO
+ - [ ] update code to use 'metalsmith-in-place:2.0.0'
  - [ ] move lib/ to gittrees
  - [ ] ugly text
  - [ ] lint css/js
