@@ -13,7 +13,7 @@ meta:
     title:
 dispatch:
 truncatable: true
-date: 2016-03-30 20:17:32 -0400
+date: 2016-04-30 20:17:32 -0400
 ---
 * [Apricity OS][aos] -- maybe for my old laptop?
 * [Mathematicians mapped out every “Game of Thrones” relationship to find the main character][thrones]
