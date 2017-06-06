@@ -1,8 +1,28 @@
-# gatsby-starter-blog
-Gatsby starter for creating a blog
+# .xyz
+This is the source repo for everything under my *.xyz domains. I belive I the main generator for the sites will be gatsby in a blog like configuration. Since gatsby 1.0 is still in alpha development I think it would be wised have some ability track the development merge the changes `gatsby-starter-blog` into each site.
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-`gatsby new gatsby-blog https://github.com/gatsbyjs/gatsby-starter-blog`
+    git checkout master
+        <make chnages>
+    git checkout staticflux
+    git merge master
+    ...
+    git checkout staticdraft
+    git merge master
+    ...
 
-## Running in development
-`gatsby develop`
+
+## Repo Brnaches
+master
+staticflux
+staticdraft
+1.0
+
+### 1.0
+    clone of the 'current' `gatsby-starter-blog` 1.0 repo
+### master
+    my generic changes from 1.0
+
+### staticflux
+
+### staticdraft
+
