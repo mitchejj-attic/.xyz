@@ -14,11 +14,14 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       graphql(
         `
       {
-        allMarkdownRemark(limit: 1000) {
+        allMarkdownRemark(limit: 10000) {
           edges {
             node {
               fields {
                 slug
+              }
+              frontmatter {
+                path
               }
             }
           }
@@ -34,7 +37,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         // Create blog posts pages.
         _.each(result.data.allMarkdownRemark.edges, edge => {
           createPage({
-            path: edge.node.fields.slug, // required
+//            path: edge.node.fields.slug, // required
+              path: edge.node.frontmatter.path,        
             component: blogPost,
             context: {
               slug: edge.node.fields.slug,
@@ -51,7 +55,8 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators
   if (node.internal.type === `File`) {
     const parsedFilePath = path.parse(node.relativePath)
-    const slug = `/${parsedFilePath.dir}/`
+    const normalizeFilePath =  path.normalize(node.relativePath)
+    const slug = `/${normalizeFilePath}/`
     createNodeField({ node, fieldName: `slug`, fieldValue: slug })
   } else if (node.internal.type === `MarkdownRemark`) {
     const fileNode = getNode(node.parent)
