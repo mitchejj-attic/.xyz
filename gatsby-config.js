@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter Blog",
-    author: "Kyle Mathews",
+    title: ".xyz",
+    author: "Jason Mitchell",
+     site_url: "https://home.xyz"
   },
   plugins: [
     {
@@ -9,6 +10,38 @@ module.exports = {
       options: {
         path: `${__dirname}/src/pages`,
         name: "pages",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        serialize: ({ site, allMarkdownRemark }) => (
+    allMarkdownRemark.edges.map(edge => ({
+      url: site.siteMetadata.site_url + edge.node.frontmatter.path
+    }))),
+        query: `
+        {
+          site {
+            siteMetadata {
+              site_url
+            }
+          }
+          allMarkdownRemark(
+            limit: 2000,
+            sortBy: {
+              fields: [frontmatter___date]
+              order: DESC
+          }) {
+            edges {
+              node {
+                frontmatter {
+                  path
+                }
+            }
+          }
+        }
+      }
+  `,
       },
     },
     {

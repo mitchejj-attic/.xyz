@@ -23,7 +23,7 @@ class BlogIndex extends React.Component {
               marginBottom: rhythm(1 / 4),
             }}
           >
-            <Link style={{ boxShadow: "none" }} to={post.node.fields.slug}>
+            <Link style={{ boxShadow: "none" }} to={post.node.frontmatter.path}>
               {post.node.frontmatter.title}
             </Link>
           </li>
@@ -56,17 +56,26 @@ query IndexQuery {
       title
     }
   }
-  allMarkdownRemark {
-    edges {
-      node {
-        fields {
-          slug
-        }
-        frontmatter {
-          title
+    allMarkdownRemark(
+      limit: 2000,
+      sortBy: {
+        fields: [frontmatter___date]
+        order: DESC
+      })
+      {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+            title
+            path
+            date
+          }
         }
       }
     }
   }
-}
 `
+
