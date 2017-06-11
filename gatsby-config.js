@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: ".xyz",
     author: "Jason Mitchell",
-     site_url: "https://home.xyz"
+    site_url: "https://home.xyz",
+    profilePic: "https://avatars1.githubusercontent.com/u/156855?s=100"
   },
   plugins: [
     {
@@ -16,9 +17,9 @@ module.exports = {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         serialize: ({ site, allMarkdownRemark }) => (
-    allMarkdownRemark.edges.map(edge => ({
-      url: site.siteMetadata.site_url + edge.node.frontmatter.path
-    }))),
+          allMarkdownRemark.edges.map(edge => ({
+            url: site.siteMetadata.site_url + edge.node.frontmatter.path
+          }))),
         query: `
         {
           site {
@@ -37,11 +38,11 @@ module.exports = {
                 frontmatter {
                   path
                 }
+              }
             }
-          }
+         }
         }
-      }
-  `,
+      `,
       },
     },
     {
@@ -68,12 +69,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
-    },
     `gatsby-plugin-offline`,
   ],
 }

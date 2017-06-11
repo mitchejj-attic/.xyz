@@ -1,10 +1,5 @@
 import React from "react"
 
-// Import typefaces
-import "typeface-montserrat"
-import "typeface-merriweather"
-
-// import profilePic from "./profile-pic.jpg"
 import { rhythm } from "../utils/typography"
 
 class Bio extends React.Component {
@@ -16,7 +11,7 @@ class Bio extends React.Component {
         }}
       >
        <img
-          src={``}
+          src={`https://avatars1.githubusercontent.com/u/156855?s=100`}
           alt={`Jason Mitchell`}
           style={{
             float: "left",
