@@ -2,6 +2,7 @@ import React from "react"
 import Helmet from "react-helmet"
 import Link from "gatsby-link"
 import get from "lodash/get"
+import format from "date-fns/format"
 
 import Bio from "../components/Bio"
 import { rhythm, scale } from "../utils/typography"
@@ -10,7 +11,6 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, "data.site.siteMetadata.title")
-    const postDate = post.frontmatter.date != 'Invalid date' ? post.frontmatter.date : null
 
     return (
       <div>
@@ -24,7 +24,7 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(-.75),
           }}
         >
-          { postDate }
+          { post.frontmatter.date ? format(post.frontmatter.date, 'YYYY-MM-DD') : null }
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
@@ -53,8 +53,9 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date
       }
     }
   }
 `
+// date(formatString: "MMMM DD, YYYY")
