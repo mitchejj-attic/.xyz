@@ -2,6 +2,7 @@
   "name": "xyz",
   "version": "0.0.0",
   "dependencies": {
+    "date-fns": "^1.28.5",
     "gatsby": "next",
     "gatsby-link": "next",
     "gatsby-plugin-manifest": "next",

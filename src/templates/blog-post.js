@@ -10,6 +10,7 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, "data.site.siteMetadata.title")
+    const postDate = post.frontmatter.date != 'Invalid date' ? post.frontmatter.date : null
 
     return (
       <div>
@@ -20,10 +21,10 @@ class BlogPostTemplate extends React.Component {
             ...scale(-1 / 5),
             display: "block",
             marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
+            marginTop: rhythm(-.75),
           }}
         >
-          {post.frontmatter.date}
+          { postDate }
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
