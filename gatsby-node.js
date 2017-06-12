@@ -67,10 +67,11 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
 
     case 'MarkdownRemark':
       const fileNode = getNode(node.parent)
+      let frontmatterPath = _.get(node, 'frontmatter.path')
       createNodeField({
         node,
         fieldName: 'slug',
-        fieldValue: fileNode.fields.slug,
+        fieldValue: frontmatterPath,
       })
       return
   }
