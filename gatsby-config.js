@@ -3,7 +3,21 @@ module.exports = {
     title: ".xyz",
     author: "Jason Mitchell",
     site_url: "https://home.xyz",
-    profilePic: "https://avatars1.githubusercontent.com/u/156855?s=100"
+    profilePic: 'https://avatars1.githubusercontent.com/u/156855?s=100',
+    twitter: '@staticdraft',
+    env: {
+      node: process.versions.node, v8:
+      process.versions.v8,
+      arch: process.arch,
+      platform: process.platform,
+      date: new Date().toJSON()
+    },
+    jason: {
+      name: 'Jason Mitchell',  location: 'Michigan',twitter: 'mitchejj',
+        strava: '2911431',
+        dailymile: 'mitchejj'
+
+    }
   },
   plugins: [
     {
@@ -16,10 +30,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        serialize: ({ site, allMarkdownRemark }) => (
-          allMarkdownRemark.edges.map(edge => ({
-            url: site.siteMetadata.site_url + edge.node.frontmatter.path
-          }))),
         query: `
         {
           site {
@@ -29,14 +39,14 @@ module.exports = {
           }
           allMarkdownRemark(
             limit: 2000,
-            sortBy: {
+            sort: {
               fields: [frontmatter___date]
               order: DESC
           }) {
             edges {
               node {
-                frontmatter {
-                  path
+                fields {
+                  slug
                 }
               }
             }
@@ -55,20 +65,18 @@ module.exports = {
               maxWidth: 590,
             },
           },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
           "gatsby-remark-prismjs",
           "gatsby-remark-copy-linked-files",
-          "gatsby-remark-smartypants",
+          {
+            resolve: 'gatsby-remark-smartypants',
+            options: {
+              dashes: 'oldschool',
+            },
+          },
         ],
       },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-offline`,
   ],
 }

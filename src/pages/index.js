@@ -2,14 +2,13 @@ import React from "react"
 import Link from "gatsby-link"
 import get from "lodash/get"
 import Helmet from "react-helmet"
-import include from "underscore.string/include"
+//import includes from "lodash/includes"
 
 import Bio from "../components/Bio"
 import { rhythm } from "../utils/typography"
 
 class BlogIndex extends React.Component {
   render() {
-    // console.log("props", this.props)
     const pageLinks = []
     const siteTitle = get(this, "props.data.site.siteMetadata.title")
     const posts = get(this, "props.data.allMarkdownRemark.edges")
@@ -58,7 +57,7 @@ query IndexQuery {
   }
     allMarkdownRemark(
       limit: 2000,
-      sortBy: {
+      sort: {
         fields: [frontmatter___date]
         order: DESC
       })

@@ -3,6 +3,17 @@ const Promise = require("bluebird")
 const path = require("path")
 const select = require(`unist-util-select`)
 const fs = require(`fs-extra`)
+const dateFns = require('date-fns')
+const slug = require('slug')
+slug.defaults.mode = 'rfc3986'
+
+const createPath = (frontmatter) => {
+  /* Work In Progress */
+  const title = frontmatter.title
+  const subtitle = frontmatter.subtitle
+  const date = frontmatter.date
+  return '/junk/'
+}
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
@@ -11,10 +22,9 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     const pages = []
     const blogPost = path.resolve("./src/templates/blog-post.js")
     resolve(
-      graphql(
-        `
+      graphql(`
       {
-        allMarkdownRemark(limit: 10000) {
+        allMarkdownRemark(limit: 1000) {
           edges {
             node {
               fields {
@@ -38,7 +48,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         _.each(result.data.allMarkdownRemark.edges, edge => {
           createPage({
 //            path: edge.node.fields.slug, // required
-              path: edge.node.frontmatter.path,        
+              path: edge.node.frontmatter.path || '/junk/',        
             component: blogPost,
             context: {
               slug: edge.node.fields.slug,
@@ -67,7 +77,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
 
     case 'MarkdownRemark':
       const fileNode = getNode(node.parent)
-      let frontmatterPath = _.get(node, 'frontmatter.path')
+      let frontmatterPath = _.get(node, 'frontmatter.path') || createPath(_.get(node, 'frontmatter'))
       createNodeField({
         node,
         fieldName: 'slug',
