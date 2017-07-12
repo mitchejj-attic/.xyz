@@ -15,7 +15,7 @@ class Template extends React.Component {
         h1: {
           ...scale(1.5),
           marginBottom: rhythm(1.5),
-          marginTop: 0,
+          marginTop: 0
         },
         link: {
           boxShadow: 'none',
