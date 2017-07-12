@@ -2,31 +2,41 @@
   "name": "xyz",
   "version": "0.0.0",
   "dependencies": {
+    "babel-loader": "^7.1.1",
     "date-fns": "^1.28.5",
-    "gatsby": "^1.0.0-beta.2-alpha.a1195641",
-    "gatsby-link": "^1.0.0-beta.2-alpha.a1195641",
-    "gatsby-plugin-manifest": "^1.0.0-beta.2-alpha.a1195641",
-    "gatsby-plugin-offline": "^1.0.0-beta.2-alpha.a1195641",
-    "gatsby-plugin-preact": "^1.0.0-beta.2-alpha.a1195641",
-    "gatsby-plugin-sharp": "^1.0.0-beta.2-alpha.a1195641",
-    "gatsby-plugin-sitemap": "^1.0.0-beta.2-alpha.a1195641",
-    "gatsby-remark-copy-linked-files": "^1.0.0-beta.2-alpha.a1195641",
-    "gatsby-remark-prismjs": "^1.0.0-beta.2-alpha.a1195641",
-    "gatsby-remark-responsive-iframe": "^1.0.0-beta.2-alpha.a1195641",
-    "gatsby-remark-responsive-image": "^1.0.0-beta.2-alpha.a1195641",
-    "gatsby-remark-smartypants": "^1.0.0-beta.2-alpha.a1195641",
-    "gatsby-source-filesystem": "^1.0.0-beta.2-alpha.a1195641",
-    "gatsby-transformer-remark": "^1.0.0-beta.2-alpha.a1195641",
-    "gatsby-transformer-sharp": "^1.0.0-beta.2-alpha.a1195641",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-jsx": "^4.0.2",
+    "eslint-plugin-standard": "^3.0.1",
+    "fs": "0.0.1-security",
+    "gatsby": "^1.1.0",
+    "gatsby-link": "^1.0.9",
+    "gatsby-plugin-manifest": "^1.0.1",
+    "gatsby-plugin-offline": "^1.0.1",
+    "gatsby-plugin-postcss-sass": "^1.0.1",
+    "gatsby-plugin-preact": "^1.0.1",
+    "gatsby-plugin-react-helmet": "^1.0.1",
+    "gatsby-plugin-sharp": "^1.0.1",
+    "gatsby-plugin-sitemap": "^1.0.1",
+    "gatsby-plugin-styled-components": "^1.0.1",
+    "gatsby-remark-copy-linked-files": "^1.0.1",
+    "gatsby-remark-images": "^1.1.0",
+    "gatsby-remark-prismjs": "^1.0.1",
+    "gatsby-remark-responsive-iframe": "^1.0.1",
+    "gatsby-remark-smartypants": "^1.0.1",
+    "gatsby-source-filesystem": "^1.0.1",
+    "gatsby-transformer-remark": "^1.1.0",
+    "gatsby-transformer-sharp": "^1.0.1",
+    "gray-percentage": "^2.0.0",
     "lodash": "^4.17.0",
     "moment": "^2.14.1",
-    "react-helmet": "^4.0.0",
+    "postcss-cssnext": "^2.11.0",
+    "prop-types": "^15.5.10",
     "react-responsive-grid": "^0.3.3",
     "react-typography": "^0.15.0",
     "safe-access": "^0.1.0",
     "slug": "^0.9.1",
-    "styled-components": "^2.1.0",
-    "typography": "^0.15.8",
+    "styled-components": "^2.1.1",
+    "typography": "^0.15.12",
     "typography-plugin-code": "^0.15.11",
     "typography-theme-github": "^0.15.10",
     "underscore.string": "^3.2.3"
@@ -37,7 +47,8 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "deploy": "gatsby build --prefix-links && gh-pages -d public"
+    "deploy": "gatsby build --prefix-links && gh-pages -d public",
+    "test": "xo"
   },
   "orign-attribution": {
     "repository": {
@@ -47,5 +58,25 @@
     },
     "author": "Kyle Mathews <mathews.kyle@gmail.com>",
     "license": "MIT"
+  },
+  "devDependencies": {
+    "eslint-config-xo": "^0.18.2",
+    "eslint-config-xo-react": "^0.13.0",
+    "eslint-plugin-react": "^7.1.0",
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "semicolon": false,
+    "space": true,
+    "rules": {
+      "import/order": 0,
+      "import/no-extraneous-dependencies": 0,
+      "react/jsx-tag-spacing": 0,
+      "object-curly-spacing": 0
+    },
+    "extends": [
+      "xo",
+      "xo-react"
+    ]
   }
 }

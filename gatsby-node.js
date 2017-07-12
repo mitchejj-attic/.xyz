@@ -1,13 +1,15 @@
-const _ = require("lodash")
-const Promise = require("bluebird")
-const path = require("path")
+const Promise = require('bluebird')
+const path = require('path')
+const _ = require('lodash')
+
 const select = require(`unist-util-select`)
 const fs = require(`fs-extra`)
 const dateFns = require('date-fns')
 const slug = require('slug')
+
 slug.defaults.mode = 'rfc3986'
 
-const createPath = (frontmatter) => {
+const createPath = frontmatter => {
   /* Work In Progress */
   const title = frontmatter.title
   const subtitle = frontmatter.subtitle
@@ -15,21 +17,18 @@ const createPath = (frontmatter) => {
   return '/junk/'
 }
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
+exports.createPages = ({graphql, boundActionCreators}) => {
+  const {createPage} = boundActionCreators
 
   return new Promise((resolve, reject) => {
     const pages = []
-    const blogPost = path.resolve("./src/templates/blog-post.js")
+    const blogPost = path.resolve('./src/templates/blog-post.js')
     resolve(
       graphql(`
       {
         allMarkdownRemark(limit: 1000) {
           edges {
             node {
-              fields {
-                slug
-              }
               frontmatter {
                 path
               }
@@ -47,12 +46,11 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         // Create blog posts pages.
         _.each(result.data.allMarkdownRemark.edges, edge => {
           createPage({
-//            path: edge.node.fields.slug, // required
-              path: edge.node.frontmatter.path || '/junk/',        
+            path: edge.node.frontmatter.path, // || '/junk/',
             component: blogPost,
             context: {
-              slug: edge.node.fields.slug,
-            },
+              path: edge.node.frontmatter.path
+            }
           })
         })
       })
@@ -61,28 +59,28 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 }
 
 // Add custom slug for blog posts to both File and MarkdownRemark nodes.
-exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
-  const { createNodeField } = boundActionCreators
+/*exports.onCreateNode = ({node, boundActionCreators, getNode}) => {
+  const {createNodeField} = boundActionCreators
 
   switch (node.internal.type) {
-    case 'File':
+    case 'File':{
       const parsedFilePath = path.parse(node.relativePath)
       const slug = `/${parsedFilePath.dir}/`
       createNodeField({
         node,
-        fieldName: 'slug',
-        fieldValue: slug
+        name: 'slug',
+        value: slug
       })
       return
-
-    case 'MarkdownRemark':
+    }
+    case 'MarkdownRemark': {
       const fileNode = getNode(node.parent)
-      let frontmatterPath = _.get(node, 'frontmatter.path') || createPath(_.get(node, 'frontmatter'))
+      const frontmatterPath = _.get(node, 'frontmatter.path') || createPath(_.get(node, 'frontmatter'))
       createNodeField({
         node,
-        fieldName: 'slug',
-        fieldValue: frontmatterPath,
+        name: 'slug',
+        value: frontmatterPath
       })
-      return
+    }
   }
-}
+}*/

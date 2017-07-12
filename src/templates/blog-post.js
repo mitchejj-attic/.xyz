@@ -44,14 +44,14 @@ class BlogPostTemplate extends React.Component {
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostByPath($slug: String!) {
+  query BlogPostByPath($path: String!) {
     site {
       siteMetadata {
         title
         author
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug }}) {
+    markdownRemark(frontmatter: { path: { eq: $path } }) {
       id
       html
       frontmatter {

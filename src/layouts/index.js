@@ -1,12 +1,15 @@
-import React from "react"
-import Link from "gatsby-link"
-import { Container } from "react-responsive-grid"
+import React from 'react'
+import Link from 'gatsby-link'
+import gray from 'gray-percentage'
+import {Container} from 'react-responsive-grid'
+import {siteMetadata} from '../../gatsby-config'
+import PropTypes from 'prop-types'
 
-import { rhythm, scale } from "../utils/typography"
+import {rhythm, scale} from '../utils/typography'
 
 class Template extends React.Component {
   render() {
-    const { location, children } = this.props
+    const {location, children} = this.props
     const style = {
       root: {
         h1: {
@@ -15,42 +18,41 @@ class Template extends React.Component {
           marginTop: 0,
         },
         link: {
-          boxShadow: "none",
-          textDecoration: "none",
-          color: "inherit",
-        },
+          boxShadow: 'none',
+          textDecoration: 'none',
+          color: 'rgba(28, 28, 28, .28)'
+        }
       },
       leaf: {
         h3: {
-          marginTop: 0,
+          marginTop: 0
         },
-        link: {},
+        link: {}
       }
     }
     let header
-    if (location.pathname === "/") {
-
+    if (location.pathname === '/') {
       header = (
         <h1 style={style.root.h1}>
-          <Link style={style.root.link} to={"/"} >
-.xyz
+          <Link style={style.root.link} to={'/'} >
+            {siteMetadata.title}
           </Link>
         </h1>
       )
     } else {
       header = (
-        <h3 style={style.leaf.h3}>
-          <Link style={style.root.link} to={"/"} >
-.xyz
+        <h2 style={style.leaf.h3}>
+          <Link style={style.root.link} to={'/'} >
+            {siteMetadata.title}
           </Link>
-        </h3>
+        </h2>
       )
     }
     return (
       <Container
         style={{
           maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
         }}
       >
         {header}
@@ -61,9 +63,9 @@ class Template extends React.Component {
 }
 
 Template.propTypes = {
-  children: React.PropTypes.function,
-  location: React.PropTypes.object,
-  route: React.PropTypes.object,
+  children: PropTypes.function,
+  location: PropTypes.object,
+  route: PropTypes.object
 }
 
 export default Template

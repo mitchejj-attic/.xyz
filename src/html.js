@@ -1,27 +1,28 @@
-import React from "react"
-import { TypographyStyle } from "react-typography"
-import Helmet from "react-helmet"
+import React from 'react'
+import {TypographyStyle} from 'react-typography'
+import Helmet from 'react-helmet'
+import PropTypes from 'prop-types'
 
-import typography from "./utils/typography"
+import typography from './utils/typography'
 
 let stylesStr
 if (process.env.NODE_ENV === `production`) {
   try {
     stylesStr = require(`!raw-loader!../public/styles.css`)
-  } catch (e) {
-    console.log(e)
+  } catch (err) {
+    console.log(err)
   }
 }
 
-module.exports = React.createClass({
+export default class HTML extends React.Component {
   render() {
     const head = Helmet.rewind()
     let css
     if (process.env.NODE_ENV === `production`) {
       css = (
         <style
+        dangerouslySetInnerHTML={{ __html: stylesStr }}
           id="gatsby-inlined-css"
-          dangerouslySetInnerHTML={{ __html: stylesStr }}
         />
       )
     }
@@ -38,18 +39,22 @@ module.exports = React.createClass({
           {this.props.headComponents}
           <TypographyStyle typography={typography} />
           {css}
-          {head.title.toComponent()}
-          {head.meta.toComponent()}
-          {head.link.toComponent()}
         </head>
         <body>
           <div
             id="___gatsby"
-            dangerouslySetInnerHTML={{ __html: this.props.body }}
+            dangerouslySetInnerHTML={{ __html: this.props.body }
           />
           {this.props.postBodyComponents}
         </body>
       </html>
     )
-  },
-})
+  }
+}
+
+HTML.propTypes = {
+
+}
+HTML.defaultProps = {
+
+}
