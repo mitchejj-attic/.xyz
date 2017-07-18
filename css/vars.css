@@ -5,9 +5,13 @@
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Roboto, "Segoe UI", sans-serif;
     padding: 0rem;
     margin: 0rem;
-    font-weight: 300;
+    font-weight: 400;
 
-    --fontSize: 1.1rem;
+    --fontSize: 1.09rem;
+    --baseLineHeight: 1.625;
+
+    --headerWeight: 600;
+
 
     --gray1: gray(28);
     --gray2: gray(66);

@@ -4,14 +4,19 @@
   {{> head }}
 </head>
 <body class="nullog">
+
+<main class='nullog-body'>
+  <ul>
+{{#each_upto blog 14}}
+
+  <li>{{> article/header renderSelf=renderSelf}}</li>
+
+{{/each_upto}}
+</ul>
+</main>
 <header class='site-header center'>
 {{> nav-header }}
 </header>
-<main class='nullog-body'>
-{{#each_upto blog per_page}}
-{{> article }}
-{{/each_upto}}
-</main>
 <footer>
 {{> footer }}
 </footer>
