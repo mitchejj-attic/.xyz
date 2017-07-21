@@ -1,0 +1,64 @@
+.markdown ul {
+  list-style-type: none;
+}
+
+
+.markdown li > p {
+
+    padding: 0rem;
+    border: 0rem;
+    margin: 0rem
+}
+
+.markdown li > ul {
+    padding-left: 1.25rem;
+    padding-top: inherit;
+    padding-bottom: inherit;
+    margin: inherit
+}
+
+
+.markdown li  :any-link {
+   border-bottom: .125em dotted var(--yellow-1);
+    color: var(--blue-5);
+}
+
+.markdown pre {
+  font-size: 1.12rem;
+  display: block;
+  background: #f9f9f9;
+  color: #3a3f45;
+  border: 1px solid #b0c0cf;
+  overflow-y: hidden;
+}
+
+.markdown pre code {
+  background: none;
+  border: none;
+  border-radius: 3rem;
+  display: inline-block;
+  overflow: inherit;
+  padding: 0.81rem;
+  white-space: inherit;
+  word-wrap: normal;
+}
+
+code {
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -hp-pre-wrap;
+  word-wrap: break-word;
+  background: #ebedee;
+  border: 1px solid #dee1e3;
+  display: inline;
+  font-family: var(--monospace);
+  max-width: 100%;
+  overflow: auto;
+  padding: 0 0.1625rem;
+}
+
+
