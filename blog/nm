@@ -1,0 +1,132 @@
+#!/usr/bin/env ruby
+#####
+##
+##  Base Source:
+##    https://github.com/lleger/site/blob/master/jekyll.thor
+##
+#####
+require 'thor'
+require 'yaml'
+require 'erb'
+require 'stringex'
+require 'fileutils'
+require 'minigit'   # I could use system calls but...
+
+DRAFTLOC = 'draft'
+POST = 'source/post'
+EDITOR = 'atom'
+
+
+class J2 < Thor
+   include FileUtils
+   include Thor::Actions
+
+   method_option :editor, :default => 'atom'
+   method_option :latest, :aliases => "-l", :desc => "post latest draft", :default => false
+
+   desc "go", "just a set up"
+   def go
+      system('bundle upgrade')
+      system('bundle clean --force')
+   end
+
+   desc "drafts", "list all drafts"
+   def drafts
+      postManager(list:DRAFTLOC)
+   end
+   desc "posts", "list all posts"
+   def posts
+      postManager(list:POST)
+   end
+
+   desc "new NAME", "create a new draft post"
+   def new(title)
+      draft = DRAFTLOC + "/#{title.to_url}" + ".md"
+      newDraft(title: title, location: draft)
+      system(EDITOR, draft.to_s)
+   end
+
+   desc "post [FILE]", "turn a draft into a post"
+   def post(file = nil)
+      if options.latest?
+         file = Dir.glob("_drafts/*").max_by { |f| File.mtime(f) }
+      else
+         postManager(list:DRAFTLOC, publish: true )
+      end
+   end
+   protected
+      def gittyP
+         system('git status')
+      end
+      def edit (file:, editor: options[:editor])
+         system(options[:editor], file)
+      end
+      def file_selector()
+      end
+   private
+      def newDraft (title:, location:)
+         if File.exist?(location)
+            abort("#{location} already exists!")
+         else
+            yamlHeader = {
+               'title' => title,
+               'subtitle' => nil,
+               'tags' => nil,
+               'meta' => {
+                  'description' => nil,
+                  'image' => {
+                     'url' => nil,
+                     'title' => nil,
+                     'link' => nil},
+                  'source' => {
+                     'url' => nil,
+                     'title' => nil}},
+               'dispatch' => nil,
+               'truncatable' => true
+               }
+            h = yamlHeader.to_yaml + "date: <%= Time.now %>\n---\n"
+            puts "Creating new post: #{title} at #{location}"
+            File.open(location, 'w') {|f| f.write(h) }
+            MiniGit.add location
+            MiniGit.commit :m => "new draft: #{location}"
+            puts "Done."
+         end
+      end
+
+      def publish (post:)
+      end
+
+      def replace(filepath, regexp, *args, &block)
+         content = File.read(filepath).gsub(regexp, *args, &block)
+         File.open(filepath, 'wb') { |file| file.write(content) }
+      end
+
+      def postManager(list: , draft: DRAFTLOC, posts: POST, publish: false, edit: false)
+         header = [["ID", "Date", "Name"], ["---","----------", "----------"]]
+         post = Dir["#{list}/*"]
+         post_array = Array[]
+         post.each_with_index { |f, i| post_array << [i, File.mtime(f).strftime('%Y-%m-%d'), f] }
+         print_table(header + post_array)
+         if publish || edit
+            choice = ask("Choose a draft to post:", :blue)
+            if choice.to_i < post_array.size
+               publishing = post_array[choice.to_i][2]
+               date = Time.now.strftime('%Y-%m-%d')
+               newPost = "#{posts}/#{date}-#{File.basename(publishing)}"
+               if !File.exists?(newPost)
+                  erb = ERB.new(File.read(publishing))
+                  File.open(publishing, 'w') {|f| f.write(erb.result) }
+                  MiniGit.mv publishing, newPost
+#                  MiniGit.add newPost
+#                  MiniGit.commit :m => "moving from draft to post: #{newPost}"
+               else
+                  say_status("error", "#{newPost} already exist", :red)
+               end
+            else
+               say_status("error", "#{choice} not valid", :red)
+            end
+         end
+      end
+end
+
+J2.start(ARGV)
