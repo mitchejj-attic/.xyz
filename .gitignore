@@ -5,3 +5,7 @@ public
 .intermediate-representation/
 .cache/
 yarn.lock
+.vscode/
+post/
+src/templates/zenburn.css
+test-pages/

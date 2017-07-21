@@ -22,10 +22,23 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-postcss-sass`,
+      options: {
+        postCssPlugins: [],
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
         name: 'pages'
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/post/published`,
+        name: 'blog'
       }
     },
    /*
@@ -56,14 +69,6 @@ module.exports = {
       `,
       },
     }, */
-    {
-      resolve: `gatsby-plugin-postcss-sass`,
-      options: {
-        postCssPlugins: [
-          'postcss-cssnext'
-        ]
-      }
-    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {

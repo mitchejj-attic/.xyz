@@ -4,10 +4,12 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import graphql from 'graphql'
 import PropTypes from 'prop-types'
+import styled from 'styled-components' 
 import IndexingPost from '../components/IndexingPost'
+import SiteHeader from '../components/SiteHeader'
+import { Text, Heading, Provider, Divider, Flex, Box } from 'rebass'
 
-import Bio from '../components/Bio'
-import {rhythm} from '../utils/typography'
+
 
 class BlogIndex extends React.Component {
   render() {
@@ -22,15 +24,27 @@ class BlogIndex extends React.Component {
         )
       }
     })
+    
+    const UnordredList = styled.ul`
+
+`;
 
     return (
-      <div>
+      <Flex wrap >
+        <Box p={2} width={1, 1/4}>
+      <SiteHeader />
+        </Box>
+        <Box p={2} width={1,3/4}>
+                <div>
         <Helmet title={siteTitle} />
-        <Bio />
-        <ul>
+        <UnordredList>
           {pageLinks}
-        </ul>
+        </UnordredList>
       </div>
+        </Box>
+      </Flex >
+        
+
     )
   }
 }

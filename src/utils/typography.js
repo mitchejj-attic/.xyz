@@ -1,4 +1,4 @@
-import Typography from 'typography'
+/*import Typography from 'typography'
 import githubTheme from 'typography-theme-github'
 import CodePlugin from 'typography-plugin-code'
 
@@ -14,10 +14,10 @@ githubTheme.overrideThemeStyles = ({ rhythm }, options) => ({
     marginTop: rhythm(1.5),
     fontWeight: 400
   },
-*/  ul: {
+  ul: {
     listStyleType: 'none',
      lineHeight: 1.375
-  }
+  }*//*
 })
 const typography = new Typography(githubTheme)
 
@@ -27,3 +27,4 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 export default typography
+*/

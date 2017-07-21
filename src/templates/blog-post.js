@@ -2,41 +2,35 @@ import React from "react"
 import Helmet from "react-helmet"
 import Link from "gatsby-link"
 import get from "lodash/get"
-import format from "date-fns/format"
+import '../css/base.css'
 
 import Bio from "../components/Bio"
-import { rhythm, scale } from "../utils/typography"
+import SiteHeader from '../components/SiteHeader'
+import { Text, Heading, Provider, Divider, Flex, Box , Image} from 'rebass'
 
-function Qtime(props) {
-  const RFC3339 = 'YYYY-MM-DDTHH:mm:ssZ'
-  return (
-    <time>{format(props.date, 'YYYY-MM-DD')}</time>
-  )}
+
 
 class BlogPostTemplate extends React.Component {
   render() {
+
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, "data.site.siteMetadata.title")
-
-
     return (
-      <div>
-        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        <article>
-          <h1>{post.frontmatter.title}</h1>
-          { post.frontmatter.date &&
-            <Qtime date={post.frontmatter.date} />
-          }  
-          <div className="markdown" dangerouslySetInnerHTML={{ __html: post.html }} />
-        </article>
 
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
-        <Bio siteMetadata={this.props.data.site.siteMetadata} />
-      </div>
+                <Flex wrap >
+        <Box p={2} width={1, 1/4}>
+          <SiteHeader pageTitle={post.frontmatter.title} date={post.frontmatter.date} path={this.props.location.pathname} />
+    
+        </Box>
+        <Box p={2} width={1,3/4}>
+        <article>
+          <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
+          <Image src={post.frontmatter.meta.image.url} />  
+          <Text className="markdown" dangerouslySetInnerHTML={{ __html: post.html }} />
+        </article>
+        </Box>
+      </Flex> 
+
     )
   }
 }
@@ -55,8 +49,17 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
+        path
         title
         date
+        meta {
+          description
+          image {
+            url
+            caption
+            link
+          }
+        }
       }
     }
   }
