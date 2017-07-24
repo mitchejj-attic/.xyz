@@ -20,7 +20,7 @@ a {
   outline-width: 0;
 }
 :any-link {
-  color: inherit;
+
   text-decoration: none;
   font-size: inherit;
 }
@@ -42,4 +42,7 @@ samp {
 
 figure {
   margin: 1rem;
+}
+ul, li, ol {
+  
 }

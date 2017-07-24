@@ -1,43 +1,54 @@
 @charset "utf-8";
-:root {
-  --monospace: "SFMono-Regular", Inconsolata, Consolas, Monaco, "Liberation Mono", Courier, monospace;
-  font-feature-settings: "kern", "liga", "pnum" ; /*"frac",  */
-  -webkit-font-smoothing: antialiased;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Roboto, "Segoe UI", sans-serif;
-/*  Color Kit
-    Generated from: https://palx.jxnblk.com/003366
-        Base Color: https://palx.jxnblk.com/003366
-*/
-
---yellow-1: #dcdcc5;
---blue-5: #003366;
+@import 'xyz.css';
+@import 'normal.css';
+@import 'markdown.css';
 
 
 
-/* ripped from https://github.com/jxnblk/type-system/blob/master/type-system.css */
-  --h0: 4.5rem;
-  --h1: 3rem;
-  --h2: 2.25rem;
-  --h3: 1.5rem;
-  --h4: 1.125rem;
-  --h5: .75rem;
+.outline {
+  /*lost-utility: edit rgb(15, 150, 25);*/
+}
+.containerlost {
+   
+   lost-utility: clear;
+  }
 
-  --lh: calc(4/3);
-  --mx: 32em;
-
-  --m1: calc(2/3 * 1em);
-  --m2: calc(4/3 * 1em);
-  --m3: calc(8/3 * 1em);
-  --m4: calc(16/3 * 1em);
-  --x1: .5rem;
-  --x2: 1rem;
-  --x3: 2rem;
-  --x4: 4rem;
-  --x5: 8rem;
-  --x6: 16rem;
+    .grid {
+   lost-column: 1;
+}
+@media (min-width: 46.5rem) {
+  .grid:first-child {
+   /*height: 100vh;*/
+}
+.grid {
+   lost-column: 1/4;
+}
+.grid:last-child {
+    lost-column: 3/4;
+}
   
+}
+@media (min-width: 40rem) {
+}
+
+
+
+
+.row {
+  lost-utility: clearfix;
 
 }
+
+
+
+.quarter {
+  lost-column: 1/4 0;
+}
+
+.half {
+  lost-column: 1/2 0;
+}
+
 body {
   font-family: -apple-system, sans-serif;
   font-size: var(--h4);
@@ -103,14 +114,11 @@ h5, h6  { font-size: var(--h5) }
 .mx { max-width: var(--mx) }
 .bold { font-weight: bold }
 
-@import 'normal.css';
-@import 'markdown.css';
-
 .cleanlist {
     list-style-type: none;
 }
 .indexlist :any-link {
-    border-bottom: .125em solid var(--yellow-1)
+    border-bottom: .25rem solid var(--yellow-1)
 }
 
 :any-link {

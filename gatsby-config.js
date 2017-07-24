@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: '.xyz',
+    title: 'static draft',
     author: 'Jason Mitchell',
     site_url: 'https://home.xyz',
     profilePic: 'https://avatars1.githubusercontent.com/u/156855?s=100',
@@ -24,7 +24,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-postcss-sass`,
       options: {
-        postCssPlugins: [],
+        postCssPlugins: ['postcss-cssnext', 'lost'],
       }
     },
     {
@@ -37,7 +37,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/post/published`,
+        path: `${__dirname}/blog/published`,
         name: 'blog'
       }
     },

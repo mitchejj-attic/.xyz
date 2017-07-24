@@ -17,7 +17,8 @@ class Template extends React.Component {
 
  
     return (
-      <Provider >
+      <div className="outline">
+
         <Helmet
           meta={[
             {
@@ -35,8 +36,7 @@ class Template extends React.Component {
           ]}
         />
 {children()}
-
-  </Provider>
+</div>
   )}
 }
 

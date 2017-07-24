@@ -16,20 +16,18 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, "data.site.siteMetadata.title")
     return (
-
-                <Flex wrap >
-        <Box p={2} width={1, 1/4}>
-          <SiteHeader pageTitle={post.frontmatter.title} date={post.frontmatter.date} path={this.props.location.pathname} />
-    
-        </Box>
-        <Box p={2} width={1,3/4}>
+      <div className="containerlost">
+        <div className="grid">
+                  <SiteHeader pageTitle={post.frontmatter.title} date={post.frontmatter.date} path={this.props.location.pathname} />   
+        </div>
+        <div className="grid">
         <article>
           <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
           <Image src={post.frontmatter.meta.image.url} />  
           <Text className="markdown" dangerouslySetInnerHTML={{ __html: post.html }} />
         </article>
-        </Box>
-      </Flex> 
+        </div>  
+    </div>
 
     )
   }

@@ -30,19 +30,17 @@ class BlogIndex extends React.Component {
 `;
 
     return (
-      <Flex wrap >
-        <Box p={2} width={1, 1/4}>
-      <SiteHeader />
-        </Box>
-        <Box p={2} width={1,3/4}>
-                <div>
-        <Helmet title={siteTitle} />
+      <div className="containerlost">
+        <div className="grid">
+          <SiteHeader />
+        </div>
+        <div className="grid">
+                  <Helmet title={siteTitle} />
         <UnordredList>
           {pageLinks}
         </UnordredList>
+          </div>
       </div>
-        </Box>
-      </Flex >
         
 
     )
