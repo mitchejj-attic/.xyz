@@ -47,9 +47,10 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "deploy": "gatsby build --prefix-links && gh-pages -d public",
+    "deploy": "npm run update-content  && gatsby build",
     "dev-build": "gatsby build && gatsby serve",
-    "test": "xo"
+    "test": "xo",
+    "update-content": "git pull -s subtree markdown content"
   },
   "orign-attribution": {
     "repository": {
