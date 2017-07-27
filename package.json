@@ -47,7 +47,7 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "deploy": "npm run update-content  && gatsby build",
+    "deploy": "gatsby build",
     "dev-build": "gatsby build && gatsby serve",
     "test": "xo",
     "update-content": "git pull -s subtree markdown content"
