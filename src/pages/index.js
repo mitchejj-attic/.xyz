@@ -4,18 +4,16 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import graphql from 'graphql'
 import PropTypes from 'prop-types'
-import styled from 'styled-components' 
 import IndexingPost from '../components/IndexingPost'
+import BlogIndexCard from '../components/blog-index-card'
 import SiteHeader from '../components/SiteHeader'
-import { Text, Heading, Provider, Divider, Flex, Box } from 'rebass'
-
-
 
 class BlogIndex extends React.Component {
   render() {
     const pageLinks = []
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const { allMarkdownRemark } = this.props.data
+    /*const posts = get(this, 'props.data.allMarkdownRemark.edges')
     posts.forEach(post => {
       if (post.node.path !== '/404/') {
         const postTitle = get(post, 'node.frontmatter.title')
@@ -24,24 +22,23 @@ class BlogIndex extends React.Component {
         )
       }
     })
+    */
     
-    const UnordredList = styled.ul`
-
-`;
-
     return (
-      <div className="containerlost">
-        <div className="grid">
+      <section className="containerlost">
+        <Helmet title={siteTitle} />
+        <aside className="grid aside">
           <SiteHeader />
-        </div>
-        <div className="grid">
-                  <Helmet title={siteTitle} />
-        <UnordredList>
-          {pageLinks}
-        </UnordredList>
+        </aside>
+        <div className="grid main">
+
+        <ul className="">
+          {allMarkdownRemark.edges.map(({ node }) =>
+            <BlogIndexCard post={node}  />
+          )}
+        </ul>
           </div>
-      </div>
-        
+      </section>
 
     )
   }
@@ -54,7 +51,7 @@ BlogIndex.propTypes = {
 export default BlogIndex
 
 export const pageQuery = graphql`
-query IndexQuery {
+query BlogPostsIndexQuery {
   site {
     siteMetadata {
       title
@@ -69,12 +66,9 @@ query IndexQuery {
       {
         edges {
           node {
-            frontmatter {
-            title
-            path
-            date
-          }
+            ...blogIndexCardFragment_item
         }
+        
       }
     }
   }

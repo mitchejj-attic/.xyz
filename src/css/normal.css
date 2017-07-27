@@ -20,8 +20,7 @@ a {
   outline-width: 0;
 }
 :any-link {
-
-  text-decoration: none;
+    text-decoration: none;
   font-size: inherit;
 }
 small, .small {
