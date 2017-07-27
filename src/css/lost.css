@@ -1,0 +1,31 @@
+@lost gutter 1rem;
+.outline {
+  /*lost-utility: edit rgb(15, 150, 25);*/
+}
+
+.containerlost {
+  lost-utility: clear;
+}
+
+.grid {
+  lost-column: 1;
+}
+.main {
+lost-column: 1;
+}
+.aside {
+  lost-column: 1;
+
+}
+
+@media (min-width: 46.5rem) {
+  .grid:first-child {
+    /*height: 100vh;*/
+  }
+  .grid:first-child {
+    lost-column: 1/4;
+  }
+  .grid:last-child{
+    lost-column: 3/4;
+  }
+}
