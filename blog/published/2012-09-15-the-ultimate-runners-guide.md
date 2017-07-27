@@ -1,6 +1,6 @@
 ---
 title: The Ultimate Runner's Guide
-subtitle: '(Infographic)'
+subtitle: Infographic
 tags: running
 meta:
   description: null

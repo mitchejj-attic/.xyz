@@ -1,6 +1,6 @@
 ---
 title: The Complete Guide to Interval Training
-subtitle: (Infographic)
+subtitle: Infographic
 tags: 'fitness, training'
 meta:
   description: null

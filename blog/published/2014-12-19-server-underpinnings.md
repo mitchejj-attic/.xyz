@@ -1,6 +1,6 @@
 ---
 title: server underpinnings
-subtitle: 'The perfect server isn''t going to exist, the right server is the one you don''t have to think about or worry about'
+subtitle: The perfect server isn't going to exist, the right server is the one you don't have to think about or worry about
 tags: null
 meta:
   description: null

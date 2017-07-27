@@ -1,12 +1,12 @@
 ---
 title: september bits
-subtitle: 2015
+subtitle: '2015'
 tags: bits
 meta:
   description: null
   image:
     url: null
-    title: One of the best available data sets on left-handedness comes from a scratch-and-sniff survey of olfactory ability mailed out to millions of National Geographic subscribers in the 1980s.
+    title: null
     link: null
   source:
     url: null
@@ -22,7 +22,7 @@ path: /2015/09/30/september-bits/
 * [Linux workstation security checklist][linuxCheck]
 * [How to view-source of a Chrome extension][chrome]
 
-[left]: https://www.washingtonpost.com/news/wonkblog/wp/2015/09/22/the-surprising-geography-of-american-left-handedness/
+[left]: https://www.washingtonpost.com/news/wonkblog/wp/2015/09/22/the-surprising-geography-of-american-left-handedness/ One of the best available data sets on left-handedness comes from a scratch-and-sniff survey of olfactory ability mailed out to millions of National Geographic subscribers in the 1980s.
 [tnw]: http://thenodeway.io/
 [gulp]: http://www.valdelama.com/useful-gulp-recipes
 [linuxCheck]: https://github.com/lfit/itpol/blob/master/linux-workstation-security.md

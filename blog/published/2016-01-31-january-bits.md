@@ -1,6 +1,6 @@
 ---
 title: January Bits
-subtitle: 2016
+subtitle: '2016'
 tags: bits
 meta:
   description: null
