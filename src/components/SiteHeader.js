@@ -40,7 +40,7 @@ export default class SiteHeader extends React.Component {
         if (pathName === '/') {
             header = (
                 <div>
-                <h1 className="reset"><Link to={'/'} >
+                <h1 className="reset siteName h3"><Link to={'/'} >
                     {siteMetadata.title}
                     </Link></h1>
                                 <hr />    
@@ -55,10 +55,10 @@ export default class SiteHeader extends React.Component {
         else {
             header = (
                 <div>
-                <h2 className="center reset"><Link to={'/'} >
+                <h2 className="center reset siteName h3"><Link to={'/'} >
                     {siteMetadata.title}
-                    </Link></h2>
-                {date && distanceInWordsToNow(date, { addSuffix: true })}
+                    </Link></h2><div className="mobileHide">
+                {date && distanceInWordsToNow(date, { addSuffix: true })}</div>
                 </div>              
             )
         }

@@ -81,6 +81,9 @@ h5, h6  { font-size: var(--h5) }
 .inline-block { display: inline-block }
 .list-style-none { list-style: none }
  /*   ***   */
+ .siteName {
+   font-weight:200
+ }
 
  img {
   max-width: 100%;

@@ -14,7 +14,7 @@
   --h4: 1.125rem;
   --h5: .75rem;
 
-  --lh: calc(4/3);
+  --lh: 1.6111 /*calc(4.75/3)*/;
   --mx: 32em;
 
   --m1: calc(2/3 * 1em);
@@ -27,12 +27,16 @@
   --x4: 4rem;
   --x5: 8rem;
   --x6: 16rem;
+
+--mobile-breakpoint: 40rem;
 }
 
 /* custom media queries */
-@custom-media --viewport-phone (max-width: 50.0rem);
+@custom-media --viewport-non-mobile (min-width: var(--mobile-breakpoint))
+@custom-media --viewport-mobile (max-width: var(--mobile-breakpoint))
+/*@custom-media --viewport-phone (max-width: 50.0rem);
 @custom-media --viewport-medium (width >= 50rem) and (width <= 75.0rem);
-@custom-media --viewport-non-mobile (min-width: 75rem);
+@custom-media --viewport-non-mobile (min-width: 75rem);*/
 
 
 /* Larger than mobile screen */

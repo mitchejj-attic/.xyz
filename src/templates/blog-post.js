@@ -22,23 +22,31 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = get(this.props, "data.site.siteMetadata.title")
 
     return (
-      <div className="containerlost">
-        <div className="grid aside">
-                  <SiteHeader pageTitle={post.frontmatter.title} date={post.frontmatter.date} path={this.props.location.pathname} subtitle={post.frontmatter.subtitle} />   
-        </div>
-        <div className="grid main">
-          <article title={post.frontmatter.title} >
+
+        <div className="blogContainer">
+          <div className="header">
+          <div className="siteHead">
+            <SiteHeader pageTitle={post.frontmatter.title} date={post.frontmatter.date} path={this.props.location.pathname} subtitle={post.frontmatter.subtitle} />
+          </div>
+          <div className="blogHead">
+            <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
             <Qtime date={post.frontmatter.date} />
             <h1 className="reset cyan5">{post.frontmatter.title}</h1>
-            {post.frontmatter.subtitle && <h2 className="gray5 reset">{post.frontmatter.subtitle}</h2>}
+            
+
+          </div>
+          </div>  
+          <div className="blogContent">
+                                <article title={post.frontmatter.title} >
+    
             
           
-          <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
+          
           <Image src={post.frontmatter.meta.image.url} />  
           <div className="markdown" dangerouslySetInnerHTML={{ __html: post.html }} />
         </article>
-        </div>  
-    </div>
+          </div>
+        </div>
 
     )
   }

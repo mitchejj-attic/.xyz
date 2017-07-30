@@ -1,31 +1,44 @@
-@lost gutter 1rem;
+/*@lost gutter 1rem;
 .outline {
-  /*lost-utility: edit rgb(15, 150, 25);*/
+  lost-utility: edit rgb(15, 150, 25);
 }
-
-.containerlost {
+*/
+.blogContainer, .aLostColumn {
+  lost-column: 1;
   lost-utility: clear;
 }
 
-.grid {
-  lost-column: 1;
+.header {lost-column: 1;}
+.siteHead {lost-column: 1;}
+.blogHead {lost-column: 1;}
+.blogContent { lost-column: 1;}
+.mainContent { lost-column: 1;}
+
+
+
+@media (max-width: 45.001rem) {
+  .mobileHide { display:none }
 }
-.main {
-lost-column: 1;
-}
-.aside {
-  lost-column: 1;
+@media (min-width: 45rem ) {
+.siteHead {lost-column: 1/4}
+.blogHead {lost-column: 3/4}
+.blogContent { lost-column: 2/3; lost-offset: 1/6}
+/* *** */
+.mainContent {lost-column: 3/4; /*column-count: 2; column-rule: 1px solid lightblue;*/}
 
 }
 
-@media (min-width: 46.5rem) {
-  .grid:first-child {
-    /*height: 100vh;*/
-  }
-  .grid:first-child {
-    lost-column: 1/4;
-  }
-  .grid:last-child{
-    lost-column: 3/4;
-  }
-}
+
+/*
+
+
+.blog, {lost-column: 2/3; lost-offset: 1/6; lost-utility: clear;}
+
+
+
+
+
+.blog:first-child {}
+.blog:last-child { }
+.blog:first-child { lost-column: 1/6;lost-utility: clear;}
+.blog:last-child { lost-column: 1/8;lost-utility: clear;}*/

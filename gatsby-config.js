@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'static draft',
+    title: 'StaticDraft.xyz',
     author: 'Jason Mitchell',
     site_url: 'https://home.xyz',
     profilePic: 'https://avatars1.githubusercontent.com/u/156855?s=100',

@@ -25,20 +25,17 @@ class BlogIndex extends React.Component {
     */
     
     return (
-      <section className="containerlost">
-        <Helmet title={siteTitle} />
-        <aside className="grid aside">
-          <SiteHeader />
-        </aside>
-        <div className="grid main">
-
-        <ul className="">
+      <div className="index">
+        <div className="siteHead"><SiteHeader /></div>
+        <div className="mainContent">
+ <ul className="">
           {allMarkdownRemark.edges.map(({ node }) =>
             <BlogIndexCard post={node}  />
           )}
         </ul>
-          </div>
-      </section>
+        </div>
+
+      </div>
 
     )
   }
