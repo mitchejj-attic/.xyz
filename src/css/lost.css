@@ -1,9 +1,9 @@
-/*@lost gutter 1rem;
+/*@lost gutter 1rem;*/
 .outline {
-  lost-utility: edit rgb(15, 150, 25);
+  /*lost-utility: edit rgb(15, 150, 25);*/
 }
-*/
-.blogContainer, .aLostColumn {
+
+.blogContainer, .pageContainer {
   lost-column: 1;
   lost-utility: clear;
 }
@@ -20,13 +20,15 @@
   .mobileHide { display:none }
 }
 @media (min-width: 45rem ) {
-.siteHead {lost-column: 1/4}
+/*.siteHead {lost-column: 1/4}
 .blogHead {lost-column: 3/4}
 .blogContent { lost-column: 2/3; lost-offset: 1/6}
-/* *** */
-.mainContent {lost-column: 3/4; /*column-count: 2; column-rule: 1px solid lightblue;*/}
+ *** */
+ .blogContainer, .pageContainer { lost-column: 5/6; lost-offset: 1/24;}
+.mainContent {lost-column: 6/7; lost-offset: 1/48 ;  /*column-count: 2; column-rule: 1px solid lightblue;*/}
 
 }
+
 
 
 /*

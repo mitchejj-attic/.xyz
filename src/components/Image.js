@@ -1,21 +1,16 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Lightbox from 'react-images'
 
 export default class Image extends React.Component {
     static defaultProps = {
-        src: null,
-        caption: null,
+        image: null,
   }
     render() {
-        const src = this.props.src
-        const imageSet = [{
-            src: this.props.src
-            caption: this.props.src
-        }]
+        const {url, caption} = this.props.image
+
         return (
-            <figure>
-                <img src={src} alt={caption} >
+            <figure className="blog-figure" >
+                <img className="blog-image" src={url} alt={caption} />
             </figure>
         )
     }

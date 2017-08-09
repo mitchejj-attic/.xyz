@@ -1,12 +1,15 @@
 @charset "utf-8";
 @import 'colors.css';
 @import 'xyz.css';
+/*@import 'grid.css';*/
 @import 'lost.css';
 @import 'normal.css';
 @import 'markdown.css';
 
 @media (min-width: 40rem) {
 }
+
+
 
 .monospace {
   font-family: var(--monospace);
@@ -143,4 +146,13 @@ blockquote small {
 
 .center {
   text-align: center;
+}
+
+.fullVW {
+  width: = 100vw;
+  background: red;
+}
+.footnote, .footnotes {
+  font-size: 75%;
+
 }

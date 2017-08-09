@@ -10,7 +10,7 @@ class BlogIndexCard extends React.Component {
         const post = this.props.post
 
         return (
-            <li className="h3 cleanlist indexlist"><Link to={post.frontmatter.path}>{post.frontmatter.title}</Link></li>
+            <li className="h3 cleanlist indexlist "><Link to={post.frontmatter.path}>{post.frontmatter.title}</Link></li>
         )
     }
 }

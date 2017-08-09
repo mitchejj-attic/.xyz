@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import graphql from 'graphql'
 import PropTypes from 'prop-types'
 import IndexingPost from '../components/IndexingPost'
-import BlogIndexCard from '../components/blog-index-card'
+import PostCard from '../components/post-card'
 import SiteHeader from '../components/SiteHeader'
 
 class BlogIndex extends React.Component {
@@ -25,28 +25,17 @@ class BlogIndex extends React.Component {
     */
     
     return (
-      <div className="pageContainer">
-        <div className="header">
-          <div className="siteHead"><SiteHeader /></div>
-
-          
-                                  <ul className=" whoami reset list-style-none">
-                        <li className="inline-block mr1">about</li> 
-                    <li className="inline-block mr1">projects</li>  
-</ul>
+      <div className="index">
+        <div className="siteHead"><SiteHeader /></div>
+        
+        <div className="mainContent">
 
 
-
-        </div>
-
-        <div className="blogContent">
-
-           <ul className="">
           {allMarkdownRemark.edges.map(({ node }) =>
-            <BlogIndexCard post={node}  />
+            <PostCard post={node}  />
           )}
-        </ul>
         </div>
+
       </div>
 
     )
@@ -60,7 +49,7 @@ BlogIndex.propTypes = {
 export default BlogIndex
 
 export const pageQuery = graphql`
-query BlogPostsIndexQuery {
+query BlogPostsAllQuery {
   site {
     siteMetadata {
       title
@@ -75,7 +64,7 @@ query BlogPostsIndexQuery {
       {
         edges {
           node {
-            ...blogIndexCardFragment_item
+            ...blogPostCardFragment_item
         }
         
       }

@@ -8,7 +8,6 @@ export default class IndexingPost extends React.Component {
 
         return (
             <li className="h3 cleanlist indexlist"><Link to={postLink}>{postTitle}</Link></li>
-            
         )
     }
 }

@@ -5,13 +5,14 @@ import get from "lodash/get"
 import '../css/base.css'
 import Bio from "../components/Bio"
 import SiteHeader from '../components/SiteHeader'
-import { Text, Image } from 'rebass'
+//import { Text, Image } from 'rebass'
+import Image from '../components/Image'
 import format from "date-fns/format"
 
 function Qtime(props) {
   const RFC3339 = 'YYYY-MM-DDTHH:mm:ssZ'
   return (
-    <time className=" gray5">{format(props.date, 'dddd MMMM D, YYYY')}</time>
+    <time className="time-divide">{format(props.date, 'dddd MMMM D, YYYY')}</time>
   )
 }
 
@@ -20,6 +21,7 @@ class BlogPostTemplate extends React.Component {
 
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, "data.site.siteMetadata.title")
+    const image = post.frontmatter.meta.image
 
     return (
 
@@ -31,7 +33,11 @@ class BlogPostTemplate extends React.Component {
           <div className="blogHead">
             <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
             <Qtime date={post.frontmatter.date} />
-            <h1 className="reset cyan5">{post.frontmatter.title}</h1>
+            <h1 className="reset gray5 h1">{post.frontmatter.title}</h1>
+         
+
+            
+            
             
 
           </div>
@@ -42,7 +48,7 @@ class BlogPostTemplate extends React.Component {
             
           
           
-          <Image src={post.frontmatter.meta.image.url} />  
+          {image.url && <Image image={image} /> } 
           <div className="markdown" dangerouslySetInnerHTML={{ __html: post.html }} />
         </article>
           </div>

@@ -34,6 +34,9 @@ export default class SiteHeader extends React.Component {
         const subtitle = this.props.subtitle
         const date = this.props.date
         const timeAgo = distanceInWordsToNow(date, {addSuffix: true})
+/* <div className="mobileHide">
+                {date && distanceInWordsToNow(date, { addSuffix: true })}</div>
+*/
 
         let header
         
@@ -42,29 +45,21 @@ export default class SiteHeader extends React.Component {
                 <div>
                 <h1 className="reset siteName h3"><Link to={'/'} >
                     {siteMetadata.title}
-                    </Link></h1>
-                                <hr />    
-                <ul className="reset list-style-none">
-                        <li className="inline-block mr1">about</li> 
-                    <li className="inline-block mr1">projects</li>  
-                      
-                </ul>       
+                    </Link></h1>      
                 </div>
             )
         }
         else {
             header = (
-                <div>
-                <h2 className="center reset siteName h3"><Link to={'/'} >
+                <h2 className="reset siteName h3"><Link to={'/'} >
                     {siteMetadata.title}
-                    </Link></h2><div className="mobileHide">
-                {date && distanceInWordsToNow(date, { addSuffix: true })}</div>
-                </div>              
+                    </Link></h2>
+               
             )
         }
 
         return (
-            <div className="center reset">
+            <div className=" reset">
         
                 {header}
       
