@@ -28,7 +28,7 @@ class BlogPostTemplate extends React.Component {
         <div className="blogContainer">
           <div className="header">
           <div className="siteHead">
-            <SiteHeader pageTitle={post.frontmatter.title} date={post.frontmatter.date} path={this.props.location.pathname} subtitle={post.frontmatter.subtitle} />
+            <SiteHeader pageTitle={post.frontmatter.title} date={post.frontmatter.date}  subtitle={post.frontmatter.subtitle} />
           </div>
           <div className="blogHead">
             <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
