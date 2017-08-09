@@ -17,7 +17,7 @@ path: /2013/06/07/openbox-cinnamon/
 ---
 My [vacation\[summer, 2013\]][myLink] ended and I continue to evaluate and tinker with plans to create a standardized deployment across my laptops; I am finding what I once thought was a sure thing isn't. I currently run [OpenBox][openBox] on my Arch install, my desire to keep minimal system along how much I enjoy many aspects of [Crunch Bang][#!] I thought OpenBox would be the clear winner. Yet [Cinnamon][cMon] is starting to emerge as a strong contender, I am starting to grow fond of the environment. I wish Cinnamon was an independant [project][cMonProject] and not a vital cog of Mint Linux. Without such seperation, lack of documantion and independant development cycle the project lacks transparency leaving the UX at the whim of the Mint dev team.
 
->Cinnamon is a Mint project and it's the implementation of Mint's vision and needs for a desktop.<sup id="#fn1r-2013-06-07">[1]</sup>
+>Cinnamon is a Mint project and it's the implementation of Mint's vision and needs for a desktop.[^...1]
 ><small><cite>[Clement Lefebvre][clem]</cite></small>
 
 Electing to use Cinnamon would be taking the easy way out along with the baggage associated with it. Cinnamon is a derivative of GNOME, which has a plethora of settings not always exposed to the user. One such setting is natural scrolling, I have natural scrolling correctly configure in xorg.conf\{.d\}
@@ -36,13 +36,8 @@ Neither GNOME nor Cinnamon would honor this system wide defualt setting, so some
 	gsettings set org.gnome.settings-daemon.peripherals.touchpad natural-scroll "true"
 
 
-<div class="footnotes">
-  <ol>
-    <li id='fn1-2013-06-07'>
-      <blockquote>It's in its design to be compatible with Linux as a whole though, so for it not work or not to be suitable on any distribution is a perfectly valid concern and we do consider it a bug.</blockquote><p>It is perfectly acceptable for Mint to spend their resources on improving Cinnamon for Mint. Speaking only as an end user not using a Mint distro, if I elect to use Cinnamon I would personally feel more comfortable with my choice if development priority was given to improve the project overall and not specifically Mint.
-      <a href="#fn1r-2013-06-07">&#x21A9;&#xFE0E;</a></p></li>
-</ol>
-</div>
+
+[^...1]: <blockquote>It's in its design to be compatible with Linux as a whole though, so for it not work or not to be suitable on any distribution is a perfectly valid concern and we do consider it a bug.</blockquote><p>It is perfectly acceptable for Mint to spend their resources on improving Cinnamon for Mint. Speaking only as an end user not using a Mint distro, if I elect to use Cinnamon I would personally feel more comfortable with my choice if development priority was given to improve the project overall and not specifically Mint.
 
 [1]: #fn1-2013-06-07
 [#!]: http://crunchbang.org
