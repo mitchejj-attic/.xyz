@@ -1,13 +1,12 @@
-import React from "react"
-import Helmet from "react-helmet"
-import Link from "gatsby-link"
-import get from "lodash/get"
+import React from 'react'
+import Helmet from 'react-helmet'
 import '../css/base.css'
-import Bio from "../components/Bio"
+import Bio from '../components/Bio'
 import SiteHeader from '../components/SiteHeader'
-//import { Text, Image } from 'rebass'
+import Link from 'gatsby-link'
+
 import Image from '../components/Image'
-import format from "date-fns/format"
+import format from 'date-fns/format'
 
 function Qtime(props) {
   const RFC3339 = 'YYYY-MM-DDTHH:mm:ssZ'
@@ -18,42 +17,36 @@ function Qtime(props) {
 
 class BlogPostTemplate extends React.Component {
   render() {
-
     const post = this.props.data.markdownRemark
-    const siteTitle = get(this.props, "data.site.siteMetadata.title")
+    const siteTitle = this.props.data.site.siteMetadata.title
     const image = post.frontmatter.meta.image
 
-    return (
-
-        <div className="blogContainer">
-          <div className="header">
-          <div className="siteHead">
-            <SiteHeader pageTitle={post.frontmatter.title} date={post.frontmatter.date}  subtitle={post.frontmatter.subtitle} />
-          </div>
-          <div className="blogHead">
-            <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-            <Qtime date={post.frontmatter.date} />
-            <h1 className="reset gray5 h1">{post.frontmatter.title}</h1>
-         
-
-            
-            
-            
-
-          </div>
-          </div>  
-          <div className="blogContent">
-                                <article title={post.frontmatter.title} >
-    
-            
-          
-          
-          {image.url && <Image image={image} /> } 
-          <div className="markdown" dangerouslySetInnerHTML={{ __html: post.html }} />
-        </article>
-          </div>
+  return (
+    <div className="blogContainer">
+      
+      <div className="header">
+        <div className="siteHead">
+          <SiteHeader pageTitle={post.frontmatter.title} date={post.frontmatter.date} subtitle={post.frontmatter.subtitle} />
         </div>
 
+        <div className="blogHead">
+          <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
+          <Qtime date={post.frontmatter.date} />
+          {post.frontmatter.dispatch &&
+            <div className="dispatch">My notion of dispatches (linked list) has yet to be fully implemented, until I do just follow the <Link to={post.frontmatter.dispatch}>link here.</Link>
+            </div>
+          }
+          <h1 className="reset gray5 h1">{post.frontmatter.title}</h1>
+        </div>
+      </div>
+
+      <div className="blogContent">
+        <article title={post.frontmatter.title} >
+          {image.url && <Image image={image} /> }
+          <div className="markdown" dangerouslySetInnerHTML={{ __html: post.html }} />
+        </article>
+      </div>
+    </div>
     )
   }
 }
@@ -76,6 +69,7 @@ export const pageQuery = graphql`
         title
         subtitle
         date
+        dispatch
         meta {
           description
           image {
