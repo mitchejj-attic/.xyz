@@ -2,9 +2,9 @@
   "name": "xyz",
   "version": "0.0.0",
   "dependencies": {
-    "babel-loader": "^7.1.1",
     "cssnano": "next",
     "date-fns": "^1.28.5",
+    "dateformat": "^2.0.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-config-standard-jsx": "^4.0.2",
     "eslint-plugin-standard": "^3.0.1",
