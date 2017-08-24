@@ -37,7 +37,7 @@ Neither GNOME nor Cinnamon would honor this system wide defualt setting, so some
 
 
 
-[^...1]: <blockquote>It's in its design to be compatible with Linux as a whole though, so for it not work or not to be suitable on any distribution is a perfectly valid concern and we do consider it a bug.</blockquote><p>It is perfectly acceptable for Mint to spend their resources on improving Cinnamon for Mint. Speaking only as an end user not using a Mint distro, if I elect to use Cinnamon I would personally feel more comfortable with my choice if development priority was given to improve the project overall and not specifically Mint.
+[^...1]: It is perfectly acceptable for Mint to spend their resources on improving Cinnamon for Mint. Speaking only as an end user not using a Mint distro, if I elect to use Cinnamon I would personally feel more comfortable with my choice if development priority was given to improve the project overall and not specifically Mint.<blockquote>It's in its design to be compatible with Linux as a whole though, so for it not work or not to be suitable on any distribution is a perfectly valid concern and we do consider it a bug.</blockquote>
 
 [1]: #fn1-2013-06-07
 [#!]: http://crunchbang.org
