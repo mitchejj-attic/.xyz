@@ -6,7 +6,7 @@ To Do:
 * [ ] Need a rewrite rule for /io/pi/ see /2015/03/15/raspberry/ for link test
 * [ ] Need a rewirte rule for /pages/arch-on-flash
 * [ ] Need a rewrite rule for /about/history
-* [ ] Need to fix `dispatch` links
+* [-] Need to fix `dispatch` links
 * [ ] Need to fix meta data
 * [-] Better footnotes see /2014/11/30/november-bits/ or /2014/07/14/middleman/
     * [ ] Move footnotes back over to using the provied markdown support
