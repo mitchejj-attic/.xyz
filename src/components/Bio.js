@@ -1,10 +1,16 @@
 import React from "react"
+import Link from "gatsby-link"
 
 
 
 class Bio extends React.Component {
   render() {
     // test of prassing props
+    let a = ""
+    let locationType = this.props.type
+    if (locationType = 'head') {
+      a = "bio mobileHide"
+    }
     let {siteMetadata}= this.props
     let test 
     if (siteMetadata) {
@@ -15,24 +21,10 @@ class Bio extends React.Component {
     }
 
     return (
-      <p
-        style={{
-
-        }}
-      >
-       <img
-          src={`https://avatars1.githubusercontent.com/u/156855?s=100`}
-          alt={`Jason Mitchell`}
-          style={{
-
-          }}
-        />        
-        Written by
-        {" "}
-        <strong>Jason Mitchell</strong>
-        {" "}
-        {test}
-      </p>
+      <div className={a}>
+      <p>I’m Jason; this is my online dwelling; this is the disjointed weblog. I hold a degree in Computer Science from <Link to="http://gvsu.edu/">Grand Valley State University</Link>. However, instead of putting my degree to uses, I work a retail job, as a manger, for
+      <Link to="http://panerabread.com">Panera Bread</Link>. Thanks to this experience learned a lot and grown as an individual. Here will live a digital work-space and playground. I will share personal thoughts, refine my writing style and explore different technologies and methodologies. Things may work, things may not work and things may break. As a result, nothing here should be considered finished, polished, refined or ready for mass consumption. With any luck, I will develop this space into an unique blend of tech, running
+      and everything I find interesting. </p></div>
     )
   }
 }

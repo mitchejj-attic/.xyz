@@ -34,35 +34,28 @@ export default class SiteHeader extends React.Component {
         const subtitle = this.props.subtitle
         const date = this.props.date
         const timeAgo = distanceInWordsToNow(date, {addSuffix: true})
-/* <div className="mobileHide">
+        /* <div className="mobileHide">
                 {date && distanceInWordsToNow(date, { addSuffix: true })}</div>
-*/
-
+        */
         let header
         
         if (pathName === '/') {
             header = (
-                <div>
                 <h1 className="reset siteName h3"><Link to={'/'} >
-                    {siteMetadata.title}
-                    </Link></h1>      
-                </div>
-            )
-        }
+                {siteMetadata.title}
+                </Link>
+            </h1>      
+            )}
         else {
             header = (
                 <h2 className="reset siteName h3"><Link to={'/'} >
-                    {siteMetadata.title}
+                   2 {siteMetadata.title}
                     </Link></h2>
-               
-            )
-        }
+            )}
 
         return (
             <div className=" reset">
-        
                 {header}
-      
             </div>
             
         )
