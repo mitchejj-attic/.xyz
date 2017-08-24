@@ -1,10 +1,8 @@
 node_modules/
 public
-.gatsby-context.js
 .DS_Store
 .intermediate-representation/
 .cache/
-yarn.lock
 .vscode/
 post/
 src/templates/zenburn.css
