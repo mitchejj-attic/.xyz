@@ -1,17 +1,17 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import graphql from 'graphql'
 import PropTypes from 'prop-types'
 import IndexingPost from '../components/IndexingPost'
 import BlogIndexCard from '../components/blog-index-card'
 import SiteHeader from '../components/SiteHeader'
+import Bio from '../components/Bio'
 
 class BlogIndex extends React.Component {
   render() {
     const pageLinks = []
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+    const siteTitle = this.props.data.site.siteMetadata.title
     const { allMarkdownRemark } = this.props.data
     /*const posts = get(this, 'props.data.allMarkdownRemark.edges')
     posts.forEach(post => {
@@ -27,19 +27,13 @@ class BlogIndex extends React.Component {
     return (
       <div className="pageContainer">
         <div className="header">
-          <div className="siteHead"><SiteHeader /></div>
-
-          
-                                  <ul className=" whoami reset list-style-none">
-                        <li className="inline-block mr1">about</li> 
-                    <li className="inline-block mr1">projects</li>  
-</ul>
-
-
-
+          <SiteHeader />
+          <Bio type="head" />
         </div>
+        
 
         <div className="blogContent">
+        
 
            <ul className="">
           {allMarkdownRemark.edges.map(({ node }) =>
