@@ -23,29 +23,27 @@ class BlogPostTemplate extends React.Component {
 
   return (
     <div className="blogContainer">
-      
+
       <div className="header">
         <div className="siteHead">
           <SiteHeader pageTitle={post.frontmatter.title} date={post.frontmatter.date} subtitle={post.frontmatter.subtitle} />
         </div>
+      </div>
 
         <div className="blogHead">
           <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
           <Qtime date={post.frontmatter.date} />
+
+          <h1 className="post-title">{post.frontmatter.title}</h1>
           {post.frontmatter.dispatch &&
-            <div className="dispatch">My notion of dispatches (linked list) has yet to be fully implemented, until I do just follow the <Link to={post.frontmatter.dispatch}>link here.</Link>
+            <div className="dispatch"><p>My notion of dispatches (linked list) has yet to be fully implemented, until I do just follow the <Link to={post.frontmatter.dispatch}>link here.</Link></p>
             </div>
           }
-          <h1 className="reset gray5 h1">{post.frontmatter.title}</h1>
-        </div>
-      </div>
-
-      <div className="blogContent">
-        <article title={post.frontmatter.title} >
           {image.url && <Image image={image} /> }
+        </div>
+        <article title={post.frontmatter.title} className="blogContent">
           <div className="markdown" dangerouslySetInnerHTML={{ __html: post.html }} />
         </article>
-      </div>
     </div>
     )
   }
