@@ -13,26 +13,23 @@ class BlogIndex extends React.Component {
     const pageLinks = []
     const siteTitle = this.props.data.site.siteMetadata.title
     const { allMarkdownRemark } = this.props.data
+
     
     return (
       <div className="pageContainer">
         <div className="header">
           <SiteHeader />
         </div>
-      
+        
+
         <div className="blogContent">
-      
+        
 
            <ul className="">
           {allMarkdownRemark.edges.map(({ node }) =>
             <BlogIndexCard post={node}  />
-            )}
-          </ul>
-
-           <Bio type="head" />  
-           <ul>
-          <li className="h3 cleanlist indexlist "><Link to="all/">the archive</ Link></li>  
-          </ul>
+          )}
+        </ul>
         </div>
       </div>
 
@@ -47,14 +44,14 @@ BlogIndex.propTypes = {
 export default BlogIndex
 
 export const pageQuery = graphql`
-query BlogPostsIndexQuery {
+query AllBlogPostsIndexQuery {
   site {
     siteMetadata {
       title
     }
   }
     allMarkdownRemark(
-      limit: 4,
+      limit: 2000,
       sort: {
         fields: [frontmatter___date]
         order: DESC

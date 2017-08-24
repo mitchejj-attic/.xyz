@@ -25,9 +25,6 @@
 
 
 .markdown li  :any-link {
-   border-bottom: .125rem solid var(--yellow1);
-   border-radius: .125rem;
-    color: var(--blue5);
     line-height: 1.77;
 }
 
@@ -35,7 +32,6 @@
   font-size: 1.12rem;
   display: block;
   background: var(--gray9);
-  
   border: .0625rem solid var(--gray9);
   border-radius: .25rem;
   overflow-y: hidden;
@@ -57,17 +53,19 @@ time {
 }
 
 code {
-  color:var(--gray9);
+  color: white;
   white-space: pre;
-  word-wrap: break-word;
-  background: var(--yellow1);
-  border: 0.0625rem solid var(--yellow1);
-  border-radius: .125rem;
+  background: var(--blue7);
+  border: 0.0625rem  transparent;
+  border-top-left-radius: .125rem;
+  border-top-right-radius: .125rem;
   display: inline;
   font-family: var(--monospace);
   max-width: 100%;
   overflow: auto;
-  padding: 0 0.1625rem;
+  padding: 0 0.25rem; /* last 0 to ensure we get a link boarder showing*/
+
+
 }
 .time-divide {
 /*
@@ -81,14 +79,11 @@ code {
   padding-left: .25rem;
   border-bottom: 0.125rem solid var(--gray8);*/
 
-  color: var(--gray5);
+  color: var(--blue0);
   display: block;
 }
 
 .whoami { 
-
-
-
   padding-left: .25rem;
 }
 

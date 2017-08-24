@@ -47,5 +47,3 @@
 
 /* Larger than desktop screen */
 @media (min-width: 120.0rem) {  }
-
-.dispatch { background: var(--red4); color: white; padding: .5rem}

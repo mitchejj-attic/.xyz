@@ -14,8 +14,6 @@
 .blogContent { lost-column: 1;}
 .mainContent { lost-column: 1;}
 
-
-
 @media (max-width: 45.001rem) {
   .mobileHide { display:none }
 }

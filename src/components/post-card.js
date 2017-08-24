@@ -1,9 +1,7 @@
 import React from "react"
 import PropTypes from 'prop-types'
 import graphql from 'graphql'
-import get from 'lodash/get'
 import Link from "gatsby-link"
-
 
 class PostCard extends React.Component {
     render() {
@@ -30,6 +28,7 @@ export const blogIndexCardFragment = graphql`
             subtitle
             path
             date
+            dispatch
           }
         
     }

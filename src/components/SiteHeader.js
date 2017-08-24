@@ -41,7 +41,7 @@ export default class SiteHeader extends React.Component {
         
         if (pathName === '/') {
             header = (
-                <h1 className="reset siteName h3"><Link to={'/'} >
+                <h1 className="reset siteName h2"><Link to={'/'} >
                 {siteMetadata.title}
                 </Link>
             </h1>      

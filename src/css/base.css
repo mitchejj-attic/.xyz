@@ -9,8 +9,6 @@
 @media (min-width: 40rem) {
 }
 
-
-
 .monospace {
   font-family: var(--monospace);
 }
@@ -19,6 +17,8 @@ body {
   font-size: var(--h4);
   line-height: var(--lh);
   margin: 1.25rem;
+  background-color: var(--blue5);
+  color: white;
 }
 
 h1, h2, h3 {
@@ -101,18 +101,55 @@ cite :before {
   content: '\2014 \00A0';
 }
 
-blockquote {
-  border-left: thick solid var(--gray9);
+blockquote, .dispatch, .bio, .post-title {
+  border-left: thick solid var(--black);
+  border-radius: .5rem;
   padding-left: 2rem;
   padding-right: .5rem;
   padding-top: .0625rem;
   padding-bottom: .0625rem;
-  background-color: var(--gray1);
-  color: var(--gray9);
+  background-color: var(--blue6);
+  & :any-link {
+    color: white;
+    border-bottom: .0625rem solid var(--blue0)
+  }
+}
+
+
+blockquote, .dispatch, .bio, {
+
+ 
+  color: white;
   font-size: 110%;
 
+
+}/*
+blockquote {
+  background-color: white;
+  color: var(--black);
+  margin: .5rem;
+  padding-left: 2rem;
+  padding-right: .5rem;
+  padding-top: .0625rem;
+  padding-bottom: .0625rem;
+  border-radius: .5rem;
+  border: thick  var(--blue4);
+  font-size: 110%;
+
+
+
+}*/
+
+
+li > blockquote {
+  background: var(--blue6);
+  border-radius: inherit;
+  color: inherit;
+  margin: .5rem;
+  padding: 1rem;
+  width:75%;
+
 }
-li > blockquote {}
 
 blockquote small {
    display: block;
@@ -121,12 +158,12 @@ blockquote small {
     list-style-type: none;
 }
 .indexlist :any-link {
-    border-bottom: .25rem solid var(--yellow1)
+
 }
 
 :any-link {
-  color: var(--blue5);
-  
+  color: white;
+  border-bottom: .0625rem solid var(--yellow1)
 }
 
 .center {
@@ -156,16 +193,41 @@ blockquote small {
   font-size: 75%;
 }
 
+/*.dispatch {
+  border-left: thick solid var(--blue6);
+  background-color: var(--blue4);
+  border-radius: .125rem;
+  padding-left: 2rem;
+  padding-right: .5rem;
+  padding-top: .0625rem;
+  padding-bottom: .0625rem;
+  border: 0.0625rem  transparent;
+
+}
+
+
 .bio {
-  background: var(--blue5);
-  color: white;
-  padding-left: 1rem;
-  padding-left: 1rem;
-  padding-top: .125rem;
-  padding-bottom: .125rem;
+  background: white;
+  color: var(--black);
+  border-radius: .25rem;
+  padding-left: 2rem;
+  padding-right: .5rem;
+  padding-top: .0625rem;
+  padding-bottom: .0625rem;
+  border: 0.0625rem  transparent;
+
 
   & :any-link {
-    color: white;
-    border-bottom: .0625rem solid var(--yellow2)
+    color: var(--black);
+    border-bottom: .0625rem solid var(--blue5)
   }
+}*/
+
+.post-title {
+  color: white;
+  font-size: var(--h1);
+}
+
+.post-title > p {
+
 }
