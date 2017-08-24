@@ -4061,9 +4061,9 @@ gather-stream@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/gather-stream/-/gather-stream-1.0.0.tgz#b33994af457a8115700d410f317733cbe7a0904b"
 
-gatsby-cli@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-1.1.1.tgz#20ceafc27d8df330215a2c95b47614835dbc509e"
+gatsby-cli@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-1.1.2.tgz#b518717a4f9dc442ca7b832ae7f32647c4d00cab"
   dependencies:
     babel-runtime "^6.25.0"
     bluebird "^3.5.0"
@@ -4080,8 +4080,8 @@ gatsby-cli@^1.1.1:
     yurnalist "^0.2.1"
 
 gatsby-link@^1.0.9:
-  version "1.6.9"
-  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-1.6.9.tgz#f0153ed09e4c46d6940dcf4c02d69976ad6061e0"
+  version "1.6.10"
+  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-1.6.10.tgz#cde7957c2fb9957d74faa3caf71dc45d91e379f6"
   dependencies:
     babel-runtime "6.26.0"
     prop-types "^15.5.8"
@@ -4245,8 +4245,8 @@ gatsby-transformer-sharp@^1.0.1:
     image-size "^0.6.0"
 
 gatsby@^1.7.2:
-  version "1.9.2"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.2.tgz#56ec9580cc0ccb6a2e897f2da6fb65f5772d4538"
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.3.tgz#d2fd42c67772547ef7a3c92668221996901cf5b8"
   dependencies:
     async "^2.1.2"
     babel-code-frame "^6.22.0"
@@ -4288,7 +4288,7 @@ gatsby@^1.7.2:
     friendly-errors-webpack-plugin "^1.6.1"
     front-matter "^2.1.0"
     fs-extra "^3.0.1"
-    gatsby-cli "^1.1.1"
+    gatsby-cli "^1.1.2"
     glob "^7.1.1"
     graphql "^0.10.3"
     graphql-relay "^0.5.1"
@@ -4902,7 +4902,7 @@ hex-color-regex@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
 
-history@^4.5.1, history@^4.6.0, history@^4.6.2:
+history@^4.6.2, history@^4.7.2:
   version "4.7.2"
   resolved "https://registry.yarnpkg.com/history/-/history-4.7.2.tgz#22b5c7f31633c5b8021c7f4a8a954ac139ee8d5b"
   dependencies:
@@ -4931,6 +4931,10 @@ hoek@4.x.x:
 hoist-non-react-statics@^1.0.0, hoist-non-react-statics@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
+
+hoist-non-react-statics@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.3.0.tgz#ede16318c2ff1f9fe3a025396ba06fd4c44608bb"
 
 home-or-tmp@^2.0.0:
   version "2.0.0"
@@ -7395,7 +7399,7 @@ path-to-regexp@0.1.7:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
 
-path-to-regexp@^1.0.1, path-to-regexp@^1.5.3:
+path-to-regexp@^1.0.1, path-to-regexp@^1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-1.7.0.tgz#59fde0f435badacba103a84e9d3bc64e96b9937d"
   dependencies:
@@ -8826,13 +8830,14 @@ react-proxy@^3.0.0-alpha.0:
     lodash "^4.6.1"
 
 react-router-dom@^4.1.1:
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-4.1.2.tgz#7f8a7ca868d32acadd19ca09543b40d26df8ec37"
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-4.2.0.tgz#84238285ac31a1afe53c87a751b9f1ffc5b69af7"
   dependencies:
-    history "^4.5.1"
+    history "^4.7.2"
+    invariant "^2.2.2"
     loose-envify "^1.3.1"
     prop-types "^15.5.4"
-    react-router "^4.1.1"
+    react-router "^4.2.0"
 
 "react-router-scroll@github:ytase/react-router-scroll#build":
   version "0.4.1"
@@ -8841,15 +8846,15 @@ react-router-dom@^4.1.1:
     scroll-behavior "^0.9.1"
     warning "^3.0.0"
 
-react-router@^4.1.1:
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/react-router/-/react-router-4.1.2.tgz#7ae027341abc42eb08ad9f7a8cac08d0563672ce"
+react-router@^4.1.1, react-router@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-4.2.0.tgz#61f7b3e3770daeb24062dae3eedef1b054155986"
   dependencies:
-    history "^4.6.0"
-    hoist-non-react-statics "^1.2.0"
+    history "^4.7.2"
+    hoist-non-react-statics "^2.3.0"
     invariant "^2.2.2"
     loose-envify "^1.3.1"
-    path-to-regexp "^1.5.3"
+    path-to-regexp "^1.7.0"
     prop-types "^15.5.4"
     warning "^3.0.0"
 
@@ -10317,8 +10322,8 @@ stylehacks@^4.0.0-rc.2:
     postcss-selector-parser "^3.0.0-rc.0"
 
 stylis@^3.2.1:
-  version "3.2.10"
-  resolved "https://registry.yarnpkg.com/stylis/-/stylis-3.2.10.tgz#564614acfbc5460f899b7e1b58fc6a947e49fdb1"
+  version "3.2.11"
+  resolved "https://registry.yarnpkg.com/stylis/-/stylis-3.2.11.tgz#8e9b99ed5e3b9b1b959c455f004c6effb7cf7331"
 
 subtext@1.x.x:
   version "1.1.1"
@@ -10656,8 +10661,8 @@ tough-cookie@~2.3.0:
     punycode "^1.4.1"
 
 tracer@^0.8.7:
-  version "0.8.9"
-  resolved "https://registry.yarnpkg.com/tracer/-/tracer-0.8.9.tgz#64bc88a116e35d76edad2315a0011eb5f11393a6"
+  version "0.8.11"
+  resolved "https://registry.yarnpkg.com/tracer/-/tracer-0.8.11.tgz#5941c67404410d86665b75bba68bb1c9d2c3cacd"
   dependencies:
     colors "1.1.2"
     dateformat "2.0.0"
