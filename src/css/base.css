@@ -154,5 +154,18 @@ blockquote small {
 }
 .footnote, .footnotes {
   font-size: 75%;
+}
 
+.bio {
+  background: var(--blue5);
+  color: white;
+  padding-left: 1rem;
+  padding-left: 1rem;
+  padding-top: .125rem;
+  padding-bottom: .125rem;
+
+  & :any-link {
+    color: white;
+    border-bottom: .0625rem solid var(--yellow2)
+  }
 }
