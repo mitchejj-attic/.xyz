@@ -109,6 +109,7 @@ blockquote, .dispatch, .bio, .post-title {
   padding-top: .0625rem;
   padding-bottom: .0625rem;
   background-color: var(--blue6);
+  color: white;
   & :any-link {
     color: white;
     border-bottom: .0625rem solid var(--blue0)
@@ -116,14 +117,25 @@ blockquote, .dispatch, .bio, .post-title {
 }
 
 
-blockquote, .dispatch, .bio, {
+.dispatch, .post-title {
+  
+}
 
+.dispatch, .post-title, .bio {
+  border-left: inherit;
+  border-radius: 0;
+
+}
+.bio {
+ padding-right:1.14rem;
  
-  color: white;
+}
+
+blockquote, .dispatch, .bio, { 
   font-size: 110%;
+}
 
-
-}/*
+/*
 blockquote {
   background-color: white;
   color: var(--black);
@@ -192,6 +204,9 @@ blockquote small {
 .footnote, .footnotes {
   font-size: 75%;
 }
+.post-title {
+  font-size: var(--h1);
+}
 
 /*.dispatch {
   border-left: thick solid var(--blue6);
@@ -223,10 +238,7 @@ blockquote small {
   }
 }*/
 
-.post-title {
-  color: white;
-  font-size: var(--h1);
-}
+
 
 .post-title > p {
 
