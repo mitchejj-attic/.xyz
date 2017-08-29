@@ -3,22 +3,13 @@ import Helmet from "react-helmet"
 import Link from 'gatsby-link'
 import {siteMetadata} from '../../gatsby-config'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
-
-
-import { Provider, Heading, Divider, Flex, Box } from 'rebass'
 import Bio from "../components/Bio"
 
-
 class Template extends React.Component {
-  
   render() {
-    const {children} = this.props
-
- 
+    const { children } = this.props
     return (
       <div className="outline">
-
         <Helmet
           meta={[
             {
@@ -35,9 +26,10 @@ class Template extends React.Component {
             },
           ]}
         />
-{children()}
-</div>
-  )}
+        {children()}
+      </div>
+    )
+  }
 }
 
 Template.propTypes = {
