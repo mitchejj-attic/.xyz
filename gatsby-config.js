@@ -2,12 +2,12 @@ module.exports = {
   siteMetadata: {
     title: 'StaticDraft.xyz',
     author: 'Jason Mitchell',
-    site_url: 'https://home.xyz',
+    site_url: 'https://staticdraft.xyz',
     profilePic: 'https://avatars1.githubusercontent.com/u/156855?s=100',
     twitter: '@staticdraft',
     env: {
-      node: process.versions.node, v8:
-      process.versions.v8,
+      node: process.versions.node,
+      v8: process.versions.v8,
       arch: process.arch,
       platform: process.platform,
       date: new Date().toJSON()
@@ -21,6 +21,12 @@ module.exports = {
     }
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://staticdraft.xyz`,
+      }
+    },
     {
       resolve: `gatsby-plugin-postcss-sass`,
       options: {
@@ -37,7 +43,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/blog/published`,
+        path: `${__dirname}/blog/`,
         name: 'blog'
       }
     },
@@ -87,6 +93,7 @@ module.exports = {
    // `gatsby-transformer-sharp`,
    // `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-styled-components`,
+    //`gatsby-plugin-styled-components`,
+    `gatsby-plugin-catch-links`,
   ]
 }

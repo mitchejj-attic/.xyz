@@ -1,5 +1,5 @@
 ---
-layout: page
+path: /about/
 sitemap_priority: 0.9
 title: whoami
 subtitle: a bio

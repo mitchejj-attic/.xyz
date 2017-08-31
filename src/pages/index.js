@@ -21,18 +21,17 @@ class BlogIndex extends React.Component {
         </div>
       
         <div className="blogContent">
-      
-
-           <ul className="">
-          {allMarkdownRemark.edges.map(({ node }) =>
-            <BlogIndexCard post={node}  />
-            )}
+          
+            {allMarkdownRemark.edges.map(({ node }) =>
+              <BlogIndexCard post={node} />
+            )} 
+          
+            <ul className="pl0">
+            <li className="h3 cleanlist indexlist inline-block mr1"><Link to="all/">the archive</ Link></li>
+            <li className="h3 cleanlist indexlist inline-block mr1"><Link to="about/">who am i</ Link></li>  
           </ul>
-
-           <Bio type="head" />  
-           <ul>
-          <li className="h3 cleanlist indexlist "><Link to="all/">the archive</ Link></li>  
-          </ul>
+           
+          
         </div>
       </div>
 
@@ -54,10 +53,13 @@ query BlogPostsIndexQuery {
     }
   }
     allMarkdownRemark(
-      limit: 4,
+      limit: 3,
       sort: {
         fields: [frontmatter___date]
         order: DESC
+      }
+      filter: {
+        fileAbsolutePath: { regex: "/blog/published/" }
       })
       {
         edges {

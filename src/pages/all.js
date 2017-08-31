@@ -55,7 +55,11 @@ query AllBlogPostsIndexQuery {
       sort: {
         fields: [frontmatter___date]
         order: DESC
-      })
+      }
+      filter: {
+        fileAbsolutePath: { regex: "/blog/published/" }
+      }
+    )
       {
         edges {
           node {

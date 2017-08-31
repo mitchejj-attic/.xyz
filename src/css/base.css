@@ -76,6 +76,7 @@ h5, h6  { font-size: var(--h5) }
 .mt6 { margin-top:    var(--x6) }
 .mb6 { margin-bottom: var(--x6) }
 
+.pl0 { padding-left:   0 }
 .mr1 { margin-right:   var(--x1) }
 
 .mx { max-width: var(--mx) }
@@ -100,32 +101,49 @@ cite {
 cite :before {
   content: '\2014 \00A0';
 }
-
-blockquote, .dispatch, .bio, .post-title {
+blockquote {
   border-left: thick solid var(--black);
   border-radius: .5rem;
+}
+blockquote, .dispatch, .bio, .post-title, .card-title {
   padding-left: 2rem;
   padding-right: .5rem;
   padding-top: .0625rem;
   padding-bottom: .0625rem;
   background-color: var(--blue6);
   color: white;
+
+}
+.thebox {
+  border-radius: .5rem;
+  background-color: inherit;
+  border: .0625rem solid var(--blue4);
+  margin-top: 1rem;
+  & .markdown {
+    margin: .75rem;
+  }
+}
+
+.index {
+  border-top-right-radius: .5rem;
+  border-top-left-radius: .5rem;
+}
+.card-title {
+  
+  font-weight: normal;
+
+  & :any-link {
+    color: white;
+    border-bottom: 0;
+  }
+}
+blockquote, .dispatch, .bio, .post-title {
   & :any-link {
     color: white;
     border-bottom: .0625rem solid var(--blue0)
   }
 }
 
-
-.dispatch, .post-title {
-  
-}
-
-.dispatch, .post-title, .bio {
-  border-left: inherit;
-  border-radius: 0;
-
-}
 .bio {
  padding-right:1.14rem;
  
@@ -202,10 +220,15 @@ blockquote small {
   background: red;
 }
 .footnote, .footnotes {
+  background-color: var(--blue5);
   font-size: 75%;
+  border-radius: .125rem;
+  border: .125rem solid var(--blue4);
+  padding-right: .2rem;
+ 
 }
-.post-title {
-  font-size: var(--h1);
+.footnotes > hr {
+  display:none
 }
 
 /*.dispatch {

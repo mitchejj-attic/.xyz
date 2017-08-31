@@ -6,31 +6,24 @@ const select = require(`unist-util-select`)
 const fs = require(`fs-extra`)
 const dateFns = require('date-fns')
 const slug = require('slug')
-
 slug.defaults.mode = 'rfc3986'
 
-const createPath = frontmatter => {
-  /* Work In Progress */
-  const title = frontmatter.title
-  const subtitle = frontmatter.subtitle
-  const date = frontmatter.date
-  return '/junk/'
-}
-
 exports.createPages = ({graphql, boundActionCreators}) => {
-  const {createPage} = boundActionCreators
-
+  const { createPage } = boundActionCreators
   return new Promise((resolve, reject) => {
     const pages = []
     const blogPost = path.resolve('./src/templates/blog-post.js')
+    const infoPage = path.resolve('./src/templates/info-page.js')
     resolve(
       graphql(`
       {
         allMarkdownRemark(limit: 1000) {
           edges {
             node {
+              id
               frontmatter {
                 path
+                title
               }
             }
           }
@@ -44,15 +37,43 @@ exports.createPages = ({graphql, boundActionCreators}) => {
         }
 
         // Create blog posts pages.
+        result.data.allMarkdownRemark.edges.forEach(edge => {
+          const path = edge.node.frontmatter.path
+          if (!path) return
+          const id = edge.node.id
+          
+          if (_.includes(id, `${__dirname}/blog/published/`)) {
+            createPage({
+              path: path,
+              component: blogPost,
+              context: {
+                path: path
+              },
+            })
+          }
+          else {
+            createPage({
+              path: path,
+              component: infoPage,
+              context: {
+                path: path
+              },
+            })
+
+          }
+
+        })
+        /*
         _.each(result.data.allMarkdownRemark.edges, edge => {
           createPage({
-            path: edge.node.frontmatter.path, // || '/junk/',
+            path: edge.node.frontmatter.path,
             component: blogPost,
             context: {
               path: edge.node.frontmatter.path
             }
           })
         })
+        */
       })
     )
   })

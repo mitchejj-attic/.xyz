@@ -10,7 +10,12 @@ class BlogIndexCard extends React.Component {
         const post = this.props.post
 
         return (
-            <li className="h3 cleanlist indexlist "><Link to={post.frontmatter.path}>{post.frontmatter.title}</Link></li>
+        <div className="thebox">
+                <div className="h2 card-title index"><Link to={post.frontmatter.path}>{post.frontmatter.title}</Link></div>
+                
+            <div className="markdown" dangerouslySetInnerHTML={{ __html: post.html }} />
+        </div>
+
         )
     }
 }
@@ -19,7 +24,7 @@ export default BlogIndexCard
 
 export const blogIndexCardFragment = graphql`
     fragment blogIndexCardFragment_item on MarkdownRemark {
-        
+            html
             frontmatter {
             title
             subtitle

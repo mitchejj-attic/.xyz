@@ -34,7 +34,7 @@ class BlogPostTemplate extends React.Component {
           <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
           <Qtime date={post.frontmatter.date} />
 
-          <h1 className="post-title">{post.frontmatter.title}</h1>
+          <h1 className="h2 card-title">{post.frontmatter.title}</h1>
           {post.frontmatter.dispatch &&
             <div className="dispatch"><p>My notion of dispatches (linked list) has yet to be fully implemented, until I do just follow the <Link to={post.frontmatter.dispatch}>link here.</Link></p>
             </div>

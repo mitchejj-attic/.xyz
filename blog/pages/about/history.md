@@ -1,5 +1,6 @@
 ---
 layout: page
+path: /history/
 title: the nullog journey
 subtitle: actually existing a purposeful endeavor
 tags:

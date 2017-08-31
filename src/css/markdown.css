@@ -31,7 +31,7 @@
 .markdown pre {
   font-size: 1.12rem;
   display: block;
-  background: var(--gray9);
+  background: var(--blue8);
   border: .0625rem solid var(--gray9);
   border-radius: .25rem;
   overflow-y: hidden;
