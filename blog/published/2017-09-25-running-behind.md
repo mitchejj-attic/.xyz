@@ -13,8 +13,10 @@ meta:
     title:
 dispatch:
 truncatable: true
-date: <%= Time.now %>
+date: '2017-09-25T19:38:57-04:00'
 ---
+Talk about a late posting. I had this done for months just waiting to publish.
+
 I slacked off all year and failed to up-date my 2015 year in running. In late 2014 to early 2015 I decided I wanted to run the Dopey Challenge along with the inaugural Dark Side Half Marathon at Disney World. I tried to make my 2015 supportive of these goals. I registered to run my home town half marathon early in the year along with the fall full marathon in Grand Rapids. I was looking forward to the full marathon in the fall, it was kind of a college homecoming.
 
 However work had other plans for my year. I changed job locations mid summer, which wrecked havoc on my training schedule as I spend much more time than I would have liked at work. A few months later was my two week vacation to Hawaii, this trip in retrospect provided the best running memories in 2015 as I ran on for of the islands.
