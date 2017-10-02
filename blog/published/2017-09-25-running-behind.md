@@ -14,6 +14,7 @@ meta:
 dispatch:
 truncatable: true
 date: '2017-09-25T19:38:57-04:00'
+path: /2017/09/26/running-behind/
 ---
 Talk about a late posting. I had this done for months just waiting to publish.
 
