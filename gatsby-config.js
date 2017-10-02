@@ -21,6 +21,7 @@ module.exports = {
     }
   },
   plugins: [
+    `gatsby-plugin-react-next`,
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
@@ -95,5 +96,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     //`gatsby-plugin-styled-components`,
     `gatsby-plugin-catch-links`,
+    `gatsby-plugin-netlify`,
   ]
 }
