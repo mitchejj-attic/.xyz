@@ -52,6 +52,7 @@ exports.createPages = ({graphql, boundActionCreators}) => {
             })
           }
           else {
+            if (!_.includes(id, `${__dirname}/blog/published/`)) {
             createPage({
               path: path,
               component: infoPage,
@@ -59,7 +60,7 @@ exports.createPages = ({graphql, boundActionCreators}) => {
                 path: path
               },
             })
-
+          }
           }
 
         })

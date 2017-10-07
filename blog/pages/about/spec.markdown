@@ -1,5 +1,5 @@
 ---
-layout: page
+path: /spec
 title: nullog specs
 subtitle: "infrastructure, specs & data"
 tags:

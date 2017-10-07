@@ -10,13 +10,10 @@ class InfoPageTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
-
-  return (
-    <div className="blogContainer">
-
-          <div className="markdown" dangerouslySetInnerHTML={{ __html: post.html }} />
-       
-    </div>
+    return (
+      <div className="blogContainer">
+        <div className="markdown" dangerouslySetInnerHTML={{ __html: post.html }} />
+      </div>
     )
   }
 }
