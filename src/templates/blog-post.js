@@ -20,31 +20,32 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     const image = post.frontmatter.meta.image
+    
+    return (
+      <div className="blogContainer">
 
-  return (
-    <div className="blogContainer">
-
-      <div className="header">
-        <div className="siteHead">
-          <SiteHeader pageTitle={post.frontmatter.title} date={post.frontmatter.date} subtitle={post.frontmatter.subtitle} />
+        <div className="header">
+          <div className="siteHead">
+            <SiteHeader pageTitle={post.frontmatter.title} date={post.frontmatter.date} subtitle={post.frontmatter.subtitle} />
+          </div>
         </div>
-      </div>
 
         <div className="blogHead">
           <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
           <Qtime date={post.frontmatter.date} />
-
-          <h1 className="h2 card-title">{post.frontmatter.title}</h1>
-          {post.frontmatter.dispatch &&
-            <div className="dispatch"><p>My notion of dispatches (linked list) has yet to be fully implemented, until I do just follow the <Link to={post.frontmatter.dispatch}>link here.</Link></p>
-            </div>
-          }
-          {image.url && <Image image={image} /> }
         </div>
-        <article title={post.frontmatter.title} className="blogContent">
+        
+        <article title={post.frontmatter.title} className="blogContent thebox">
+          <h1 className="h2 card-title mt0">{post.frontmatter.title}</h1>
+          {post.frontmatter.dispatch &&
+            <div className="dispatch"><p>
+              My notion of dispatches (linked list) has yet to be fully implemented, until I do just follow the <Link to={post.frontmatter.dispatch}>link here.</Link>
+            </p></div>
+          }
+          {image.url && <Image image={image} />}
           <div className="markdown" dangerouslySetInnerHTML={{ __html: post.html }} />
         </article>
-    </div>
+      </div>
     )
   }
 }
@@ -68,6 +69,7 @@ export const pageQuery = graphql`
         subtitle
         date
         dispatch
+        tags
         meta {
           description
           image {

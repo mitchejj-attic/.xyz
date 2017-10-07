@@ -110,17 +110,22 @@ blockquote, .dispatch, .bio, .post-title, .card-title {
   padding-right: .5rem;
   padding-top: .0625rem;
   padding-bottom: .0625rem;
-  background-color: var(--blue6);
-  color: white;
+  background-color: var(--blue0);
+  color: var(--blue5);
 
 }
 .thebox {
   border-radius: .5rem;
-  background-color: inherit;
-  border: .0625rem solid var(--blue4);
+  background-color: white;
+  padding-bottom: .0625rem;
   margin-top: 1rem;
   & .markdown {
     margin: .75rem;
+  }
+  color: var(--black);
+  & :any-link {
+    color: var(--blue5);
+    border-bottom: 0;
   }
 }
 
@@ -129,17 +134,18 @@ blockquote, .dispatch, .bio, .post-title, .card-title {
   border-top-left-radius: .5rem;
 }
 .card-title {
-  
+  border-top-right-radius: .5rem;
+  border-top-left-radius: .5rem;
   font-weight: normal;
 
   & :any-link {
-    color: white;
+    color: var(--blue5);
     border-bottom: 0;
   }
 }
 blockquote, .dispatch, .bio, .post-title {
   & :any-link {
-    color: white;
+    color: var(--blue6);
     border-bottom: .0625rem solid var(--blue0)
   }
 }
@@ -172,9 +178,9 @@ blockquote {
 
 
 li > blockquote {
-  background: var(--blue6);
+  background: var(--blue5);
   border-radius: inherit;
-  color: inherit;
+  color: var(--yellow1);
   margin: .5rem;
   padding: 1rem;
   width:75%;
@@ -220,16 +226,18 @@ blockquote small {
   background: red;
 }
 .footnote, .footnotes {
-  background-color: var(--blue5);
+  background-color: var(--blue0);
   font-size: 75%;
-  border-radius: .125rem;
-  border: .125rem solid var(--blue4);
+  /*border-radius: .125rem;
+  /*border: .125rem solid var(--blue4);*/
   padding-right: .2rem;
  
 }
 .footnotes > hr {
-  display:none
+  border-color: var(--blue5);
+  width: 88%
 }
+
 
 /*.dispatch {
   border-left: thick solid var(--blue6);

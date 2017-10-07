@@ -1,3 +1,6 @@
+.markdown:empty {
+  background: var(--blue5)
+}
 .markdown ul {
   list-style-type: none;
   text-indent: -.3rem;
@@ -31,7 +34,7 @@
 .markdown pre {
   font-size: 1.12rem;
   display: block;
-  background: var(--blue8);
+  background: var(--blue5);
   border: .0625rem solid var(--gray9);
   border-radius: .25rem;
   overflow-y: hidden;
@@ -53,9 +56,9 @@ time {
 }
 
 code {
-  color: white;
+
   white-space: pre;
-  background: var(--blue7);
+  background: var(--blue0);
   border: 0.0625rem  transparent;
   border-top-left-radius: .125rem;
   border-top-right-radius: .125rem;
@@ -93,5 +96,5 @@ code {
   border: 0;
 }
 .blog-image {
-max-width: 99.9%
+max-width: 100%
 }
