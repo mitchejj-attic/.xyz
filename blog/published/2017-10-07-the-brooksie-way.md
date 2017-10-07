@@ -26,7 +26,7 @@ Going into the race my current proof of time was 2:24ish. I know I went out fast
 
 The plan worked, the plan worked that is until the first big hill on the course, then it all went by the way side. Shortly after the hills I really started to feel the heat.
 
-#### Official Chip Times [(Strava)][stravaResults]
+#### Official Chip Times ([(Strava][stravaResults])
 
 * 10 k --- 1:03:38
 * 13.1 mile --- 2:32:26
