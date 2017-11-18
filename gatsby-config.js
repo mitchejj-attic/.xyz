@@ -48,8 +48,9 @@ module.exports = {
         name: 'blog'
       }
     },
-   /*
-      Resolve: `gatsby-plugin-sitemap`,
+
+   {
+      resolve: `gatsby-plugin-sitemap`,
       options: {
         query: `
         {
@@ -58,24 +59,30 @@ module.exports = {
               site_url
             }
           }
-          allMarkdownRemark(
-            limit: 2000,
-            sort: {
-              fields: [frontmatter___date]
-              order: DESC
-          }) {
+          
+          allSitePage(
+            filter: {
+              path: {ne: "/dev-404-page/"}
+            }
+          ) {
             edges {
               node {
-                fields {
-                  slug
-                }
+                path
               }
             }
-         }
+          }
+      }`,
+      serialize: ({ site, allSitePage }) =>
+      allSitePage.edges.map(edge => {
+        return {
+          url: site.siteMetadata.site_url + edge.node.path,
+          changefreq: `daily`,
+          priority: 0.7,
         }
-      `,
-      },
-    }, */
+      }),  
+      }
+    },
+   
     {
       resolve: `gatsby-transformer-remark`,
       options: {
