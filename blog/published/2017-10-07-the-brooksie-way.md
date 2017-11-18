@@ -26,10 +26,9 @@ Going into the race my current proof of time was 2:24ish. I know I went out fast
 
 The plan worked, the plan worked that is until the first big hill on the course, then it all went by the way side. Shortly after the hills I really started to feel the heat.
 
-#### Official Chip Times ([(Strava][stravaResults])
-
-* 10 k --- 1:03:38
-* 13.1 mile --- 2:32:26
+#### Official Chip Times (with strava link)
+* [The Brooksie Way Half Marathon][stravaResults] --- 2:32:26
+  * 10K Split --- 1:03:38
 
 The bulk of the hills took place between the 10k and 15k mark, and if one looks at my Strava results my pace was fairly okay. The problem was I wasn’t able to get my legs going the next last 5k, I think I was also mentally done as well.
 

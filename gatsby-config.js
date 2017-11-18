@@ -48,7 +48,6 @@ module.exports = {
         name: 'blog'
       }
     },
-
    {
       resolve: `gatsby-plugin-sitemap`,
       options: {
@@ -59,7 +58,6 @@ module.exports = {
               site_url
             }
           }
-          
           allSitePage(
             filter: {
               path: {ne: "/dev-404-page/"}
@@ -82,7 +80,6 @@ module.exports = {
       }),  
       }
     },
-   
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -98,10 +95,7 @@ module.exports = {
         ]
       }
     },
-   // `gatsby-transformer-sharp`,
-   // `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
-    //`gatsby-plugin-styled-components`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-netlify`,
   ]

@@ -18,6 +18,7 @@ class BlogIndex extends React.Component {
       <div className="pageContainer">
         <div className="header">
           <SiteHeader />
+          <Helmet title={`${siteTitle}`} />
         </div>
       
         <div className="blogContent">
