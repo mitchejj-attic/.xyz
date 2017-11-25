@@ -29,6 +29,5 @@ export const blogIndexCardFragment = graphql`
                 subtitle
                 path
                 date
-          }
-    }
+            }
 `
