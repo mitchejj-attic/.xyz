@@ -25,11 +25,10 @@ export const blogIndexCardFragment = graphql`
     fragment blogIndexCardFragment_item on MarkdownRemark {
             html
             frontmatter {
-            title
-            subtitle
-            path
-            date
+                title
+                subtitle
+                path
+                date
           }
-        
     }
 `
