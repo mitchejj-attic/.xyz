@@ -23,11 +23,12 @@ export default BlogIndexCard
 
 export const blogIndexCardFragment = graphql`
     fragment blogIndexCardFragment_item on MarkdownRemark {
-            html
-            frontmatter {
-                title
-                subtitle
-                path
-                date
-            }
+        html
+        frontmatter {
+            title
+            subtitle
+            path
+            date
+        }
+    }
 `

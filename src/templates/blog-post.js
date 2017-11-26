@@ -20,6 +20,7 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     const image = post.frontmatter.meta.image
+    const helmet_title = post.frontmatter.title + ' | ' + siteTitle
     
     return (
       <div className="blogContainer">
