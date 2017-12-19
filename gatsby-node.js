@@ -13,7 +13,7 @@ exports.createPages = ({graphql, boundActionCreators}) => {
   return new Promise((resolve, reject) => {
     const pages = []
     const blogPost = path.resolve('./src/templates/blog-post.js')
-    const infoPage = path.resolve('./src/templates/info-page.js')
+    const genericPage = path.resolve('./src/templates/generic-page.js')
     resolve(
       graphql(`
       {
@@ -55,7 +55,7 @@ exports.createPages = ({graphql, boundActionCreators}) => {
             if (!_.includes(id, `${__dirname}/blog/published/`)) {
             createPage({
               path: path,
-              component: infoPage,
+              component: genericPage,
               context: {
                 path: path
               },
