@@ -1,16 +1,16 @@
 ---
-  layout: page
-  title: you shouldn't see this
-  subtitle: just a mange bit of links
-  tags: null
-  meta:
-    description:
-    image:
-      url:
-      caption:
-      link:
-sitemap_priority: -1.0
-  ---
+layout: page
+title: you shouldn't see this
+subtitle: just a mange bit of links
+tags: null
+meta:
+  description:
+  image:
+     url:
+     caption:
+     link:
+sitemap_priority: '-1.0'
+---
 https://wiki.archlinux.org/index.php/VPN_over_SSH
 http://www.tldp.org/HOWTO/NFS-HOWTO/security.html
 https://serverfault.com/questions/486188/securing-nfs-against-ssh-tunneling
