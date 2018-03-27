@@ -1,6 +1,5 @@
-# Read Me
-
-[https://github.com/mitchejj/.xyz/blob/master/src/pages/README.md](https://github.com/mitchejj/.xyz/blob/master/src/pages/README.md)
+# .xyz
+> Static generated site for [staticdraft.xyz](https://staticdraft.xyz)
 
 To Do:
 * [ ] Need a rewrite rule for /io/pi/ see /2015/03/15/raspberry/ for link test
