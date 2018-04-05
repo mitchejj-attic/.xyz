@@ -45,20 +45,14 @@ exports.createPages = ({graphql, boundActionCreators}) => {
           if (_.includes(id, `${__dirname}/blog/published/`)) {
             createPage({
               path: path,
-              component: blogPost,
-              context: {
-                path: path
-              },
+              component: blogPost
             })
           }
           else {
             if (!_.includes(id, `${__dirname}/blog/published/`)) {
             createPage({
               path: path,
-              component: genericPage,
-              context: {
-                path: path
-              },
+              component: genericPage
             })
           }
           }
