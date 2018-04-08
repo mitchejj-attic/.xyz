@@ -8,7 +8,7 @@ import BlogIndexCard from '../components/blog-index-card'
 import SiteHeader from '../components/SiteHeader'
 import Bio from '../components/Bio'
 
-class BlogIndex extends React.Component {
+class HomeIndex extends React.Component {
   render() {
     const pageLinks = []
     const siteTitle = this.props.data.site.siteMetadata.title
@@ -40,11 +40,11 @@ class BlogIndex extends React.Component {
   }
 }
 
-BlogIndex.propTypes = {
+HomeIndex.propTypes = {
   route: PropTypes.object
 }
 
-export default BlogIndex
+export default HomeIndex
 
 export const pageQuery = graphql`
 query BlogPostsIndexQuery {
