@@ -10,9 +10,9 @@ class BlogIndexCard extends React.Component {
         const post = this.props.post
 
         return (
-            <div className="thebox">
-                <h2 className="h2 card-title index mt0"><Link to={post.frontmatter.path}>{post.frontmatter.title}</Link></h2>
-            <div className="markdown" dangerouslySetInnerHTML={{ __html: post.html }} />
+            <div className="index-card">
+                <h2 className="index-title pl1 pr1 pt1 pb1"><Link to={post.frontmatter.path}>{post.frontmatter.title}</Link></h2>
+            <div className="index-markdown " dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
 
         )

@@ -3,7 +3,6 @@ import Helmet from "react-helmet"
 import Link from 'gatsby-link'
 import {siteMetadata} from '../../gatsby-config'
 import PropTypes from 'prop-types'
-import Bio from "../components/Bio"
 
 class Template extends React.Component {
   render() {
@@ -14,7 +13,7 @@ class Template extends React.Component {
           meta={[
             {
               name: `twitter:site`,
-              content: `@`,
+              content: `@staticdraft.xyz`,
             },
             {
               name: `og:type`,
@@ -22,7 +21,7 @@ class Template extends React.Component {
             },
             {
               name: `og:site_name`,
-              content: `.xyz`,
+              content: `Static Draft`,
             },
           ]}
         />

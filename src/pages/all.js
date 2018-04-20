@@ -3,10 +3,7 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import graphql from 'graphql'
 import PropTypes from 'prop-types'
-import IndexingPost from '../components/IndexingPost'
 import BlogIndexCard from '../components/blog-index-card'
-import SiteHeader from '../components/SiteHeader'
-import Bio from '../components/Bio'
 
 class AllBlogIndex extends React.Component {
   render() {
@@ -14,26 +11,26 @@ class AllBlogIndex extends React.Component {
     const siteTitle = this.props.data.site.siteMetadata.title
     const { allMarkdownRemark } = this.props.data
 
-    
     return (
-      <div className="pageContainer">
-        <div className="header">
-          <SiteHeader />
-          <Helmet title={`${siteTitle}`} />
+      <div id="grid">
+        <div class="header stanchionbox">
+          <h1 class="h3 mt0 mb0">
+            <Helmet title={`${siteTitle}`} />    
+            {siteTitle}
+          </h1>
         </div>
-        
-
-        <div className="blogContent">
-        
-
-           <ul className="">
+        <div class="content">
           {allMarkdownRemark.edges.map(({ node }) =>
-            <BlogIndexCard post={node}  />
+            <BlogIndexCard post={node} />
           )}
-        </ul>
+        </div>
+        <div class="footer stanchionbox">
+          <ul className="pl0">
+            <li className="h3 cleanlist indexlist inline-block mr1"><Link to="/all/">the archive</ Link></li>
+            <li className="h3 cleanlist indexlist inline-block mr1"><Link to="/about/">who am i</ Link></li>
+          </ul>
         </div>
       </div>
-
     )
   }
 }

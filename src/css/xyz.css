@@ -1,7 +1,8 @@
 @charset "utf-8";
 :root {
   --monospace: "SFMono-Regular", Inconsolata, Consolas, Monaco, "Liberation Mono", Courier, monospace;
-  --base-font: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Roboto, "Segoe UI", sans-serif;
+  --base-font: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI",
+  "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-feature-settings: "kern", "liga", "pnum" ; /*"frac",  */
   -webkit-font-smoothing: antialiased;
   font-family: var(--base-font);

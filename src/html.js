@@ -37,12 +37,14 @@ if (process.env.NODE_ENV === `production`) {
           {this.props.headComponents}
           {css}
         </head>
-        <body>
+        <body >
+ 
           <div
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
+ 
         </body>
       </html>
     )
