@@ -12,7 +12,7 @@ class BlogIndexCard extends React.Component {
         return (
             <div className="index-card">
                 <h2 className="index-title pl1 pr1 pt1 pb1"><Link to={post.frontmatter.path}>{post.frontmatter.title}</Link></h2>
-            <div className="index-markdown " dangerouslySetInnerHTML={{ __html: post.html }} />
+                <div className="index-markdown" dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
 
         )
