@@ -31,7 +31,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-postcss-sass`,
       options: {
-        postCssPlugins: ['postcss-cssnext', 'lost'],
+          postCssPlugins: ['postcss-preset-env', 'lost'],
       }
     },
     {
