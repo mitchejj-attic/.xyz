@@ -1,6 +1,4 @@
 ---
 title: whoami
-date:
+date: 2019-02-16
 ---
-
-
