@@ -1,7 +1,8 @@
 ---
 title: running ahead in 2015
 subtitle: and looking back on 2014
-tags: running
+tags:
+  - running
 meta:
   description: null
   image:

@@ -1,7 +1,9 @@
 ---
 title: digital history
 subtitle: the final frontier in personal computing
-tags: 'sync, backup'
+tags:
+  - sync
+  - backup
 meta:
   description: null
   image:

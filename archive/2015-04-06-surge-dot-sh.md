@@ -1,7 +1,8 @@
 ---
 title: Surge CDN
 subtitle: null
-tags: meta
+tags:
+  - meta
 meta:
   description: I'm moving to from Heroku to Surge!
   image:

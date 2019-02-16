@@ -1,7 +1,8 @@
 ---
 title: quick and dirty metrics
 subtitle: actually its about mcache
-tags: meta
+tags:
+  - meta
 meta:
   description: null
   image:

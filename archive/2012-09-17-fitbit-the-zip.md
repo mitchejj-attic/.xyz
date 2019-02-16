@@ -1,7 +1,8 @@
 ---
 title: Fitbit & The Zip
 subtitle: null
-tags: fitness
+tags:
+  - fitness
 meta:
   description: null
   image:

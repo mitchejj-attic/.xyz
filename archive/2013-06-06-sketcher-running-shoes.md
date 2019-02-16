@@ -1,7 +1,8 @@
 ---
 title: Daily Comfort
 subtitle: Sketchers Go Run M
-tags: running
+tags:
+  - running
 meta:
   description: null
   image:

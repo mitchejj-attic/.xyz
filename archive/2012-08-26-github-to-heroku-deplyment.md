@@ -1,7 +1,10 @@
 ---
 title: github to heroku deplyment
 subtitle: null
-tags: 'heroku, github, meta'
+tags:
+  - heroku
+  - github
+  - meta
 meta:
   description: null
   image:

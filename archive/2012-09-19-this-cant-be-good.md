@@ -1,7 +1,8 @@
 ---
 title: This Can't be Good
 subtitle: null
-tags: macosx
+tags:
+  - macosx
 meta:
   description: null
   image:

@@ -1,7 +1,8 @@
 ---
 title: Linux Playground
 subtitle: null
-tags: linux
+tags:
+  - linux
 meta:
   description: null
   image:

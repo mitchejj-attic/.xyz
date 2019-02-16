@@ -1,7 +1,10 @@
 ---
 title: Middleman
 subtitle: hello world again
-tags: 'meta, middleman, jekyll'
+tags:
+  - meta
+  - middleman
+  - jekyll
 meta:
   description: null
   image:

@@ -1,7 +1,10 @@
 ---
 title: Creating an Arch Flash Drive
 subtitle: For my MacBook's
-tags: 'arch, linux, macbook'
+tags:
+  - arch
+  - linux
+  - macbook
 meta:
   description: null
   image:

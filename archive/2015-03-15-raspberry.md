@@ -1,7 +1,10 @@
 ---
 title: raspberry
 subtitle: pi 2
-tags: 'linux, arch, pi'
+tags:
+  - linux
+  - arch
+  - pi
 meta:
   description: null
   image:

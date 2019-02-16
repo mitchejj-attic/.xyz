@@ -1,7 +1,10 @@
 ---
 title: Heigh-Ho! Heigh-Ho!
 subtitle: A Dopey I go?
-tags: 'running, disney, dopey'
+tags:
+  - running
+  - disney
+  - dopey
 meta:
   description: null
   image:

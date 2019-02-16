@@ -1,7 +1,8 @@
 ---
 title: 'refactor, the stall'
 subtitle: null
-tags: meta
+tags:
+  - meta
 meta:
   description: null
   image:

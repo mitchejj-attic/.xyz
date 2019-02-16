@@ -1,7 +1,8 @@
 ---
 title: iPhone5 Blueprints
 subtitle: null
-tags: iPhone
+tags:
+  - iPhone
 meta:
   description: null
   image:

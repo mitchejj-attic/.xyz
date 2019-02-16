@@ -1,7 +1,9 @@
 ---
 title: falsity of sure things
 subtitle: natural scrolling with cinnamon
-tags: 'arch, linux'
+tags:
+  - arch
+  - linux
 meta:
   description: null
   image:

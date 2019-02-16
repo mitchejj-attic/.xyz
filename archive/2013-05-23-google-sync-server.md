@@ -1,7 +1,8 @@
 ---
 title: Chromium & Chrome Sync Server Address
 subtitle: null
-tags: chromium
+tags:
+  - chromium
 meta:
   description: null
   image:
@@ -9,7 +10,8 @@ meta:
     caption: null
     link: null
   source:
-    url: 'ttp://elliotli.blogspot.com/2010/07/google-chrome-chromium-sync-server.html'
+    url: >-
+      ttp://elliotli.blogspot.com/2010/07/google-chrome-chromium-sync-server.html
     title: Yan Li's Words
 dispatch: null
 date: '2013-05-23T00:00:00-04:00'

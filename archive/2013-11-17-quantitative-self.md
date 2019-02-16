@@ -1,7 +1,8 @@
 ---
 title: quantitative self
 subtitle: null
-tags: running
+tags:
+  - running
 meta:
   description: null
   image:

@@ -1,7 +1,8 @@
 ---
 title: Running Check List
 subtitle: null
-tags: running
+tags:
+  - running
 meta:
   description: null
   image:

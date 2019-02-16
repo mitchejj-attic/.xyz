@@ -1,7 +1,8 @@
 ---
 title: november bits
 subtitle: '2015'
-tags: bits
+tags:
+  - bits
 meta:
   description: null
   image:

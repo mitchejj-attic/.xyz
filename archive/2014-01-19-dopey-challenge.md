@@ -1,7 +1,10 @@
 ---
 title: The Dopey Weekend
 subtitle: 'the memories, the experiences the stress'
-tags: 'running, dopey, disney'
+tags:
+  - running
+  - dopey
+  - disney
 meta:
   description: My journey to completing the Dopey Challenge in 2013.
   image:

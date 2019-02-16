@@ -1,7 +1,9 @@
 ---
 title: Moving to Arch?
 subtitle: null
-tags: 'arch, linux'
+tags:
+  - arch
+  - linux
 meta:
   description: null
   image:

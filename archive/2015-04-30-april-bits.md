@@ -1,7 +1,8 @@
 ---
 title: april bits
 subtitle: '2015'
-tags: bits
+tags:
+  - bits
 meta:
   description: Interesting links from April 2014
   image:

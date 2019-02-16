@@ -1,7 +1,8 @@
 ---
 title: November Bits
 subtitle: null
-tags: bits
+tags:
+  - bits
 meta:
   description: null
   image:

@@ -1,17 +1,18 @@
 ---
 title: A 2017 Race
-subtitle:  10th McLauren Health Care Brooksie Way 
-tags: running
+subtitle: 10th McLauren Health Care Brooksie Way
+tags:
+  - running
 meta:
-  description:
+  description: null
   image:
-    url:
-    title:
-    link:
+    url: null
+    title: null
+    link: null
   source:
-    url:
-    title:
-dispatch:
+    url: null
+    title: null
+dispatch: null
 truncatable: true
 date: '2017-10-07T11:13:34-04:00'
 path: /2017/10/07/the-brooksie-way/

@@ -1,7 +1,8 @@
 ---
 title: setting sail
 subtitle: null
-tags: meta
+tags:
+  - meta
 meta:
   description: null
   image:

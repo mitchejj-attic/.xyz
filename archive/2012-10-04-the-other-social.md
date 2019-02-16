@@ -1,7 +1,9 @@
 ---
 title: The other social
 subtitle: null
-tags: 'internet, social'
+tags:
+  - internet
+  - social
 meta:
   description: null
   image:

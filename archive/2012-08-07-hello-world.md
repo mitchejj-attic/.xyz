@@ -1,7 +1,8 @@
 ---
 title: Hello World
 subtitle: null
-tags: obligatory
+tags:
+  - obligatory
 meta:
   description: null
   image:

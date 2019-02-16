@@ -1,17 +1,18 @@
 ---
 title: 2018 Dopey
-subtitle:
-tags: running
+subtitle: null
+tags:
+  - running
 meta:
-  description:
+  description: null
   image:
-    url:
-    title:
-    link:
+    url: null
+    title: null
+    link: null
   source:
-    url:
-    title:
-dispatch:
+    url: null
+    title: null
+dispatch: null
 truncatable: true
 date: '2018-04-05T18:52:45.594Z'
 path: /2018/04/05/2018-dopey/

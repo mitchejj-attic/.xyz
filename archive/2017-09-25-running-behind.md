@@ -1,17 +1,18 @@
 ---
 title: Running Behind
-subtitle:  2015 & 2016
-tags: running
+subtitle: 2015 & 2016
+tags:
+  - running
 meta:
-  description:
+  description: null
   image:
-    url:
-    title:
-    link:
+    url: null
+    title: null
+    link: null
   source:
-    url:
-    title:
-dispatch:
+    url: null
+    title: null
+dispatch: null
 truncatable: true
 date: '2017-09-25T19:38:57-04:00'
 path: /2017/09/26/running-behind/

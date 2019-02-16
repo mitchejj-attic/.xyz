@@ -1,7 +1,10 @@
 ---
 title: iSight in Arch
 subtitle: enabling the isight
-tags: 'arch, linux, macbook'
+tags:
+  - arch
+  - linux
+  - macbook
 meta:
   description: null
   image:
@@ -13,7 +16,8 @@ meta:
     title: null
 dispatch: null
 date: '2013-05-26T00:00:00-04:00'
-x-meta: /System/Library/Extensions/IOUSBFamily.kext/Contents/PlugIns/AppleUSBVideoSupport.kext/Contents/MacOS/AppleUSBVideoSupport
+x-meta: >-
+  /System/Library/Extensions/IOUSBFamily.kext/Contents/PlugIns/AppleUSBVideoSupport.kext/Contents/MacOS/AppleUSBVideoSupport
 path: /2013/05/26/arch-sight/
 ---
 

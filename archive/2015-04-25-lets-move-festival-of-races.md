@@ -1,7 +1,8 @@
 ---
 title: Lets Move Festival of Races
 subtitle: 2015 Half Marathon
-tags: running
+tags:
+  - running
 meta:
   description: Thoughts the 2015 @MacombFitness Half Marathon
   image:
@@ -14,6 +15,7 @@ meta:
 dispatch: null
 date: '2015-04-25T23:13:13-04:00'
 path: /2015/04/25/lets-move-festival-of-races/
+coverImage: 'https://frosting.surge.sh/2015/IMG_0736.jpg'
 ---
 Last year was the first year I ran this event. Mentally I felt down for most of the race, physically I felt a bit off; I ran my fast official half marathon it was also the last race I ran. This year, I was in a good place mentally but a tad unsure physically. When I signed up I wanted to better last years time, my goal time was 2:10.
 

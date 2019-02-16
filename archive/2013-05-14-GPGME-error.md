@@ -1,7 +1,8 @@
 ---
 title: pacman errors
 subtitle: 'error: GPGME error: No data'
-tags: arch
+tags:
+  - arch
 meta:
   description: null
   image:

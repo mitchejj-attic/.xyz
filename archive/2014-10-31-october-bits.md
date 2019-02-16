@@ -1,7 +1,8 @@
 ---
 title: october bits
 subtitle: null
-tags: bits
+tags:
+  - bits
 meta:
   description: null
   image:

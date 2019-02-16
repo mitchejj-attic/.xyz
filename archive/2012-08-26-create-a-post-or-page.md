@@ -1,7 +1,8 @@
 ---
 title: Create a Post or Page
 subtitle: null
-tags: jekyll
+tags:
+  - jekyll
 meta:
   description: null
   image:
